@@ -1,14 +1,8 @@
-import { BarChart3, Crosshair, Home, PawPrint, Settings, Swords } from 'lucide-react'
+import { Crosshair, Swords } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { cn } from '@/lib/utils'
 
-const NAV_ITEMS = [
-  { to: '/', label: 'Home', icon: Home, end: true },
-  { to: '/hunts', label: 'Hunts', icon: Crosshair },
-  { to: '/creatures', label: 'Creatures', icon: PawPrint },
-  { to: '/statistics', label: 'Statistics', icon: BarChart3 },
-  { to: '/settings', label: 'Settings', icon: Settings },
-]
+const NAV_ITEMS = [{ to: '/', label: 'Hunts', icon: Crosshair, end: true }]
 
 export function Sidebar() {
   return (

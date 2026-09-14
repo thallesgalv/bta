@@ -59,7 +59,7 @@ export function parseHuntAnalyser(
     }
     const shouldScale = considerProportion && sessionMinutes && sessionMinutes > 0
     const killsPer20Min = shouldScale
-      ? Math.round(((entry.kills * 20) / sessionMinutes!) * 10) / 10
+      ? Math.round((entry.kills * 20) / sessionMinutes!)
       : entry.kills
     matched.push({ creature, rawKills: entry.kills, killsPer20Min })
   }
