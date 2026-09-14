@@ -1,10 +1,12 @@
-import { Plus, Swords } from 'lucide-react'
-import { useState } from 'react'
+import { Plus, Search, Swords } from 'lucide-react'
+import { useMemo, useState } from 'react'
 import { ExportDialog } from '@/components/ExportDialog'
 import { ImportDialog } from '@/components/ImportDialog'
 import { NewRecordModal } from '@/components/NewRecordModal/NewRecordModal'
 import { RecordsTable } from '@/components/RecordsTable'
 import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { computeRanks } from '@/lib/ranking'
 import { deleteRecord, getRecords, setRecords, upsertRecords } from '@/lib/storage'
 import type { HuntRecord } from '@/types'
 
@@ -12,6 +14,14 @@ export function HuntsPage() {
   const [records, setRecordsState] = useState<HuntRecord[]>(() => getRecords())
   const [modalOpen, setModalOpen] = useState(false)
   const [editRecord, setEditRecord] = useState<HuntRecord | null>(null)
+  const [search, setSearch] = useState('')
+
+  const ranks = useMemo(() => computeRanks(records), [records])
+  const filteredRecords = useMemo(() => {
+    const query = search.trim().toLowerCase()
+    if (!query) return records
+    return records.filter((r) => r.monsterName.toLowerCase().includes(query))
+  }, [records, search])
 
   function handleSave(newRecords: HuntRecord[]) {
     setRecordsState(upsertRecords(newRecords))
@@ -55,7 +65,27 @@ export function HuntsPage() {
         </div>
       </header>
 
-      <RecordsTable records={records} onEdit={openEditModal} onDelete={handleDelete} />
+      <div className="relative w-full max-w-sm">
+        <Search className="absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+        <Input
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Buscar monstro..."
+          className="pl-8"
+        />
+      </div>
+
+      <RecordsTable
+        records={filteredRecords}
+        ranks={ranks}
+        emptyMessage={
+          records.length === 0
+            ? 'Nenhum registro cadastrado ainda.'
+            : 'Nenhum monstro encontrado.'
+        }
+        onEdit={openEditModal}
+        onDelete={handleDelete}
+      />
 
       <NewRecordModal
         open={modalOpen}

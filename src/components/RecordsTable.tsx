@@ -16,27 +16,27 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { BESTIARY } from '@/data/bestiary'
-import { computeRanks } from '@/lib/ranking'
 import { RANK_BADGE_CLASSNAME } from '@/lib/rankStyles'
 import { cn } from '@/lib/utils'
-import type { HuntRecord } from '@/types'
+import type { HuntRecord, Rank } from '@/types'
 
 const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
 
 interface RecordsTableProps {
   records: HuntRecord[]
+  ranks: Map<string, Rank>
+  emptyMessage: string
   onEdit: (record: HuntRecord) => void
   onDelete: (id: string) => void
 }
 
-export function RecordsTable({ records, onEdit, onDelete }: RecordsTableProps) {
-  const ranks = computeRanks(records)
+export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }: RecordsTableProps) {
   const sorted = [...records].sort((a, b) => b.killsPer20Min - a.killsPer20Min)
 
   if (records.length === 0) {
     return (
       <div className="flex h-40 items-center justify-center rounded-md border border-dashed border-border text-sm text-muted-foreground">
-        Nenhum registro cadastrado ainda.
+        {emptyMessage}
       </div>
     )
   }
