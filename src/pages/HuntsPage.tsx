@@ -1,5 +1,5 @@
 import { Plus, Swords } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ExportDialog } from '@/components/ExportDialog'
 import { ImportDialog } from '@/components/ImportDialog'
 import { NewRecordModal } from '@/components/NewRecordModal/NewRecordModal'
@@ -9,13 +9,9 @@ import { deleteRecord, getRecords, setRecords, upsertRecords } from '@/lib/stora
 import type { HuntRecord } from '@/types'
 
 export function HuntsPage() {
-  const [records, setRecordsState] = useState<HuntRecord[]>([])
+  const [records, setRecordsState] = useState<HuntRecord[]>(() => getRecords())
   const [modalOpen, setModalOpen] = useState(false)
   const [editRecord, setEditRecord] = useState<HuntRecord | null>(null)
-
-  useEffect(() => {
-    setRecordsState(getRecords())
-  }, [])
 
   function handleSave(newRecords: HuntRecord[]) {
     setRecordsState(upsertRecords(newRecords))
