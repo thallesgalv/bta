@@ -16,3 +16,12 @@ export interface HuntRecord {
   location: string
   updatedAt: string
 }
+
+export interface Projection {
+  id: string
+  creatureId: string
+  monsterName: string
+  killsPer20Min: number
+  totalKills: number
+  createdAt: string
+}

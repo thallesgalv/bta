@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { CreatureCombobox } from '@/components/NewRecordModal/CreatureCombobox'
+import { CreatureCombobox } from '@/components/CreatureCombobox'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -41,7 +41,7 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-1.5">
         <Label>Monstro</Label>
-        <CreatureCombobox value={creatureId} onChange={setCreatureId} />
+        <CreatureCombobox creatures={BESTIARY} value={creatureId} onChange={setCreatureId} />
       </div>
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="manual-kills">Kills per 20min</Label>

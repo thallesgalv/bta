@@ -1,8 +1,11 @@
-import { Crosshair, Swords } from 'lucide-react'
+import { Crosshair, Sparkles, Swords } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { cn } from '@/lib/utils'
 
-const NAV_ITEMS = [{ to: '/', label: 'Hunts', icon: Crosshair, end: true }]
+const NAV_ITEMS = [
+  { to: '/', label: 'Hunts', icon: Crosshair, end: true },
+  { to: '/projection', label: 'Projection', icon: Sparkles, end: false },
+]
 
 export function Sidebar() {
   return (

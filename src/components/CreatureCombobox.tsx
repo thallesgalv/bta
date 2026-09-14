@@ -1,6 +1,5 @@
 import { Check, ChevronsUpDown } from 'lucide-react'
 import { useState } from 'react'
-import { BESTIARY } from '@/data/bestiary'
 import { Button } from '@/components/ui/button'
 import {
   Command,
@@ -12,15 +11,25 @@ import {
 } from '@/components/ui/command'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
+import type { BestiaryCreature } from '@/types'
 
 interface CreatureComboboxProps {
+  creatures: BestiaryCreature[]
   value: string | null
   onChange: (id: string) => void
+  placeholder?: string
+  emptyMessage?: string
 }
 
-export function CreatureCombobox({ value, onChange }: CreatureComboboxProps) {
+export function CreatureCombobox({
+  creatures,
+  value,
+  onChange,
+  placeholder = 'Selecione uma criatura...',
+  emptyMessage = 'Nenhuma criatura encontrada.',
+}: CreatureComboboxProps) {
   const [open, setOpen] = useState(false)
-  const selected = BESTIARY.find((c) => c.id === value)
+  const selected = creatures.find((c) => c.id === value)
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -37,7 +46,7 @@ export function CreatureCombobox({ value, onChange }: CreatureComboboxProps) {
               {selected.name}
             </span>
           ) : (
-            <span className="text-muted-foreground">Selecione uma criatura...</span>
+            <span className="text-muted-foreground">{placeholder}</span>
           )}
           <ChevronsUpDown className="size-4 shrink-0 opacity-50" />
         </Button>
@@ -46,9 +55,9 @@ export function CreatureCombobox({ value, onChange }: CreatureComboboxProps) {
         <Command>
           <CommandInput placeholder="Buscar criatura..." />
           <CommandList>
-            <CommandEmpty>Nenhuma criatura encontrada.</CommandEmpty>
+            <CommandEmpty>{emptyMessage}</CommandEmpty>
             <CommandGroup>
-              {BESTIARY.map((creature) => (
+              {creatures.map((creature) => (
                 <CommandItem
                   key={creature.id}
                   value={creature.name}
