@@ -65,14 +65,20 @@ export function HuntsPage() {
         </div>
       </header>
 
-      <div className="relative w-full max-w-sm">
-        <Search className="absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-        <Input
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          placeholder="Buscar monstro..."
-          className="pl-8"
-        />
+      <div className="flex items-center gap-3">
+        <div className="relative w-full max-w-sm">
+          <Search className="absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+          <Input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Buscar monstro..."
+            className="pl-8"
+          />
+        </div>
+        <span className="text-sm text-muted-foreground whitespace-nowrap">
+          {records.length} monstro{records.length !== 1 ? 's' : ''} registrado
+          {records.length !== 1 ? 's' : ''}
+        </span>
       </div>
 
       <RecordsTable

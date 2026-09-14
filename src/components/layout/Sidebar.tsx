@@ -6,7 +6,7 @@ const NAV_ITEMS = [{ to: '/', label: 'Hunts', icon: Crosshair, end: true }]
 
 export function Sidebar() {
   return (
-    <aside className="flex h-screen w-60 shrink-0 flex-col border-r border-sidebar-border bg-sidebar">
+    <aside className="flex w-60 shrink-0 flex-col border-r border-sidebar-border bg-sidebar">
       <div className="flex items-center gap-2.5 px-5 py-6">
         <Swords className="size-6 text-primary" />
         <div>
