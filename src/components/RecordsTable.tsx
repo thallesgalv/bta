@@ -48,10 +48,10 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
           <TableRow>
             <TableHead>Image</TableHead>
             <TableHead>Name</TableHead>
-            <TableHead>Bestiary Level</TableHead>
             <TableHead>Ranking</TableHead>
             <TableHead>Kills per 20 min</TableHead>
             <TableHead>Location</TableHead>
+            <TableHead>Bestiary Level</TableHead>
             <TableHead className="w-10" />
           </TableRow>
         </TableHeader>
@@ -72,6 +72,15 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
                   {record.monsterName}
                 </TableCell>
                 <TableCell>
+                  <Badge variant="outline" className={cn('border', RANK_BADGE_CLASSNAME[rank])}>
+                    {rank}
+                  </Badge>
+                </TableCell>
+                <TableCell>{record.killsPer20Min}</TableCell>
+                <TableCell>
+                  <Badge variant="secondary">{record.location}</Badge>
+                </TableCell>
+                <TableCell>
                   {difficulty && (
                     <Badge
                       variant="outline"
@@ -80,15 +89,6 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
                       {difficulty}
                     </Badge>
                   )}
-                </TableCell>
-                <TableCell>
-                  <Badge variant="outline" className={cn('border', RANK_BADGE_CLASSNAME[rank])}>
-                    {rank}
-                  </Badge>
-                </TableCell>
-                <TableCell>{record.killsPer20Min}</TableCell>
-                <TableCell>
-                  <Badge variant="secondary">{record.location}</Badge>
                 </TableCell>
                 <TableCell>
                   <DropdownMenu>
