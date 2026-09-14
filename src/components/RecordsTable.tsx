@@ -1,4 +1,4 @@
-import { MoreHorizontal, Pencil, Trash2 } from 'lucide-react'
+import { BookOpen, ListChecks, MoreHorizontal, Pencil, Trash2 } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import {
   DropdownMenu,
@@ -16,6 +16,7 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { BESTIARY } from '@/data/bestiary'
+import { bredworldTaskUrl, tibiaWikiUrl } from '@/lib/externalLinks'
 import { DIFFICULTY_BADGE_CLASSNAME, RANK_BADGE_CLASSNAME } from '@/lib/rankStyles'
 import { cn } from '@/lib/utils'
 import type { HuntRecord, Rank } from '@/types'
@@ -69,7 +70,27 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
                   />
                 </TableCell>
                 <TableCell className="font-medium text-foreground">
-                  {record.monsterName}
+                  <div className="flex items-center gap-1.5">
+                    <span>{record.monsterName}</span>
+                    <a
+                      href={tibiaWikiUrl(record.monsterName)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Abrir no TibiaWiki"
+                      className="text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      <BookOpen className="size-3.5" />
+                    </a>
+                    <a
+                      href={bredworldTaskUrl(record.monsterName)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Abrir no Bredworld Task Delivery"
+                      className="text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      <ListChecks className="size-3.5" />
+                    </a>
+                  </div>
                 </TableCell>
                 <TableCell>
                   <Badge variant="outline" className={cn('border', RANK_BADGE_CLASSNAME[rank])}>
