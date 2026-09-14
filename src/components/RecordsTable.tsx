@@ -16,7 +16,7 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { BESTIARY } from '@/data/bestiary'
-import { RANK_BADGE_CLASSNAME } from '@/lib/rankStyles'
+import { DIFFICULTY_BADGE_CLASSNAME, RANK_BADGE_CLASSNAME } from '@/lib/rankStyles'
 import { cn } from '@/lib/utils'
 import type { HuntRecord, Rank } from '@/types'
 
@@ -48,6 +48,7 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
           <TableRow>
             <TableHead>Image</TableHead>
             <TableHead>Name</TableHead>
+            <TableHead>Bestiary Level</TableHead>
             <TableHead>Ranking</TableHead>
             <TableHead>Kills per 20 min</TableHead>
             <TableHead>Location</TableHead>
@@ -57,6 +58,7 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
         <TableBody>
           {sorted.map((record) => {
             const rank = ranks.get(record.id)!
+            const difficulty = BESTIARY_BY_ID.get(record.id)?.difficulty
             return (
               <TableRow key={record.id}>
                 <TableCell>
@@ -68,6 +70,16 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
                 </TableCell>
                 <TableCell className="font-medium text-foreground">
                   {record.monsterName}
+                </TableCell>
+                <TableCell>
+                  {difficulty && (
+                    <Badge
+                      variant="outline"
+                      className={cn('border', DIFFICULTY_BADGE_CLASSNAME[difficulty])}
+                    >
+                      {difficulty}
+                    </Badge>
+                  )}
                 </TableCell>
                 <TableCell>
                   <Badge variant="outline" className={cn('border', RANK_BADGE_CLASSNAME[rank])}>
