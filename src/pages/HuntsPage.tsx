@@ -1,4 +1,4 @@
-import { Plus, Search, Swords } from 'lucide-react'
+import { MessageCircle, Plus, Search, Swords } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { ExportDialog } from '@/components/ExportDialog'
 import { ImportDialog } from '@/components/ImportDialog'
@@ -46,6 +46,12 @@ export function HuntsPage() {
     setModalOpen(true)
   }
 
+  function handleSendToWhatsApp() {
+    const json = JSON.stringify(records, null, 2)
+    const url = `https://api.whatsapp.com/send/?phone=5513997774462&text=${encodeURIComponent(json)}`
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <div className="flex flex-col gap-6">
       <header className="flex items-center justify-between gap-4">
@@ -62,6 +68,9 @@ export function HuntsPage() {
           </Button>
           <ImportDialog onImport={handleImport} />
           <ExportDialog records={records} />
+          <Button variant="outline" disabled={records.length === 0} onClick={handleSendToWhatsApp}>
+            <MessageCircle /> Send to WhatsApp
+          </Button>
         </div>
       </header>
 

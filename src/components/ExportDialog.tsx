@@ -30,9 +30,12 @@ export function ExportDialog({ records }: ExportDialogProps) {
   function handleDownload() {
     const blob = new Blob([json], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
+    const now = new Date()
+    const pad = (n: number) => String(n).padStart(2, '0')
+    const timestamp = `${pad(now.getHours())}:${pad(now.getMinutes())}-${pad(now.getDate())}-${pad(now.getMonth() + 1)}-${now.getFullYear()}`
     const a = document.createElement('a')
     a.href = url
-    a.download = 'bta-records.json'
+    a.download = `bta-records-(${timestamp}).json`
     a.click()
     URL.revokeObjectURL(url)
   }
