@@ -6,6 +6,7 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { parseHuntAnalyser } from '@/lib/parseHuntAnalyser'
 import { buildSaveLabel } from '@/lib/saveLabel'
+import { shouldReplace } from '@/lib/storage'
 import type { HuntRecord } from '@/types'
 
 interface HuntAnalyserTabProps {
@@ -24,12 +25,17 @@ export function HuntAnalyserTab({ existingRecords, onSave, onCancel }: HuntAnaly
     [text, considerProportion],
   )
 
-  const preview = parsed.matched.map((m) => ({
-    ...m,
-    isExisting: existingRecords.some((r) => r.id === m.creature.id),
-  }))
-  const newCount = preview.filter((p) => !p.isExisting).length
-  const replaceCount = preview.filter((p) => p.isExisting).length
+  const preview = parsed.matched.map((m) => {
+    const existingRecord = existingRecords.find((r) => r.id === m.creature.id)
+    return {
+      ...m,
+      existingRecord,
+      willReplace: shouldReplace(m.killsPer20Min, existingRecord),
+    }
+  })
+  const newCount = preview.filter((p) => !p.existingRecord).length
+  const replaceCount = preview.filter((p) => p.existingRecord && p.willReplace).length
+  const skippedCount = preview.filter((p) => p.existingRecord && !p.willReplace).length
 
   const isValid = parsed.matched.length > 0 && location.trim() !== ''
 
@@ -88,7 +94,12 @@ export function HuntAnalyserTab({ existingRecords, onSave, onCancel }: HuntAnaly
                 {p.creature.name}
               </span>
               <span className="text-muted-foreground">
-                {p.killsPer20Min} kills/20min — {p.isExisting ? 'substituirá existente' : 'novo'}
+                {p.killsPer20Min} kills/20min —{' '}
+                {!p.existingRecord
+                  ? 'novo'
+                  : p.willReplace
+                    ? 'substituirá existente'
+                    : `mantido (atual: ${p.existingRecord.killsPer20Min}/20min)`}
               </span>
             </div>
           ))}
@@ -108,7 +119,7 @@ export function HuntAnalyserTab({ existingRecords, onSave, onCancel }: HuntAnaly
           Cancel
         </Button>
         <Button disabled={!isValid} onClick={handleSave}>
-          {buildSaveLabel(newCount, replaceCount)}
+          {buildSaveLabel(newCount, replaceCount, skippedCount)}
         </Button>
       </div>
     </div>

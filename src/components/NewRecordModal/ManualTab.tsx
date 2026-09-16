@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { BESTIARY } from '@/data/bestiary'
+import { shouldReplace } from '@/lib/storage'
 import type { HuntRecord } from '@/types'
 
 interface ManualTabProps {
@@ -21,8 +22,9 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
   const [location, setLocation] = useState(initial?.location ?? '')
 
   const kills = Number(killsPer20Min)
-  const isValid = Boolean(creatureId) && kills > 0 && location.trim() !== ''
-  const isExisting = existingRecords.some((r) => r.id === creatureId)
+  const existingRecord = existingRecords.find((r) => r.id === creatureId)
+  const willReplace = shouldReplace(kills, existingRecord)
+  const isValid = Boolean(creatureId) && kills > 0 && location.trim() !== '' && willReplace
 
   function handleSave() {
     if (!isValid || !creatureId) return
@@ -54,6 +56,12 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
           onChange={(e) => setKillsPer20Min(e.target.value)}
           placeholder="e.g. 300"
         />
+        {existingRecord && !willReplace && (
+          <p className="text-xs text-destructive">
+            Recorde atual: {existingRecord.killsPer20Min} kills/20min — informe um valor maior
+            para substituir.
+          </p>
+        )}
       </div>
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="manual-location">Location</Label>
@@ -69,7 +77,7 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
           Cancel
         </Button>
         <Button disabled={!isValid} onClick={handleSave}>
-          {isExisting ? 'Substituir registro existente' : 'Salvar'}
+          {existingRecord ? 'Substituir registro existente' : 'Salvar'}
         </Button>
       </div>
     </div>

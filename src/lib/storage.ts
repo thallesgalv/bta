@@ -18,11 +18,17 @@ export function setRecords(records: HuntRecord[]): void {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(records))
 }
 
+export function shouldReplace(newKills: number, existing?: HuntRecord): boolean {
+  return !existing || newKills >= existing.killsPer20Min
+}
+
 export function upsertRecords(newRecords: HuntRecord[]): HuntRecord[] {
   const existing = getRecords()
   const byId = new Map(existing.map((r) => [r.id, r]))
   for (const record of newRecords) {
-    byId.set(record.id, record)
+    if (shouldReplace(record.killsPer20Min, byId.get(record.id))) {
+      byId.set(record.id, record)
+    }
   }
   const merged = Array.from(byId.values())
   setRecords(merged)
