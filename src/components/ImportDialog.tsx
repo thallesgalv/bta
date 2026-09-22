@@ -46,11 +46,11 @@ export function ImportDialog({ onImport }: ImportDialogProps) {
     try {
       parsed = JSON.parse(text)
     } catch {
-      setError('JSON inválido. Verifique o formato e tente novamente.')
+      setError('Invalid JSON. Check the format and try again.')
       return
     }
     if (!Array.isArray(parsed) || !parsed.every(isValidRecord)) {
-      setError('Formato inválido. Esperado um array de registros (id, monsterName, killsPer20Min, location).')
+      setError('Invalid format. Expected an array of records (id, monsterName, killsPer20Min, location).')
       return
     }
     const records: HuntRecord[] = parsed.map((r) => ({
@@ -70,15 +70,15 @@ export function ImportDialog({ onImport }: ImportDialogProps) {
       </DialogTrigger>
       <DialogContent className="sm:max-w-lg">
         <DialogHeader>
-          <DialogTitle>Importar registros</DialogTitle>
+          <DialogTitle>Import records</DialogTitle>
           <DialogDescription>
-            Isso substitui todos os registros atuais pelos colados abaixo.
+            This replaces all current records with the ones pasted below.
           </DialogDescription>
         </DialogHeader>
         <Textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Cole aqui o array JSON exportado..."
+          placeholder="Paste the exported JSON array here..."
           className="h-64 font-mono text-xs"
         />
         {error && <p className="text-sm text-destructive">{error}</p>}
@@ -87,7 +87,7 @@ export function ImportDialog({ onImport }: ImportDialogProps) {
             Cancel
           </Button>
           <Button disabled={!text.trim()} onClick={handleImport}>
-            Importar
+            Import
           </Button>
         </DialogFooter>
       </DialogContent>

@@ -43,7 +43,7 @@ export function ProjectionPage() {
         <div>
           <h1 className="text-2xl font-semibold text-foreground">Projection</h1>
           <p className="text-sm text-muted-foreground">
-            Estime o tempo necessário para atingir uma meta de kills
+            Estimate the time needed to reach a kill goal
           </p>
         </div>
       </header>

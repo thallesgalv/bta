@@ -1,4 +1,4 @@
-import { Check, ChevronsUpDown } from 'lucide-react'
+import { ChevronsUpDown } from 'lucide-react'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import {
@@ -10,7 +10,6 @@ import {
   CommandList,
 } from '@/components/ui/command'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
-import { cn } from '@/lib/utils'
 import type { BestiaryCreature } from '@/types'
 
 interface CreatureComboboxProps {
@@ -25,8 +24,8 @@ export function CreatureCombobox({
   creatures,
   value,
   onChange,
-  placeholder = 'Selecione uma criatura...',
-  emptyMessage = 'Nenhuma criatura encontrada.',
+  placeholder = 'Select a creature...',
+  emptyMessage = 'No creature found.',
 }: CreatureComboboxProps) {
   const [open, setOpen] = useState(false)
   const selected = creatures.find((c) => c.id === value)
@@ -53,7 +52,7 @@ export function CreatureCombobox({
       </PopoverTrigger>
       <PopoverContent className="w-[--radix-popover-trigger-width] p-0">
         <Command>
-          <CommandInput placeholder="Buscar criatura..." />
+          <CommandInput placeholder="Search creature..." />
           <CommandList>
             <CommandEmpty>{emptyMessage}</CommandEmpty>
             <CommandGroup>
@@ -72,15 +71,6 @@ export function CreatureCombobox({
                     className="size-5 rounded-full object-cover"
                   />
                   {creature.name}
-                  <span className="ml-auto text-xs text-muted-foreground">
-                    {creature.difficulty}
-                  </span>
-                  <Check
-                    className={cn(
-                      'ml-1',
-                      value === creature.id ? 'opacity-100' : 'opacity-0',
-                    )}
-                  />
                 </CommandItem>
               ))}
             </CommandGroup>

@@ -10,4 +10,5 @@ export const RANK_BADGE_CLASSNAME: Record<Rank, string> = {
 export const DIFFICULTY_BADGE_CLASSNAME: Record<Difficulty, string> = {
   Medium: 'border-sky-400/40 bg-sky-400/15 text-sky-200',
   Hard: 'border-rose-500/40 bg-rose-500/15 text-rose-300',
+  Challenging: 'border-violet-500/40 bg-violet-500/15 text-violet-300',
 }

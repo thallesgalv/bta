@@ -33,10 +33,10 @@ export function ProjectionCard({ projection, onEdit, onDelete }: ProjectionCardP
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuItem onSelect={() => onEdit(projection)}>
-              <Pencil /> Editar
+              <Pencil /> Edit
             </DropdownMenuItem>
             <DropdownMenuItem variant="destructive" onSelect={() => onDelete(projection.id)}>
-              <Trash2 /> Excluir
+              <Trash2 /> Delete
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

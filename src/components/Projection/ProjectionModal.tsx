@@ -27,7 +27,7 @@ export function ProjectionModal({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>{editProjection ? 'Editar projeção' : 'Nova projeção'}</DialogTitle>
+          <DialogTitle>{editProjection ? 'Edit projection' : 'New projection'}</DialogTitle>
         </DialogHeader>
         <ProjectionForm
           records={records}
@@ -82,7 +82,7 @@ function ProjectionForm({ records, onSave, onCancel, editProjection }: Projectio
           creatures={registeredCreatures}
           value={creatureId}
           onChange={setCreatureId}
-          emptyMessage="Nenhuma criatura registrada em Hunts ainda."
+          emptyMessage="No creature registered in Hunts yet."
         />
       </div>
       <div className="flex flex-col gap-1.5">
@@ -99,7 +99,7 @@ function ProjectionForm({ records, onSave, onCancel, editProjection }: Projectio
       </div>
       {previewMinutes !== null && (
         <p className="text-sm text-muted-foreground">
-          Projeção: <span className="text-foreground">{formatDuration(previewMinutes)}</span>
+          Projection: <span className="text-foreground">{formatDuration(previewMinutes)}</span>
         </p>
       )}
       <div className="mt-2 flex justify-end gap-2">
@@ -107,7 +107,7 @@ function ProjectionForm({ records, onSave, onCancel, editProjection }: Projectio
           Cancel
         </Button>
         <Button disabled={!isValid} onClick={handleSave}>
-          {editProjection ? 'Salvar' : 'Inserir'}
+          {editProjection ? 'Save' : 'Add'}
         </Button>
       </div>
     </div>

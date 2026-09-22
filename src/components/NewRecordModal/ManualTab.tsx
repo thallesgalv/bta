@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { BESTIARY } from '@/data/bestiary'
-import { shouldReplace } from '@/lib/storage'
+import { MIN_KILLS_PER_20_MIN, meetsMinimumKills, shouldReplace } from '@/lib/storage'
 import type { HuntRecord } from '@/types'
 
 interface ManualTabProps {
@@ -23,8 +23,14 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
 
   const kills = Number(killsPer20Min)
   const existingRecord = existingRecords.find((r) => r.id === creatureId)
+  const belowMinimum = killsPer20Min !== '' && !meetsMinimumKills(kills)
   const willReplace = shouldReplace(kills, existingRecord)
-  const isValid = Boolean(creatureId) && kills > 0 && location.trim() !== '' && willReplace
+  const isValid =
+    Boolean(creatureId) &&
+    kills > 0 &&
+    meetsMinimumKills(kills) &&
+    location.trim() !== '' &&
+    willReplace
 
   function handleSave() {
     if (!isValid || !creatureId) return
@@ -42,7 +48,7 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-1.5">
-        <Label>Monstro</Label>
+        <Label>Creature</Label>
         <CreatureCombobox creatures={BESTIARY} value={creatureId} onChange={setCreatureId} />
       </div>
       <div className="flex flex-col gap-1.5">
@@ -56,10 +62,16 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
           onChange={(e) => setKillsPer20Min(e.target.value)}
           placeholder="e.g. 300"
         />
-        {existingRecord && !willReplace && (
+        {belowMinimum && (
           <p className="text-xs text-destructive">
-            Recorde atual: {existingRecord.killsPer20Min} kills/20min — informe um valor maior
-            para substituir.
+            Minimum of {MIN_KILLS_PER_20_MIN} kills/20min — records below that are
+            discarded.
+          </p>
+        )}
+        {!belowMinimum && existingRecord && !willReplace && (
+          <p className="text-xs text-destructive">
+            Current record: {existingRecord.killsPer20Min} kills/20min — enter a higher value
+            to replace it.
           </p>
         )}
       </div>
@@ -77,7 +89,7 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
           Cancel
         </Button>
         <Button disabled={!isValid} onClick={handleSave}>
-          {existingRecord ? 'Substituir registro existente' : 'Salvar'}
+          {existingRecord ? 'Replace existing record' : 'Save'}
         </Button>
       </div>
     </div>

@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/table'
 import { BESTIARY } from '@/data/bestiary'
 import { bredworldTaskUrl, tibiaWikiUrl } from '@/lib/externalLinks'
+import { formatDuration } from '@/lib/formatDuration'
 import { DIFFICULTY_BADGE_CLASSNAME, RANK_BADGE_CLASSNAME } from '@/lib/rankStyles'
 import { cn } from '@/lib/utils'
 import type { HuntRecord, Rank } from '@/types'
@@ -26,12 +27,20 @@ const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
 interface RecordsTableProps {
   records: HuntRecord[]
   ranks: Map<string, Rank>
+  projectionKills: number
   emptyMessage: string
   onEdit: (record: HuntRecord) => void
   onDelete: (id: string) => void
 }
 
-export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }: RecordsTableProps) {
+export function RecordsTable({
+  records,
+  ranks,
+  projectionKills,
+  emptyMessage,
+  onEdit,
+  onDelete,
+}: RecordsTableProps) {
   const sorted = [...records].sort((a, b) => b.killsPer20Min - a.killsPer20Min)
 
   if (records.length === 0) {
@@ -47,12 +56,13 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead>Image</TableHead>
+            <TableHead className="text-center">Image</TableHead>
             <TableHead>Name</TableHead>
-            <TableHead>Ranking</TableHead>
-            <TableHead>Kills per 20 min</TableHead>
-            <TableHead>Location</TableHead>
-            <TableHead>Bestiary Level</TableHead>
+            <TableHead className="text-center">Ranking</TableHead>
+            <TableHead className="text-right">Kills per 20 min</TableHead>
+            <TableHead className="text-center">Location</TableHead>
+            <TableHead className="text-center">Bestiary Level</TableHead>
+            <TableHead className="text-right">Projection</TableHead>
             <TableHead className="w-10" />
           </TableRow>
         </TableHeader>
@@ -62,11 +72,11 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
             const difficulty = BESTIARY_BY_ID.get(record.id)?.difficulty
             return (
               <TableRow key={record.id}>
-                <TableCell>
+                <TableCell className="text-center">
                   <img
                     src={BESTIARY_BY_ID.get(record.id)?.imageUrl}
                     alt={record.monsterName}
-                    className="size-8 rounded-full object-cover"
+                    className="mx-auto size-8 rounded-full object-cover"
                   />
                 </TableCell>
                 <TableCell className="font-medium text-foreground">
@@ -76,7 +86,7 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
                       href={tibiaWikiUrl(record.monsterName)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="Abrir no TibiaWiki"
+                      title="Open in TibiaWiki"
                       className="text-muted-foreground transition-colors hover:text-primary"
                     >
                       <BookOpen className="size-3.5" />
@@ -85,23 +95,23 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
                       href={bredworldTaskUrl(record.monsterName)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="Abrir no Bredworld Task Delivery"
+                      title="Open in Bredworld Task Delivery"
                       className="text-muted-foreground transition-colors hover:text-primary"
                     >
                       <ListChecks className="size-3.5" />
                     </a>
                   </div>
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center">
                   <Badge variant="outline" className={cn('border', RANK_BADGE_CLASSNAME[rank])}>
                     {rank}
                   </Badge>
                 </TableCell>
-                <TableCell>{record.killsPer20Min}</TableCell>
-                <TableCell>
+                <TableCell className="text-right tabular-nums">{record.killsPer20Min}</TableCell>
+                <TableCell className="text-center">
                   <Badge variant="secondary">{record.location}</Badge>
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-center">
                   {difficulty && (
                     <Badge
                       variant="outline"
@@ -111,7 +121,12 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
                     </Badge>
                   )}
                 </TableCell>
-                <TableCell>
+                <TableCell className="text-right tabular-nums">
+                  {projectionKills > 0
+                    ? formatDuration((projectionKills / record.killsPer20Min) * 20)
+                    : '—'}
+                </TableCell>
+                <TableCell className="text-center">
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                       <Button variant="ghost" size="icon-sm">
@@ -120,13 +135,13 @@ export function RecordsTable({ records, ranks, emptyMessage, onEdit, onDelete }:
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                       <DropdownMenuItem onSelect={() => onEdit(record)}>
-                        <Pencil /> Editar
+                        <Pencil /> Edit
                       </DropdownMenuItem>
                       <DropdownMenuItem
                         variant="destructive"
                         onSelect={() => onDelete(record.id)}
                       >
-                        <Trash2 /> Excluir
+                        <Trash2 /> Delete
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>

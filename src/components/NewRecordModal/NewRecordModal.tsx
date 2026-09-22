@@ -37,7 +37,7 @@ export function NewRecordModal({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-lg">
         <DialogHeader>
-          <DialogTitle>{editRecord ? 'Editar registro' : 'Novo cadastro'}</DialogTitle>
+          <DialogTitle>{editRecord ? 'Edit record' : 'New record'}</DialogTitle>
         </DialogHeader>
 
         {editRecord ? (

@@ -49,14 +49,14 @@ export function ExportDialog({ records }: ExportDialogProps) {
       </DialogTrigger>
       <DialogContent className="sm:max-w-lg">
         <DialogHeader>
-          <DialogTitle>Exportar registros</DialogTitle>
+          <DialogTitle>Export records</DialogTitle>
         </DialogHeader>
         <Textarea readOnly value={json} className="h-64 font-mono text-xs" />
         <DialogFooter>
           <Button variant="outline" onClick={handleCopy}>
-            {copied ? 'Copiado!' : 'Copiar'}
+            {copied ? 'Copied!' : 'Copy'}
           </Button>
-          <Button onClick={handleDownload}>Baixar .json</Button>
+          <Button onClick={handleDownload}>Download .json</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

@@ -1,27 +1,44 @@
-import { MessageCircle, Plus, Search, Swords } from 'lucide-react'
+import { Plus, Search, Swords } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { ExportDialog } from '@/components/ExportDialog'
 import { ImportDialog } from '@/components/ImportDialog'
 import { NewRecordModal } from '@/components/NewRecordModal/NewRecordModal'
 import { RecordsTable } from '@/components/RecordsTable'
+import { SendToWhatsAppButton } from '@/components/SendToWhatsAppButton'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { BESTIARY } from '@/data/bestiary'
 import { computeRanks } from '@/lib/ranking'
-import { deleteRecord, getRecords, setRecords, upsertRecords } from '@/lib/storage'
-import type { HuntRecord } from '@/types'
+import { deleteRecord, getMode, getRecords, setMode, setRecords, upsertRecords } from '@/lib/storage'
+import type { HuntRecord, Mode } from '@/types'
+
+const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
 
 export function HuntsPage() {
   const [records, setRecordsState] = useState<HuntRecord[]>(() => getRecords())
   const [modalOpen, setModalOpen] = useState(false)
   const [editRecord, setEditRecord] = useState<HuntRecord | null>(null)
   const [search, setSearch] = useState('')
+  const [projectionKills, setProjectionKills] = useState('444')
+  const [mode, setModeState] = useState<Mode>(() => getMode())
 
   const ranks = useMemo(() => computeRanks(records), [records])
   const filteredRecords = useMemo(() => {
     const query = search.trim().toLowerCase()
-    if (!query) return records
-    return records.filter((r) => r.monsterName.toLowerCase().includes(query))
-  }, [records, search])
+    const allowedDifficulties = mode === 'Master' ? ['Hard', 'Challenging'] : ['Hard', 'Medium']
+    return records.filter((r) => {
+      const difficulty = BESTIARY_BY_ID.get(r.id)?.difficulty
+      if (!difficulty || !allowedDifficulties.includes(difficulty)) return false
+      if (!query) return true
+      return r.monsterName.toLowerCase().includes(query)
+    })
+  }, [records, search, mode])
+
+  function handleModeChange(next: Mode) {
+    setModeState(next)
+    setMode(next)
+  }
 
   function handleSave(newRecords: HuntRecord[]) {
     setRecordsState(upsertRecords(newRecords))
@@ -46,12 +63,6 @@ export function HuntsPage() {
     setModalOpen(true)
   }
 
-  function handleSendToWhatsApp() {
-    const json = JSON.stringify(records, null, 2)
-    const url = `https://api.whatsapp.com/send/?phone=5513997774462&text=${encodeURIComponent(json)}`
-    window.open(url, '_blank', 'noopener,noreferrer')
-  }
-
   return (
     <div className="flex flex-col gap-6">
       <header className="flex items-center justify-between gap-4">
@@ -68,9 +79,13 @@ export function HuntsPage() {
           </Button>
           <ImportDialog onImport={handleImport} />
           <ExportDialog records={records} />
-          <Button variant="outline" disabled={records.length === 0} onClick={handleSendToWhatsApp}>
-            <MessageCircle /> Send to WhatsApp
-          </Button>
+          <SendToWhatsAppButton records={records} />
+          <Tabs value={mode} onValueChange={(v) => handleModeChange(v as Mode)}>
+            <TabsList>
+              <TabsTrigger value="Expert">Expert</TabsTrigger>
+              <TabsTrigger value="Master">Master</TabsTrigger>
+            </TabsList>
+          </Tabs>
         </div>
       </header>
 
@@ -80,23 +95,31 @@ export function HuntsPage() {
           <Input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Buscar monstro..."
+            placeholder="Find creature..."
             className="pl-8"
           />
         </div>
+        <div className="flex items-center gap-1.5">
+          <span className="text-sm text-muted-foreground whitespace-nowrap">Kills</span>
+          <Input
+            type="text"
+            inputMode="numeric"
+            value={projectionKills}
+            onChange={(e) => setProjectionKills(e.target.value.replace(/\D/g, ''))}
+            className="w-24"
+          />
+        </div>
         <span className="text-sm text-muted-foreground whitespace-nowrap">
-          {records.length} monstro{records.length !== 1 ? 's' : ''} registrado
-          {records.length !== 1 ? 's' : ''}
+          {records.length} registered creature{records.length !== 1 ? 's' : ''}
         </span>
       </div>
 
       <RecordsTable
         records={filteredRecords}
         ranks={ranks}
+        projectionKills={Number(projectionKills) || 0}
         emptyMessage={
-          records.length === 0
-            ? 'Nenhum registro cadastrado ainda.'
-            : 'Nenhum monstro encontrado.'
+          records.length === 0 ? 'No records yet.' : 'No creature found.'
         }
         onEdit={openEditModal}
         onDelete={handleDelete}
