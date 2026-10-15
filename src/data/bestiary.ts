@@ -7,3390 +7,8475 @@ export const BESTIARY: BestiaryCreature[] = [
     "id": "acid_blob",
     "name": "Acid Blob",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/75/Acid_Blob.gif/revision/latest?cb=20180417223145&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/75/Acid_Blob.gif/revision/latest?cb=20180417223145&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 0,
+      "energy": 110,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "acolyte_of_the_cult",
     "name": "Acolyte of the Cult",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a3/Acolyte_of_the_Cult.gif/revision/latest?cb=20180206145417&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a3/Acolyte_of_the_Cult.gif/revision/latest?cb=20180206145417&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 80,
+      "fire": 100,
+      "death": 105,
+      "energy": 110,
+      "holy": 80,
+      "ice": 80
+    }
   },
   {
     "id": "adept_of_the_cult",
     "name": "Adept of the Cult",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3d/Adept_of_the_Cult.gif/revision/latest?cb=20180206145418&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3d/Adept_of_the_Cult.gif/revision/latest?cb=20180206145418&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 100,
+      "death": 105,
+      "energy": 105,
+      "holy": 70,
+      "ice": 80
+    }
   },
   {
     "id": "adult_goanna",
     "name": "Adult Goanna",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0f/Adult_Goanna.gif/revision/latest?cb=20220507012242&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0f/Adult_Goanna.gif/revision/latest?cb=20220507012242&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 75,
+      "fire": 100,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "afflicted_strider",
     "name": "Afflicted Strider",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/62/Afflicted_Strider.gif/revision/latest?cb=20220530225751&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/62/Afflicted_Strider.gif/revision/latest?cb=20220530225751&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 90,
+      "fire": 110,
+      "death": 85,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "ancient_scarab",
     "name": "Ancient Scarab",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2c/Ancient_Scarab.gif/revision/latest?cb=20210420141507&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2c/Ancient_Scarab.gif/revision/latest?cb=20210420141507&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 120,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "angry_sugar_fairy",
     "name": "Angry Sugar Fairy",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8b/Angry_Sugar_Fairy.gif/revision/latest?cb=20240604163352&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8b/Angry_Sugar_Fairy.gif/revision/latest?cb=20240604163352&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 105,
+      "death": 60,
+      "energy": 60,
+      "holy": 90,
+      "ice": 90
+    }
   },
   {
     "id": "animated_feather",
     "name": "Animated Feather",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c5/Animated_Feather.gif/revision/latest?cb=20180607140213&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c5/Animated_Feather.gif/revision/latest?cb=20180607140213&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 118,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "animated_snowman",
     "name": "Animated Snowman",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/80/Animated_Snowman.gif/revision/latest?cb=20221125120314&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/80/Animated_Snowman.gif/revision/latest?cb=20221125120314&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 120,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "arachnophobica",
     "name": "Arachnophobica",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/21/Arachnophobica.gif/revision/latest?cb=20181107170955&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/21/Arachnophobica.gif/revision/latest?cb=20181107170955&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 50,
+      "energy": 50,
+      "holy": 140,
+      "ice": 100
+    }
   },
   {
     "id": "arctic_faun",
     "name": "Arctic Faun",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/38/Arctic_Faun.gif/revision/latest?cb=20180607130127&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/38/Arctic_Faun.gif/revision/latest?cb=20180607130127&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 30,
+      "fire": 115,
+      "death": 80,
+      "energy": 110,
+      "holy": 70,
+      "ice": 20
+    }
   },
   {
     "id": "armadile",
     "name": "Armadile",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e3/Armadile.gif/revision/latest?cb=20171218214813&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e3/Armadile.gif/revision/latest?cb=20171218214813&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 100,
+      "death": 55,
+      "energy": 85,
+      "holy": 85,
+      "ice": 85
+    }
   },
   {
     "id": "askarak_demon",
     "name": "Askarak Demon",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e3/Askarak_Demon.gif/revision/latest?cb=20110629231448&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e3/Askarak_Demon.gif/revision/latest?cb=20110629231448&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 125,
+      "death": 105,
+      "energy": 40,
+      "holy": 100,
+      "ice": 40
+    }
   },
   {
     "id": "askarak_lord",
     "name": "Askarak Lord",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a7/Askarak_Lord.gif/revision/latest?cb=20110701104342&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a7/Askarak_Lord.gif/revision/latest?cb=20110701104342&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 120,
+      "death": 105,
+      "energy": 35,
+      "holy": 100,
+      "ice": 35
+    }
   },
   {
     "id": "askarak_prince",
     "name": "Askarak Prince",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/06/Askarak_Prince.gif/revision/latest?cb=20110701104155&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/06/Askarak_Prince.gif/revision/latest?cb=20110701104155&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 115,
+      "death": 105,
+      "energy": 30,
+      "holy": 100,
+      "ice": 30
+    }
   },
   {
     "id": "baleful_bunny",
     "name": "Baleful Bunny",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Baleful_Bunny.gif/revision/latest?cb=20181212150103&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Baleful_Bunny.gif/revision/latest?cb=20181212150103&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 95,
+      "fire": 100,
+      "death": 100,
+      "energy": 95,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "banshee",
     "name": "Banshee",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/Banshee.gif/revision/latest?cb=20050417025231&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/Banshee.gif/revision/latest?cb=20050417025231&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 100
+    }
   },
   {
     "id": "barbarian_bloodwalker",
     "name": "Barbarian Bloodwalker",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e2/Barbarian_Bloodwalker.gif/revision/latest?cb=20210321143927&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e2/Barbarian_Bloodwalker.gif/revision/latest?cb=20210321143927&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 105,
+      "fire": 100,
+      "death": 110,
+      "energy": 90,
+      "holy": 80,
+      "ice": 50
+    }
   },
   {
     "id": "barkless_devotee",
     "name": "Barkless Devotee",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/36/Barkless_Devotee.gif/revision/latest?cb=20170926045658&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/36/Barkless_Devotee.gif/revision/latest?cb=20170926045658&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 85,
+      "energy": 83,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "barkless_fanatic",
     "name": "Barkless Fanatic",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/43/Barkless_Fanatic.gif/revision/latest?cb=20170709104307&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/43/Barkless_Fanatic.gif/revision/latest?cb=20170709104307&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 85,
+      "energy": 83,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "bashmu",
     "name": "Bashmu",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/67/Bashmu.gif/revision/latest?cb=20210527031805&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/67/Bashmu.gif/revision/latest?cb=20210527031805&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 80,
+      "fire": 100,
+      "death": 110,
+      "energy": 95,
+      "holy": 110,
+      "ice": 105
+    }
   },
   {
     "id": "behemoth",
     "name": "Behemoth",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Behemoth.gif/revision/latest?cb=20210420143709&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Behemoth.gif/revision/latest?cb=20210420143709&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 20,
+      "fire": 70,
+      "death": 105,
+      "energy": 90,
+      "holy": 70,
+      "ice": 110
+    }
   },
   {
     "id": "bellicose_orger",
     "name": "Bellicose Orger",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/25/Bellicose_Orger.gif/revision/latest?cb=20191009183334&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/25/Bellicose_Orger.gif/revision/latest?cb=20191009183334&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 80,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "berserker_chicken",
     "name": "Berserker Chicken",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3d/Berserker_Chicken.gif/revision/latest?cb=20150421205857&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3d/Berserker_Chicken.gif/revision/latest?cb=20150421205857&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 90,
+      "fire": 90,
+      "death": 90,
+      "energy": 90,
+      "holy": 90,
+      "ice": 90
+    }
   },
   {
     "id": "betrayed_wraith",
     "name": "Betrayed Wraith",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5d/Betrayed_Wraith.gif/revision/latest?cb=20210627083547&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5d/Betrayed_Wraith.gif/revision/latest?cb=20210627083547&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 0,
+      "energy": 90,
+      "holy": 125,
+      "ice": 50
+    }
   },
   {
     "id": "biting_book",
     "name": "Biting Book",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9d/Biting_Book.gif/revision/latest?cb=20180607130122&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9d/Biting_Book.gif/revision/latest?cb=20180607130122&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "black_sphinx_acolyte",
     "name": "Black Sphinx Acolyte",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c7/Black_Sphinx_Acolyte.gif/revision/latest?cb=20230831011051&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c7/Black_Sphinx_Acolyte.gif/revision/latest?cb=20230831011051&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 100,
+      "death": 0,
+      "energy": 100,
+      "holy": 130,
+      "ice": 100
+    }
   },
   {
     "id": "blemished_spawn",
     "name": "Blemished Spawn",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ea/Blemished_Spawn.gif/revision/latest?cb=20220602220125&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ea/Blemished_Spawn.gif/revision/latest?cb=20220602220125&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 115,
+      "death": 90,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "blightwalker",
     "name": "Blightwalker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b3/Blightwalker.gif/revision/latest?cb=20120425222059&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b3/Blightwalker.gif/revision/latest?cb=20120425222059&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 0,
+      "fire": 50,
+      "death": 0,
+      "energy": 80,
+      "holy": 130,
+      "ice": 85
+    }
   },
   {
     "id": "bloated_man_maggot",
     "name": "Bloated Man-Maggot",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Bloated_Man-Maggot.gif/revision/latest?cb=20230613180247&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Bloated_Man-Maggot.gif/revision/latest?cb=20230613180247&path-prefix=en",
+    "resistances": {
+      "physical": 55,
+      "earth": 60,
+      "fire": 85,
+      "death": 95,
+      "energy": 115,
+      "holy": 105,
+      "ice": 115
+    }
   },
   {
     "id": "blood_beast",
     "name": "Blood Beast",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/60/Blood_Beast.gif/revision/latest?cb=20140613234039&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/60/Blood_Beast.gif/revision/latest?cb=20140613234039&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 100,
+      "energy": 90,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "blood_hand",
     "name": "Blood Hand",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fb/Blood_Hand.gif/revision/latest?cb=20210420141124&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fb/Blood_Hand.gif/revision/latest?cb=20210420141124&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 50,
+      "energy": 80,
+      "holy": 110,
+      "ice": 90
+    }
   },
   {
     "id": "blood_priest",
     "name": "Blood Priest",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/71/Blood_Priest.gif/revision/latest?cb=20210420141148&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/71/Blood_Priest.gif/revision/latest?cb=20210420141148&path-prefix=en",
+    "resistances": {
+      "physical": 108,
+      "earth": 0,
+      "fire": 108,
+      "death": 50,
+      "energy": 85,
+      "holy": 108,
+      "ice": 85
+    }
   },
   {
     "id": "blue_djinn",
     "name": "Blue Djinn",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/82/Blue_Djinn.gif/revision/latest?cb=20240228100731&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/82/Blue_Djinn.gif/revision/latest?cb=20240228100731&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 20,
+      "death": 113,
+      "energy": 50,
+      "holy": 80,
+      "ice": 110
+    }
   },
   {
     "id": "bluebeak",
     "name": "Bluebeak",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Bluebeak.gif/revision/latest?cb=20250628082652&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Bluebeak.gif/revision/latest?cb=20250628082652&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 105,
+      "death": 100,
+      "energy": 105,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "boar_man",
     "name": "Boar Man",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/af/Boar_Man.gif/revision/latest?cb=20221108204824&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/af/Boar_Man.gif/revision/latest?cb=20221108204824&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 95,
+      "fire": 85,
+      "death": 95,
+      "energy": 85,
+      "holy": 110,
+      "ice": 95
+    }
   },
   {
     "id": "bog_raider",
     "name": "Bog Raider",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/af/Bog_Raider.gif/revision/latest?cb=20210420140923&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/af/Bog_Raider.gif/revision/latest?cb=20210420140923&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 70,
+      "fire": 15,
+      "death": 95,
+      "energy": 110,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "bonebeast",
     "name": "Bonebeast",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9b/Bonebeast.gif/revision/latest?cb=20210420143114&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9b/Bonebeast.gif/revision/latest?cb=20210420143114&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 100
+    }
   },
   {
     "id": "bony_sea_devil",
     "name": "Bony Sea Devil",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/14/Bony_Sea_Devil.gif/revision/latest?cb=20220602202044&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/14/Bony_Sea_Devil.gif/revision/latest?cb=20220602202044&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 105,
+      "death": 95,
+      "energy": 100,
+      "holy": 110,
+      "ice": 40
+    }
   },
   {
     "id": "boogy",
     "name": "Boogy",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/34/Boogy.gif/revision/latest?cb=20170728175757&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/34/Boogy.gif/revision/latest?cb=20170728175757&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 30,
+      "fire": 100,
+      "death": 80,
+      "energy": 100,
+      "holy": 60,
+      "ice": 90
+    }
   },
   {
     "id": "brachiodemon",
     "name": "Brachiodemon",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/02/Brachiodemon.gif/revision/latest?cb=20200716000055&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/02/Brachiodemon.gif/revision/latest?cb=20200716000055&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 70,
+      "death": 50,
+      "energy": 100,
+      "holy": 135,
+      "ice": 125
+    }
   },
   {
     "id": "brain_squid",
     "name": "Brain Squid",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cf/Brain_Squid.gif/revision/latest?cb=20180607130124&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cf/Brain_Squid.gif/revision/latest?cb=20180607130124&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 115,
+      "energy": 0,
+      "holy": 0,
+      "ice": 100
+    }
   },
   {
     "id": "braindeath",
     "name": "Braindeath",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Braindeath.gif/revision/latest?cb=20070620013329&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Braindeath.gif/revision/latest?cb=20070620013329&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 0,
+      "fire": 115,
+      "death": 0,
+      "energy": 90,
+      "holy": 120,
+      "ice": 80
+    }
   },
   {
     "id": "bramble_wyrmling",
     "name": "Bramble Wyrmling",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bf/Bramble_Wyrmling.gif/revision/latest?cb=20250630072131&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bf/Bramble_Wyrmling.gif/revision/latest?cb=20250630072131&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 80,
+      "fire": 105,
+      "death": 110,
+      "energy": 100,
+      "holy": 95,
+      "ice": 100
+    }
   },
   {
     "id": "branchy_crawler",
     "name": "Branchy Crawler",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cc/Branchy_Crawler.gif/revision/latest?cb=20220530225513&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cc/Branchy_Crawler.gif/revision/latest?cb=20220530225513&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 50,
+      "fire": 109,
+      "death": 115,
+      "energy": 105,
+      "holy": 60,
+      "ice": 100
+    }
   },
   {
     "id": "breach_brood",
     "name": "Breach Brood",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/45/Breach_Brood.gif/revision/latest?cb=20160421202915&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/45/Breach_Brood.gif/revision/latest?cb=20160421202915&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 105,
+      "fire": 90,
+      "death": 105,
+      "energy": 20,
+      "holy": 105,
+      "ice": 75
+    }
   },
   {
     "id": "brimstone_bug",
     "name": "Brimstone Bug",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f0/Brimstone_Bug.gif/revision/latest?cb=20100618054539&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f0/Brimstone_Bug.gif/revision/latest?cb=20100618054539&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 0,
+      "fire": 110,
+      "death": 0,
+      "energy": 110,
+      "holy": 110,
+      "ice": 110
+    }
   },
   {
     "id": "brinebrute_inferniarch",
     "name": "Brinebrute Inferniarch",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a4/Brinebrute_Inferniarch.gif/revision/latest?cb=20241105122515&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a4/Brinebrute_Inferniarch.gif/revision/latest?cb=20241105122515&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 85,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "broken_shaper",
     "name": "Broken Shaper",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/14/Broken_Shaper.gif/revision/latest?cb=20161117161507&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/14/Broken_Shaper.gif/revision/latest?cb=20161117161507&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 70,
+      "fire": 115,
+      "death": 100,
+      "energy": 115,
+      "holy": 80,
+      "ice": 80
+    }
   },
   {
     "id": "broodrider_inferniarch",
     "name": "Broodrider Inferniarch",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bb/Broodrider_Inferniarch.gif/revision/latest?cb=20241105122540&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bb/Broodrider_Inferniarch.gif/revision/latest?cb=20241105122540&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 80,
+      "death": 85,
+      "energy": 105,
+      "holy": 110,
+      "ice": 115
+    }
   },
   {
     "id": "bulltaur_alchemist",
     "name": "Bulltaur Alchemist",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/62/Bulltaur_Alchemist.gif/revision/latest?cb=20231114094938&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/62/Bulltaur_Alchemist.gif/revision/latest?cb=20231114094938&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 120,
+      "fire": 100,
+      "death": 105,
+      "energy": 100,
+      "holy": 105,
+      "ice": 85
+    }
   },
   {
     "id": "bulltaur_brute",
     "name": "Bulltaur Brute",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c9/Bulltaur_Brute.gif/revision/latest?cb=20231114095000&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c9/Bulltaur_Brute.gif/revision/latest?cb=20231114095000&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 120,
+      "fire": 90,
+      "death": 100,
+      "energy": 105,
+      "holy": 110,
+      "ice": 90
+    }
   },
   {
     "id": "bulltaur_forgepriest",
     "name": "Bulltaur Forgepriest",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Bulltaur_Forgepriest.gif/revision/latest?cb=20231114095019&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Bulltaur_Forgepriest.gif/revision/latest?cb=20231114095019&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 100,
+      "fire": 85,
+      "death": 110,
+      "energy": 100,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "burning_book",
     "name": "Burning Book",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Burning_Book.gif/revision/latest?cb=20180607130123&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Burning_Book.gif/revision/latest?cb=20180607130123&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 0,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "burning_gladiator",
     "name": "Burning Gladiator",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3c/Burning_Gladiator.gif/revision/latest?cb=20221125114241&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3c/Burning_Gladiator.gif/revision/latest?cb=20221125114241&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 100,
+      "fire": 70,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 120
+    }
   },
   {
     "id": "burster_spectre",
     "name": "Burster Spectre",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1f/Burster_Spectre.gif/revision/latest?cb=20181107180045&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1f/Burster_Spectre.gif/revision/latest?cb=20181107180045&path-prefix=en",
+    "resistances": {
+      "physical": 0,
+      "earth": 100,
+      "fire": 120,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 30
+    }
   },
   {
     "id": "candy_floss_elemental",
     "name": "Candy Floss Elemental",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Candy_Floss_Elemental.gif/revision/latest?cb=20240604125627&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Candy_Floss_Elemental.gif/revision/latest?cb=20240604125627&path-prefix=en",
+    "resistances": {
+      "physical": 60,
+      "earth": 110,
+      "fire": 115,
+      "death": 80,
+      "energy": 85,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "candy_horror",
     "name": "Candy Horror",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Candy_Horror.gif/revision/latest?cb=20240604125609&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Candy_Horror.gif/revision/latest?cb=20240604125609&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 90,
+      "fire": 95,
+      "death": 50,
+      "energy": 110,
+      "holy": 115,
+      "ice": 100
+    }
   },
   {
     "id": "capricious_phantom",
     "name": "Capricious Phantom",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6b/Capricious_Phantom.gif/revision/latest?cb=20200611061713&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6b/Capricious_Phantom.gif/revision/latest?cb=20200611061713&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 50,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "carniphila",
     "name": "Carniphila",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Carniphila.gif/revision/latest?cb=20210420161400&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Carniphila.gif/revision/latest?cb=20210420161400&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 120,
+      "death": 100,
+      "energy": 90,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "carnivostrich",
     "name": "Carnivostrich",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Carnivostrich.gif/revision/latest?cb=20221108204841&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Carnivostrich.gif/revision/latest?cb=20221108204841&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 100,
+      "fire": 110,
+      "death": 95,
+      "energy": 85,
+      "holy": 120,
+      "ice": 110
+    }
   },
   {
     "id": "cave_chimera",
     "name": "Cave Chimera",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f7/Cave_Chimera.gif/revision/latest?cb=20210527054803&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f7/Cave_Chimera.gif/revision/latest?cb=20210527054803&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 80,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "cave_devourer",
     "name": "Cave Devourer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/04/Cave_Devourer.gif/revision/latest?cb=20171107134525&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/04/Cave_Devourer.gif/revision/latest?cb=20171107134525&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 120,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "chasm_spawn",
     "name": "Chasm Spawn",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d5/Chasm_Spawn.gif/revision/latest?cb=20171107140228&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d5/Chasm_Spawn.gif/revision/latest?cb=20171107140228&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 130,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "choking_fear",
     "name": "Choking Fear",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/ce/Choking_Fear.gif/revision/latest?cb=20210420140910&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/ce/Choking_Fear.gif/revision/latest?cb=20210420140910&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 0,
+      "death": 45,
+      "energy": 98,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "cinder_wyrmling",
     "name": "Cinder Wyrmling",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/07/Cinder_Wyrmling.gif/revision/latest?cb=20250630072234&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/07/Cinder_Wyrmling.gif/revision/latest?cb=20250630072234&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 105,
+      "fire": 80,
+      "death": 100,
+      "energy": 100,
+      "holy": 95,
+      "ice": 110
+    }
   },
   {
     "id": "clay_guardian",
     "name": "Clay Guardian",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ae/Clay_Guardian.gif/revision/latest?cb=20110630000809&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ae/Clay_Guardian.gif/revision/latest?cb=20110630000809&path-prefix=en",
+    "resistances": {
+      "physical": 75,
+      "earth": 0,
+      "fire": 100,
+      "death": 60,
+      "energy": 70,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "cliff_strider",
     "name": "Cliff Strider",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a3/Cliff_Strider.gif/revision/latest?cb=20120622171948&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a3/Cliff_Strider.gif/revision/latest?cb=20120622171948&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 80,
+      "death": 65,
+      "energy": 95,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "cloak_of_terror",
     "name": "Cloak of Terror",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d4/Cloak_of_Terror.gif/revision/latest?cb=20220602202244&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d4/Cloak_of_Terror.gif/revision/latest?cb=20220602202244&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 105,
+      "fire": 100,
+      "death": 120,
+      "energy": 40,
+      "holy": 60,
+      "ice": 100
+    }
   },
   {
     "id": "clomp",
     "name": "Clomp",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/66/Clomp.gif/revision/latest?cb=20151112212135&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/66/Clomp.gif/revision/latest?cb=20151112212135&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "cobra_assassin",
     "name": "Cobra Assassin",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Cobra_Assassin.gif/revision/latest?cb=20190701203956&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Cobra_Assassin.gif/revision/latest?cb=20190701203956&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 0,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "cobra_scout",
     "name": "Cobra Scout",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b9/Cobra_Scout.gif/revision/latest?cb=20190701203955&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b9/Cobra_Scout.gif/revision/latest?cb=20190701203955&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "cobra_vizier",
     "name": "Cobra Vizier",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/43/Cobra_Vizier.gif/revision/latest?cb=20190701203633&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/43/Cobra_Vizier.gif/revision/latest?cb=20190701203633&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "converter",
     "name": "Converter",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/32/Converter.gif/revision/latest?cb=20230613180248&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/32/Converter.gif/revision/latest?cb=20230613180248&path-prefix=en",
+    "resistances": {
+      "physical": 120,
+      "earth": 90,
+      "fire": 75,
+      "death": 115,
+      "energy": 110,
+      "holy": 65,
+      "ice": 100
+    }
   },
   {
     "id": "corym_skirmisher",
     "name": "Corym Skirmisher",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b6/Corym_Skirmisher.gif/revision/latest?cb=20180417200543&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b6/Corym_Skirmisher.gif/revision/latest?cb=20180417200543&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 75,
+      "fire": 100,
+      "death": 80,
+      "energy": 85,
+      "holy": 105,
+      "ice": 100
+    }
   },
   {
     "id": "corym_vanguard",
     "name": "Corym Vanguard",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/db/Corym_Vanguard.gif/revision/latest?cb=20130719005130&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/db/Corym_Vanguard.gif/revision/latest?cb=20130719005130&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "courage_leech",
     "name": "Courage Leech",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/ff/Courage_Leech.gif/revision/latest?cb=20220602202401&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/ff/Courage_Leech.gif/revision/latest?cb=20220602202401&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 120,
+      "fire": 100,
+      "death": 125,
+      "energy": 50,
+      "holy": 70,
+      "ice": 100
+    }
   },
   {
     "id": "cow",
     "name": "Cow",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/de/Cow.gif/revision/latest?cb=20210612103224&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/de/Cow.gif/revision/latest?cb=20210612103224&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 100,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "crape_man",
     "name": "Crape Man",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7a/Crape_Man.gif/revision/latest?cb=20221108204035&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7a/Crape_Man.gif/revision/latest?cb=20221108204035&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 95,
+      "fire": 100,
+      "death": 115,
+      "energy": 90,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "crawler",
     "name": "Crawler",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0a/Crawler.gif/revision/latest?cb=20221125120859&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0a/Crawler.gif/revision/latest?cb=20221125120859&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 108,
+      "death": 95,
+      "energy": 100,
+      "holy": 105,
+      "ice": 107
+    }
   },
   {
     "id": "crazed_summer_rearguard",
     "name": "Crazed Summer Rearguard",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/aa/Crazed_Summer_Rearguard.gif/revision/latest?cb=20181107202649&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/aa/Crazed_Summer_Rearguard.gif/revision/latest?cb=20181107202649&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 100,
+      "fire": 60,
+      "death": 100,
+      "energy": 100,
+      "holy": 80,
+      "ice": 125
+    }
   },
   {
     "id": "crazed_summer_vanguard",
     "name": "Crazed Summer Vanguard",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/11/Crazed_Summer_Vanguard.gif/revision/latest?cb=20181107202649&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/11/Crazed_Summer_Vanguard.gif/revision/latest?cb=20181107202649&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 50,
+      "death": 100,
+      "energy": 100,
+      "holy": 80,
+      "ice": 130
+    }
   },
   {
     "id": "crazed_winter_rearguard",
     "name": "Crazed Winter Rearguard",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2b/Crazed_Winter_Rearguard.gif/revision/latest?cb=20181107202650&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2b/Crazed_Winter_Rearguard.gif/revision/latest?cb=20181107202650&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 120,
+      "fire": 120,
+      "death": 80,
+      "energy": 115,
+      "holy": 100,
+      "ice": 60
+    }
   },
   {
     "id": "crazed_winter_vanguard",
     "name": "Crazed Winter Vanguard",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Crazed_Winter_Vanguard.gif/revision/latest?cb=20181107202651&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Crazed_Winter_Vanguard.gif/revision/latest?cb=20181107202651&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 115,
+      "fire": 130,
+      "death": 85,
+      "energy": 120,
+      "holy": 100,
+      "ice": 50
+    }
   },
   {
     "id": "creepy_crawler",
     "name": "Creepy Crawler",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/37/Creepy_Crawler.gif/revision/latest?cb=20251108014351&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/37/Creepy_Crawler.gif/revision/latest?cb=20251108014351&path-prefix=en",
+    "resistances": {
+      "physical": 94,
+      "earth": 112,
+      "fire": 112,
+      "death": 97,
+      "energy": 88,
+      "holy": 106,
+      "ice": 94
+    }
   },
   {
     "id": "crusader",
     "name": "Crusader",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/35/Crusader.gif/revision/latest?cb=20250630071920&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/35/Crusader.gif/revision/latest?cb=20250630071920&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 105,
+      "fire": 95,
+      "death": 100,
+      "energy": 90,
+      "holy": 90,
+      "ice": 110
+    }
   },
   {
     "id": "crypt_construct",
     "name": "Crypt Construct",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fd/Crypt_Construct.gif/revision/latest?cb=20251108014323&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fd/Crypt_Construct.gif/revision/latest?cb=20251108014323&path-prefix=en",
+    "resistances": {
+      "physical": 106,
+      "earth": 109,
+      "fire": 106,
+      "death": 92,
+      "energy": 82,
+      "holy": 92,
+      "ice": 88
+    }
   },
   {
     "id": "crypt_fiend",
     "name": "Crypt Fiend",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c2/Crypt_Fiend.gif/revision/latest?cb=20251108014302&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c2/Crypt_Fiend.gif/revision/latest?cb=20251108014302&path-prefix=en",
+    "resistances": {
+      "physical": 106,
+      "earth": 112,
+      "fire": 109,
+      "death": 100,
+      "energy": 85,
+      "holy": 103,
+      "ice": 91
+    }
   },
   {
     "id": "crypt_mage",
     "name": "Crypt Mage",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/47/Crypt_Mage.gif/revision/latest?cb=20251108014240&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/47/Crypt_Mage.gif/revision/latest?cb=20251108014240&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 109,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "crypt_warden",
     "name": "Crypt Warden",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/12/Crypt_Warden.gif/revision/latest?cb=20190702012025&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/12/Crypt_Warden.gif/revision/latest?cb=20190702012025&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 100,
+      "death": 135,
+      "energy": 100,
+      "holy": 75,
+      "ice": 100
+    }
   },
   {
     "id": "crypt_warrior",
     "name": "Crypt Warrior",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d0/Skeleton_Warrior.gif/revision/latest?cb=20150418080023&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d0/Skeleton_Warrior.gif/revision/latest?cb=20150418080023&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 95,
+      "fire": 105,
+      "death": 0,
+      "energy": 105,
+      "holy": 125,
+      "ice": 100
+    }
   },
   {
     "id": "crystal_spider",
     "name": "Crystal Spider",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/37/Crystal_Spider.gif/revision/latest?cb=20070620013513&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/37/Crystal_Spider.gif/revision/latest?cb=20070620013513&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 0,
+      "death": 100,
+      "energy": 120,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "crystalcrusher",
     "name": "Crystalcrusher",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a4/Crystalcrusher.gif/revision/latest?cb=20240228102818&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a4/Crystalcrusher.gif/revision/latest?cb=20240228102818&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 85,
+      "death": 90,
+      "energy": 105,
+      "holy": 110,
+      "ice": 103
+    }
   },
   {
     "id": "cult_believer",
     "name": "Cult Believer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Cult_Believer.gif/revision/latest?cb=20170803132750&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Cult_Believer.gif/revision/latest?cb=20170803132750&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 90,
+      "death": 100,
+      "energy": 90,
+      "holy": 90,
+      "ice": 90
+    }
   },
   {
     "id": "cult_enforcer",
     "name": "Cult Enforcer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2d/Cult_Enforcer.gif/revision/latest?cb=20220730174901&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2d/Cult_Enforcer.gif/revision/latest?cb=20220730174901&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "cult_scholar",
     "name": "Cult Scholar",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Cult_Scholar.gif/revision/latest?cb=20171020182152&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Cult_Scholar.gif/revision/latest?cb=20171020182152&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 70,
+      "fire": 70,
+      "death": 70,
+      "energy": 70,
+      "holy": 70,
+      "ice": 70
+    }
   },
   {
     "id": "cunning_werepanther",
     "name": "Cunning Werepanther",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d7/Cunning_Werepanther.gif/revision/latest?cb=20230613180248&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d7/Cunning_Werepanther.gif/revision/latest?cb=20230613180248&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 125,
+      "fire": 115,
+      "death": 110,
+      "energy": 80,
+      "holy": 90,
+      "ice": 80
+    }
   },
   {
     "id": "cursed_ape",
     "name": "Cursed Ape",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3a/Cursed_Ape.gif/revision/latest?cb=20221108204928&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3a/Cursed_Ape.gif/revision/latest?cb=20221108204928&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 80,
+      "death": 60,
+      "energy": 95,
+      "holy": 125,
+      "ice": 105
+    }
   },
   {
     "id": "cursed_book",
     "name": "Cursed Book",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4a/Cursed_Book.gif/revision/latest?cb=20180607130123&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4a/Cursed_Book.gif/revision/latest?cb=20180607130123&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "cursed_prospector",
     "name": "Cursed Prospector",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b7/Cursed_Prospector.gif/revision/latest?cb=20191110161527&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b7/Cursed_Prospector.gif/revision/latest?cb=20191110161527&path-prefix=en",
+    "resistances": {
+      "physical": 40,
+      "earth": 100,
+      "fire": 105,
+      "death": 100,
+      "energy": 100,
+      "holy": 50,
+      "ice": 105
+    }
   },
   {
     "id": "cyclops_drone",
     "name": "Cyclops Drone",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/Cyclops_Drone.gif/revision/latest?cb=20210420144745&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/Cyclops_Drone.gif/revision/latest?cb=20210420144745&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 105,
+      "energy": 90,
+      "holy": 80,
+      "ice": 80
+    }
   },
   {
     "id": "cyclops_smith",
     "name": "Cyclops Smith",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Cyclops_Smith.gif/revision/latest?cb=20240228101433&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Cyclops_Smith.gif/revision/latest?cb=20240228101433&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 90,
+      "death": 105,
+      "energy": 80,
+      "holy": 80,
+      "ice": 100
+    }
   },
   {
     "id": "cyclursus",
     "name": "Cyclursus",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Cyclursus.gif/revision/latest?cb=20251108014219&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Cyclursus.gif/revision/latest?cb=20251108014219&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 103,
+      "fire": 103,
+      "death": 112,
+      "energy": 103,
+      "holy": 103,
+      "ice": 103
+    }
   },
   {
     "id": "dark_carnisylvan",
     "name": "Dark Carnisylvan",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b3/Dark_Carnisylvan.gif/revision/latest?cb=20210527033224&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b3/Dark_Carnisylvan.gif/revision/latest?cb=20210527033224&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 120,
+      "death": 80,
+      "energy": 100,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "dark_faun",
     "name": "Dark Faun",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3c/Dark_Faun.gif/revision/latest?cb=20171020182535&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3c/Dark_Faun.gif/revision/latest?cb=20171020182535&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 30,
+      "fire": 105,
+      "death": 60,
+      "energy": 110,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "dark_torturer",
     "name": "Dark Torturer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b5/Dark_Torturer.gif/revision/latest?cb=20061212191617&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b5/Dark_Torturer.gif/revision/latest?cb=20061212191617&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 10,
+      "fire": 0,
+      "death": 90,
+      "energy": 70,
+      "holy": 110,
+      "ice": 110
+    }
   },
   {
     "id": "darklight_construct",
     "name": "Darklight Construct",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8f/Darklight_Construct.gif/revision/latest?cb=20230613180249&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8f/Darklight_Construct.gif/revision/latest?cb=20230613180249&path-prefix=en",
+    "resistances": {
+      "physical": 115,
+      "earth": 90,
+      "fire": 45,
+      "death": 120,
+      "energy": 105,
+      "holy": 60,
+      "ice": 105
+    }
   },
   {
     "id": "darklight_emitter",
     "name": "Darklight Emitter",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/05/Darklight_Emitter.gif/revision/latest?cb=20230613180251&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/05/Darklight_Emitter.gif/revision/latest?cb=20230613180251&path-prefix=en",
+    "resistances": {
+      "physical": 115,
+      "earth": 95,
+      "fire": 60,
+      "death": 120,
+      "energy": 110,
+      "holy": 75,
+      "ice": 100
+    }
   },
   {
     "id": "darklight_matter",
     "name": "Darklight Matter",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Darklight_Matter.gif/revision/latest?cb=20230613180253&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Darklight_Matter.gif/revision/latest?cb=20230613180253&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 110,
+      "fire": 120,
+      "death": 100,
+      "energy": 60,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "darklight_source",
     "name": "Darklight Source",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3b/Darklight_Source.gif/revision/latest?cb=20230613180254&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3b/Darklight_Source.gif/revision/latest?cb=20230613180254&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 110,
+      "fire": 115,
+      "death": 100,
+      "energy": 45,
+      "holy": 100,
+      "ice": 60
+    }
   },
   {
     "id": "darklight_striker",
     "name": "Darklight Striker",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/27/Darklight_Striker.gif/revision/latest?cb=20230613130524&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/27/Darklight_Striker.gif/revision/latest?cb=20230613130524&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 115,
+      "fire": 120,
+      "death": 100,
+      "energy": 65,
+      "holy": 90,
+      "ice": 70
+    }
   },
   {
     "id": "dawnfire_asura",
     "name": "Dawnfire Asura",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Dawnfire_Asura.gif/revision/latest?cb=20150625214314&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Dawnfire_Asura.gif/revision/latest?cb=20150625214314&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 100,
+      "fire": 0,
+      "death": 80,
+      "energy": 105,
+      "holy": 110,
+      "ice": 110
+    }
   },
   {
     "id": "death_blob",
     "name": "Death Blob",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a5/Death_Blob.gif/revision/latest?cb=20210420155207&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a5/Death_Blob.gif/revision/latest?cb=20210420155207&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 0,
+      "fire": 110,
+      "death": 0,
+      "energy": 110,
+      "holy": 110,
+      "ice": 90
+    }
   },
   {
     "id": "death_priest",
     "name": "Death Priest",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Lich.gif/revision/latest?cb=20221125123236&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Lich.gif/revision/latest?cb=20221125123236&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 0,
+      "energy": 20,
+      "holy": 120,
+      "ice": 100
+    }
   },
   {
     "id": "deathling_scout",
     "name": "Deathling Scout",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/83/Deathling_Scout.gif/revision/latest?cb=20260720163415&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/83/Deathling_Scout.gif/revision/latest?cb=20260720163415&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 90,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deathling_spellsinger",
     "name": "Deathling Spellsinger",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/12/Deathling_Spellsinger.gif/revision/latest?cb=20180607132143&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/12/Deathling_Spellsinger.gif/revision/latest?cb=20180607132143&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 90,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepling_brawler",
     "name": "Deepling Brawler",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b7/Deepling_Brawler.gif/revision/latest?cb=20171218214539&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b7/Deepling_Brawler.gif/revision/latest?cb=20171218214539&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepling_elite",
     "name": "Deepling Elite",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Deepling_Elite.gif/revision/latest?cb=20240228102130&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Deepling_Elite.gif/revision/latest?cb=20240228102130&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 90,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepling_guard",
     "name": "Deepling Guard",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d4/Deepling_Guard.gif/revision/latest?cb=20111201050034&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d4/Deepling_Guard.gif/revision/latest?cb=20111201050034&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 90,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepling_master_librarian",
     "name": "Deepling Master Librarian",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Deepling_Master_Librarian.gif/revision/latest?cb=20180610203337&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Deepling_Master_Librarian.gif/revision/latest?cb=20180610203337&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 50,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepling_scout",
     "name": "Deepling Scout",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/ce/Deepling_Scout.gif/revision/latest?cb=20171218214538&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/ce/Deepling_Scout.gif/revision/latest?cb=20171218214538&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepling_spellsinger",
     "name": "Deepling Spellsinger",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b4/Deepling_Spellsinger.gif/revision/latest?cb=20180610203336&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b4/Deepling_Spellsinger.gif/revision/latest?cb=20180610203336&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 50,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepling_tyrant",
     "name": "Deepling Tyrant",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/54/Deepling_Tyrant.gif/revision/latest?cb=20120403232838&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/54/Deepling_Tyrant.gif/revision/latest?cb=20120403232838&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 90,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepling_warrior",
     "name": "Deepling Warrior",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c1/Deepling_Warrior.gif/revision/latest?cb=20240228102154&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c1/Deepling_Warrior.gif/revision/latest?cb=20240228102154&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 90,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "deepworm",
     "name": "Deepworm",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b1/Deepworm.gif/revision/latest?cb=20171107134902&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b1/Deepworm.gif/revision/latest?cb=20171107134902&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 120,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "defiler",
     "name": "Defiler",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Defiler.gif/revision/latest?cb=20171220002856&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Defiler.gif/revision/latest?cb=20171220002856&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 125,
+      "death": 100,
+      "energy": 90,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "demon",
     "name": "Demon",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/75/Demon.gif/revision/latest?cb=20150414134039&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/75/Demon.gif/revision/latest?cb=20150414134039&path-prefix=en",
+    "resistances": {
+      "physical": 75,
+      "earth": 60,
+      "fire": 0,
+      "death": 80,
+      "energy": 50,
+      "holy": 112,
+      "ice": 112
+    }
   },
   {
     "id": "demon_outcast",
     "name": "Demon Outcast",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/22/Demon_Outcast.gif/revision/latest?cb=20131126125425&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/22/Demon_Outcast.gif/revision/latest?cb=20131126125425&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 60,
+      "fire": 0,
+      "death": 70,
+      "energy": 108,
+      "holy": 106,
+      "ice": 95
+    }
   },
   {
     "id": "demon_parrot",
     "name": "Demon Parrot",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Demon_Parrot.gif/revision/latest?cb=20171219235005&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Demon_Parrot.gif/revision/latest?cb=20171219235005&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "demon_skeleton",
     "name": "Demon Skeleton",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/de/Demon_Skeleton.gif/revision/latest?cb=20240228100224&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/de/Demon_Skeleton.gif/revision/latest?cb=20240228100224&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 100
+    }
   },
   {
     "id": "destroyer",
     "name": "Destroyer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/36/Destroyer.gif/revision/latest?cb=20061212193751&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/36/Destroyer.gif/revision/latest?cb=20061212193751&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 80,
+      "fire": 70,
+      "death": 80,
+      "energy": 0,
+      "holy": 103,
+      "ice": 115
+    }
   },
   {
     "id": "devoted_radiant_acolyte",
     "name": "Devoted Radiant Acolyte",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b2/Devoted_Radiant_Acolyte.gif/revision/latest?cb=20260720011632&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b2/Devoted_Radiant_Acolyte.gif/revision/latest?cb=20260720011632&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 105,
+      "fire": 60,
+      "death": 70,
+      "energy": 110,
+      "holy": 95,
+      "ice": 90
+    }
   },
   {
     "id": "devoted_radiant_inquisitor",
     "name": "Devoted Radiant Inquisitor",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/59/Devoted_Radiant_Inquisitor.gif/revision/latest?cb=20260720011634&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/59/Devoted_Radiant_Inquisitor.gif/revision/latest?cb=20260720011634&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 90,
+      "fire": 105,
+      "death": 110,
+      "energy": 75,
+      "holy": 75,
+      "ice": 105
+    }
   },
   {
     "id": "devoted_radiant_paragon",
     "name": "Devoted Radiant Paragon",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2e/Devoted_Radiant_Paragon.gif/revision/latest?cb=20260720011637&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2e/Devoted_Radiant_Paragon.gif/revision/latest?cb=20260720011637&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 115,
+      "fire": 70,
+      "death": 80,
+      "energy": 110,
+      "holy": 100,
+      "ice": 95
+    }
   },
   {
     "id": "devoted_radiant_templar",
     "name": "Devoted Radiant Templar",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9f/Devoted_Radiant_Templar.gif/revision/latest?cb=20260720011640&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9f/Devoted_Radiant_Templar.gif/revision/latest?cb=20260720011640&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 95,
+      "fire": 110,
+      "death": 105,
+      "energy": 80,
+      "holy": 75,
+      "ice": 110
+    }
   },
   {
     "id": "devoted_radiant_warden",
     "name": "Devoted Radiant Warden",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9b/Devoted_Radiant_Warden.gif/revision/latest?cb=20260720011642&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9b/Devoted_Radiant_Warden.gif/revision/latest?cb=20260720011642&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 105,
+      "fire": 70,
+      "death": 80,
+      "energy": 110,
+      "holy": 110,
+      "ice": 90
+    }
   },
   {
     "id": "devoted_radiant_zealot",
     "name": "Devoted Radiant Zealot",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/17/Devoted_Radiant_Zealot.gif/revision/latest?cb=20260720011644&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/17/Devoted_Radiant_Zealot.gif/revision/latest?cb=20260720011644&path-prefix=en",
+    "resistances": {
+      "physical": 115,
+      "earth": 90,
+      "fire": 105,
+      "death": 110,
+      "energy": 60,
+      "holy": 80,
+      "ice": 105
+    }
   },
   {
     "id": "devourer",
     "name": "Devourer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Devourer.gif/revision/latest?cb=20180506164623&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Devourer.gif/revision/latest?cb=20180506164623&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 90,
+      "energy": 105,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "diabolic_imp",
     "name": "Diabolic Imp",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ea/Diabolic_Imp.gif/revision/latest?cb=20250926155358&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ea/Diabolic_Imp.gif/revision/latest?cb=20250926155358&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 50,
+      "fire": 0,
+      "death": 90,
+      "energy": 100,
+      "holy": 105,
+      "ice": 110
+    }
   },
   {
     "id": "diamond_servant_replica",
     "name": "Diamond Servant Replica",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Diamond_Servant_Replica.gif/revision/latest?cb=20161108223946&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Diamond_Servant_Replica.gif/revision/latest?cb=20161108223946&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 25,
+      "fire": 90,
+      "death": 100,
+      "energy": 0,
+      "holy": 115,
+      "ice": 100
+    }
   },
   {
     "id": "diremaw",
     "name": "Diremaw",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ac/Diremaw.gif/revision/latest?cb=20171107134720&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ac/Diremaw.gif/revision/latest?cb=20171107134720&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 120
+    }
   },
   {
     "id": "distorted_phantom",
     "name": "Distorted Phantom",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bc/Distorted_Phantom.gif/revision/latest?cb=20200611061714&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bc/Distorted_Phantom.gif/revision/latest?cb=20200611061714&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 50,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "doom_deer",
     "name": "Doom Deer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ec/Doom_Deer.gif/revision/latest?cb=20141003150621&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ec/Doom_Deer.gif/revision/latest?cb=20141003150621&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 0,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "dragolisk",
     "name": "Dragolisk",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d7/Dragolisk.gif/revision/latest?cb=20231114095035&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d7/Dragolisk.gif/revision/latest?cb=20231114095035&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 110,
+      "fire": 60,
+      "death": 110,
+      "energy": 100,
+      "holy": 115,
+      "ice": 105
+    }
   },
   {
     "id": "dragon",
     "name": "Dragon",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e0/Dragon.gif/revision/latest?cb=20140823213526&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e0/Dragon.gif/revision/latest?cb=20140823213526&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 20,
+      "fire": 0,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "dragon_hatchling",
     "name": "Dragon Hatchling",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Dragon_Hatchling.gif/revision/latest?cb=20171218213732&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Dragon_Hatchling.gif/revision/latest?cb=20171218213732&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 25,
+      "fire": 0,
+      "death": 100,
+      "energy": 105,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "dragon_lord",
     "name": "Dragon Lord",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/97/Dragon_Lord.gif/revision/latest?cb=20150418105002&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/97/Dragon_Lord.gif/revision/latest?cb=20150418105002&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 20,
+      "fire": 0,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "dragon_lord_hatchling",
     "name": "Dragon Lord Hatchling",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/49/Dragon_Lord_Hatchling.gif/revision/latest?cb=20240228101402&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/49/Dragon_Lord_Hatchling.gif/revision/latest?cb=20240228101402&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 25,
+      "fire": 0,
+      "death": 100,
+      "energy": 105,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "dragonling",
     "name": "Dragonling",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Dragonling.gif/revision/latest?cb=20140215163055&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Dragonling.gif/revision/latest?cb=20140215163055&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 95,
+      "holy": 100,
+      "ice": 95
+    }
   },
   {
     "id": "draken_abomination",
     "name": "Draken Abomination",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/40/Draken_Abomination.gif/revision/latest?cb=20100618160201&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/40/Draken_Abomination.gif/revision/latest?cb=20100618160201&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 0,
+      "energy": 105,
+      "holy": 105,
+      "ice": 95
+    }
   },
   {
     "id": "draken_elite",
     "name": "Draken Elite",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Draken_Elite.gif/revision/latest?cb=20100621022924&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Draken_Elite.gif/revision/latest?cb=20100621022924&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 70,
+      "energy": 60,
+      "holy": 70,
+      "ice": 100
+    }
   },
   {
     "id": "draken_spellweaver",
     "name": "Draken Spellweaver",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4a/Draken_Spellweaver.gif/revision/latest?cb=20250926155748&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4a/Draken_Spellweaver.gif/revision/latest?cb=20250926155748&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 0,
+      "fire": 0,
+      "death": 20,
+      "energy": 110,
+      "holy": 105,
+      "ice": 110
+    }
   },
   {
     "id": "draken_warmaster",
     "name": "Draken Warmaster",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/29/Draken_Warmaster.gif/revision/latest?cb=20091128072333&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/29/Draken_Warmaster.gif/revision/latest?cb=20091128072333&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 50,
+      "energy": 95,
+      "holy": 95,
+      "ice": 105
+    }
   },
   {
     "id": "dread_intruder",
     "name": "Dread Intruder",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/01/Dread_Intruder.gif/revision/latest?cb=20160421202929&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/01/Dread_Intruder.gif/revision/latest?cb=20160421202929&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 20,
+      "energy": 10,
+      "holy": 110,
+      "ice": 95
+    }
   },
   {
     "id": "drillworm",
     "name": "Drillworm",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/85/Drillworm.gif/revision/latest?cb=20121125133011&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/85/Drillworm.gif/revision/latest?cb=20121125133011&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 105,
+      "death": 85,
+      "energy": 85,
+      "holy": 85,
+      "ice": 84
+    }
   },
   {
     "id": "druid_s_apparition",
     "name": "Druid's Apparition",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/98/Druid%27s_Apparition.gif/revision/latest?cb=20200611061714&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/98/Druid%27s_Apparition.gif/revision/latest?cb=20200611061714&path-prefix=en",
+    "resistances": {
+      "physical": 120,
+      "earth": 100,
+      "fire": 120,
+      "death": 120,
+      "energy": 100,
+      "holy": 60,
+      "ice": 70
+    }
   },
   {
     "id": "dwarf_geomancer",
     "name": "Dwarf Geomancer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0d/Dwarf_Geomancer.gif/revision/latest?cb=20171218205327&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0d/Dwarf_Geomancer.gif/revision/latest?cb=20171218205327&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 40,
+      "death": 110,
+      "energy": 90,
+      "holy": 90,
+      "ice": 105
+    }
   },
   {
     "id": "dwarf_henchman",
     "name": "Dwarf Henchman",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/08/Dwarf_Henchman.gif/revision/latest?cb=20180206145426&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/08/Dwarf_Henchman.gif/revision/latest?cb=20180206145426&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "dworc_shadowstalker",
     "name": "Dworc Shadowstalker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8f/Dworc_Shadowstalker.gif/revision/latest?cb=20250626134313&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8f/Dworc_Shadowstalker.gif/revision/latest?cb=20250626134313&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 95,
+      "fire": 105,
+      "death": 60,
+      "energy": 105,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "earth_elemental",
     "name": "Earth Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1b/Earth_Elemental.gif/revision/latest?cb=20240228101508&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1b/Earth_Elemental.gif/revision/latest?cb=20240228101508&path-prefix=en",
+    "resistances": {
+      "physical": 65,
+      "earth": 0,
+      "fire": 125,
+      "death": 60,
+      "energy": 0,
+      "holy": 50,
+      "ice": 95
+    }
   },
   {
     "id": "efreet",
     "name": "Efreet",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/de/Efreet.gif/revision/latest?cb=20240228100812&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/de/Efreet.gif/revision/latest?cb=20240228100812&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 10,
+      "death": 80,
+      "energy": 40,
+      "holy": 108,
+      "ice": 105
+    }
   },
   {
     "id": "elder_bonelord",
     "name": "Elder Bonelord",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/09/Elder_Bonelord.gif/revision/latest?cb=20240228100944&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/09/Elder_Bonelord.gif/revision/latest?cb=20240228100944&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 70,
+      "energy": 80,
+      "holy": 100,
+      "ice": 70
+    }
   },
   {
     "id": "elder_forest_fury",
     "name": "Elder Forest Fury",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/Elder_Forest_Fury.gif/revision/latest?cb=20150721094041&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/Elder_Forest_Fury.gif/revision/latest?cb=20150721094041&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 105,
+      "death": 60,
+      "energy": 100,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "elder_mummy",
     "name": "Elder Mummy",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dd/Mummy.gif/revision/latest?cb=20171220140436&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dd/Mummy.gif/revision/latest?cb=20171220140436&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 80
+    }
   },
   {
     "id": "elder_wyrm",
     "name": "Elder Wyrm",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Elder_Wyrm.gif/revision/latest?cb=20130703140615&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Elder_Wyrm.gif/revision/latest?cb=20130703140615&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 25,
+      "fire": 70,
+      "death": 100,
+      "energy": 0,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "emerald_tortoise",
     "name": "Emerald Tortoise",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Emerald_Tortoise.gif/revision/latest?cb=20220621120928&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Emerald_Tortoise.gif/revision/latest?cb=20220621120928&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 115,
+      "fire": 90,
+      "death": 100,
+      "energy": 90,
+      "holy": 90,
+      "ice": 90
+    }
   },
   {
     "id": "energetic_book",
     "name": "Energetic Book",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/97/Energetic_Book.gif/revision/latest?cb=20180607140216&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/97/Energetic_Book.gif/revision/latest?cb=20180607140216&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 100,
+      "energy": 0,
+      "holy": 0,
+      "ice": 100
+    }
   },
   {
     "id": "energuardian_of_tales",
     "name": "Energuardian of Tales",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/68/Energuardian_of_Tales.gif/revision/latest?cb=20180615200646&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/68/Energuardian_of_Tales.gif/revision/latest?cb=20180615200646&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 112,
+      "fire": 100,
+      "death": 100,
+      "energy": 0,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "energy_elemental",
     "name": "Energy Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/76/Energy_Elemental.gif/revision/latest?cb=20200115220105&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/76/Energy_Elemental.gif/revision/latest?cb=20200115220105&path-prefix=en",
+    "resistances": {
+      "physical": 65,
+      "earth": 115,
+      "fire": 0,
+      "death": 95,
+      "energy": 0,
+      "holy": 95,
+      "ice": 0
+    }
   },
   {
     "id": "enfeebled_silencer",
     "name": "Enfeebled Silencer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9e/Enfeebled_Silencer.gif/revision/latest?cb=20170709121447&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9e/Enfeebled_Silencer.gif/revision/latest?cb=20170709121447&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 40,
+      "fire": 70,
+      "death": 35,
+      "energy": 85,
+      "holy": 125,
+      "ice": 85
+    }
   },
   {
     "id": "enlightened_of_the_cult",
     "name": "Enlightened of the Cult",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/91/Enlightened_of_the_Cult.gif/revision/latest?cb=20060819131505&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/91/Enlightened_of_the_Cult.gif/revision/latest?cb=20060819131505&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 100,
+      "fire": 100,
+      "death": 105,
+      "energy": 105,
+      "holy": 80,
+      "ice": 80
+    }
   },
   {
     "id": "enraged_crystal_golem",
     "name": "Enraged Crystal Golem",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/24/Enraged_Crystal_Golem.gif/revision/latest?cb=20240228102712&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/24/Enraged_Crystal_Golem.gif/revision/latest?cb=20240228102712&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 100,
+      "fire": 0,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "enslaved_dwarf",
     "name": "Enslaved Dwarf",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3b/Enslaved_Dwarf.gif/revision/latest?cb=20120622171646&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3b/Enslaved_Dwarf.gif/revision/latest?cb=20120622171646&path-prefix=en",
+    "resistances": {
+      "physical": 103,
+      "earth": 70,
+      "fire": 0,
+      "death": 85,
+      "energy": 95,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "eternal_guardian",
     "name": "Eternal Guardian",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4c/Eternal_Guardian.gif/revision/latest?cb=20091230072003&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4c/Eternal_Guardian.gif/revision/latest?cb=20091230072003&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 0,
+      "fire": 30,
+      "death": 80,
+      "energy": 90,
+      "holy": 80,
+      "ice": 90
+    }
   },
   {
     "id": "evil_prospector",
     "name": "Evil Prospector",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/17/Evil_Prospector.gif/revision/latest?cb=20191110161527&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/17/Evil_Prospector.gif/revision/latest?cb=20191110161527&path-prefix=en",
+    "resistances": {
+      "physical": 35,
+      "earth": 100,
+      "fire": 105,
+      "death": 110,
+      "energy": 70,
+      "holy": 65,
+      "ice": 105
+    }
   },
   {
     "id": "evil_sheep",
     "name": "Evil Sheep",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Evil_Sheep.gif/revision/latest?cb=20171219235429&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Evil_Sheep.gif/revision/latest?cb=20171219235429&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 100,
+      "fire": 110,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "evil_sheep_lord",
     "name": "Evil Sheep Lord",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/80/Evil_Sheep_Lord.gif/revision/latest?cb=20171219235430&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/80/Evil_Sheep_Lord.gif/revision/latest?cb=20171219235430&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 105,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "execowtioner",
     "name": "Execowtioner",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ef/Execowtioner.gif/revision/latest?cb=20140614003524&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ef/Execowtioner.gif/revision/latest?cb=20140614003524&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 85,
+      "fire": 100,
+      "death": 85,
+      "energy": 90,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "exotic_bat",
     "name": "Exotic Bat",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b2/Exotic_Bat.gif/revision/latest?cb=20220515014936&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b2/Exotic_Bat.gif/revision/latest?cb=20220515014936&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 99,
+      "fire": 110,
+      "death": 95,
+      "energy": 95,
+      "holy": 95,
+      "ice": 95
+    }
   },
   {
     "id": "exotic_cave_spider",
     "name": "Exotic Cave Spider",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ed/Exotic_Cave_Spider.gif/revision/latest?cb=20220513200058&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ed/Exotic_Cave_Spider.gif/revision/latest?cb=20220513200058&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "eyeless_devourer",
     "name": "Eyeless Devourer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Eyeless_Devourer.gif/revision/latest?cb=20220602220119&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Eyeless_Devourer.gif/revision/latest?cb=20220602220119&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 90,
+      "fire": 100,
+      "death": 100,
+      "energy": 95,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "falcon_knight",
     "name": "Falcon Knight",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Falcon_Knight.gif/revision/latest?cb=20180627182705&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Falcon_Knight.gif/revision/latest?cb=20180627182705&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 100,
+      "fire": 100,
+      "death": 50,
+      "energy": 100,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "falcon_paladin",
     "name": "Falcon Paladin",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Falcon_Paladin.gif/revision/latest?cb=20180607130125&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Falcon_Paladin.gif/revision/latest?cb=20180607130125&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 100,
+      "fire": 100,
+      "death": 50,
+      "energy": 100,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "faun",
     "name": "Faun",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a6/Faun.gif/revision/latest?cb=20171020182911&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a6/Faun.gif/revision/latest?cb=20171020182911&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 30,
+      "fire": 115,
+      "death": 80,
+      "energy": 110,
+      "holy": 70,
+      "ice": 100
+    }
   },
   {
     "id": "feral_sphinx",
     "name": "Feral Sphinx",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ec/Feral_Sphinx.gif/revision/latest?cb=20190702012025&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ec/Feral_Sphinx.gif/revision/latest?cb=20190702012025&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 115,
+      "energy": 100,
+      "holy": 80,
+      "ice": 115
+    }
   },
   {
     "id": "feral_werecrocodile",
     "name": "Feral Werecrocodile",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/54/Feral_Werecrocodile.gif/revision/latest?cb=20230613180255&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/54/Feral_Werecrocodile.gif/revision/latest?cb=20230613180255&path-prefix=en",
+    "resistances": {
+      "physical": 75,
+      "earth": 80,
+      "fire": 65,
+      "death": 40,
+      "energy": 105,
+      "holy": 120,
+      "ice": 115
+    }
   },
   {
     "id": "feversleep",
     "name": "Feversleep",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Feversleep.gif/revision/latest?cb=20131129181708&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Feversleep.gif/revision/latest?cb=20131129181708&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 0,
+      "fire": 65,
+      "death": 45,
+      "energy": 105,
+      "holy": 110,
+      "ice": 95
+    }
   },
   {
     "id": "fire_elemental",
     "name": "Fire Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Fire_Elemental.gif/revision/latest?cb=20210420141456&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Fire_Elemental.gif/revision/latest?cb=20210420141456&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 0,
+      "death": 0,
+      "energy": 100,
+      "holy": 100,
+      "ice": 125
+    }
   },
   {
     "id": "flimsy_lost_soul",
     "name": "Flimsy Lost Soul",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/49/Flimsy_Lost_Soul.gif/revision/latest?cb=20191110161526&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/49/Flimsy_Lost_Soul.gif/revision/latest?cb=20191110161526&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 80,
+      "fire": 100,
+      "death": 0,
+      "energy": 80,
+      "holy": 120,
+      "ice": 100
+    }
   },
   {
     "id": "floating_savant",
     "name": "Floating Savant",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e7/Floating_Savant.gif/revision/latest?cb=20180607130126&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e7/Floating_Savant.gif/revision/latest?cb=20180607130126&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 0,
+      "death": 50,
+      "energy": 100,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "flying_book",
     "name": "Flying Book",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Flying_Book.gif/revision/latest?cb=20180607130124&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Flying_Book.gif/revision/latest?cb=20180607130124&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 50,
+      "fire": 85,
+      "death": 80,
+      "energy": 95,
+      "holy": 10,
+      "ice": 70
+    }
   },
   {
     "id": "foam_stalker",
     "name": "Foam Stalker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ec/Foam_Stalker.gif/revision/latest?cb=20220621121842&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ec/Foam_Stalker.gif/revision/latest?cb=20220621121842&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 20,
+      "death": 100,
+      "energy": 130,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "forest_fury",
     "name": "Forest Fury",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/66/Forest_Fury.gif/revision/latest?cb=20130703140731&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/66/Forest_Fury.gif/revision/latest?cb=20130703140731&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 105,
+      "death": 60,
+      "energy": 100,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "frazzlemaw",
     "name": "Frazzlemaw",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/53/Frazzlemaw.gif/revision/latest?cb=20131126123308&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/53/Frazzlemaw.gif/revision/latest?cb=20131126123308&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 80,
+      "fire": 90,
+      "death": 90,
+      "energy": 85,
+      "holy": 105,
+      "ice": 95
+    }
   },
   {
     "id": "freakish_lost_soul",
     "name": "Freakish Lost Soul",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2f/Freakish_Lost_Soul.gif/revision/latest?cb=20191110161526&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2f/Freakish_Lost_Soul.gif/revision/latest?cb=20191110161526&path-prefix=en",
+    "resistances": {
+      "physical": 40,
+      "earth": 30,
+      "fire": 100,
+      "death": 0,
+      "energy": 65,
+      "holy": 140,
+      "ice": 100
+    }
   },
   {
     "id": "frost_dragon",
     "name": "Frost Dragon",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b2/Frost_Dragon.gif/revision/latest?cb=20070620013409&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b2/Frost_Dragon.gif/revision/latest?cb=20070620013409&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 100,
+      "fire": 0,
+      "death": 90,
+      "energy": 100,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "frost_dragon_hatchling",
     "name": "Frost Dragon Hatchling",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a1/Frost_Dragon_Hatchling.gif/revision/latest?cb=20171218213734&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a1/Frost_Dragon_Hatchling.gif/revision/latest?cb=20171218213734&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 0,
+      "death": 100,
+      "energy": 105,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "frost_flower_asura",
     "name": "Frost Flower Asura",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9a/Frost_Flower_Asura.gif/revision/latest?cb=20180607130129&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9a/Frost_Flower_Asura.gif/revision/latest?cb=20180607130129&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 110,
+      "fire": 115,
+      "death": 80,
+      "energy": 100,
+      "holy": 70,
+      "ice": 0
+    }
   },
   {
     "id": "furious_fire_elemental",
     "name": "Furious Fire Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Fire_Elemental.gif/revision/latest?cb=20210420141456&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Fire_Elemental.gif/revision/latest?cb=20210420141456&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 0,
+      "death": 0,
+      "energy": 100,
+      "holy": 100,
+      "ice": 125
+    }
   },
   {
     "id": "fury",
     "name": "Fury",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b0/Fury.gif/revision/latest?cb=20171222135001&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b0/Fury.gif/revision/latest?cb=20171222135001&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 110,
+      "fire": 0,
+      "death": 110,
+      "energy": 110,
+      "holy": 70,
+      "ice": 95
+    }
   },
   {
     "id": "gazer_spectre",
     "name": "Gazer Spectre",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/82/Gazer_Spectre.gif/revision/latest?cb=20181107180045&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/82/Gazer_Spectre.gif/revision/latest?cb=20181107180045&path-prefix=en",
+    "resistances": {
+      "physical": 15,
+      "earth": 100,
+      "fire": 30,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 130
+    }
   },
   {
     "id": "ghastly_dragon",
     "name": "Ghastly Dragon",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f6/Ghastly_Dragon.gif/revision/latest?cb=20091219143827&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f6/Ghastly_Dragon.gif/revision/latest?cb=20091219143827&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 0,
+      "fire": 90,
+      "death": 0,
+      "energy": 110,
+      "holy": 115,
+      "ice": 50
+    }
   },
   {
     "id": "ghoulish_hyaena",
     "name": "Ghoulish Hyaena",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c2/Ghoulish_Hyaena.gif/revision/latest?cb=20171219235133&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c2/Ghoulish_Hyaena.gif/revision/latest?cb=20171219235133&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 40,
+      "fire": 115,
+      "death": 0,
+      "energy": 100,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "giant_spider",
     "name": "Giant Spider",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Giant_Spider.gif/revision/latest?cb=20150421143720&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Giant_Spider.gif/revision/latest?cb=20150421143720&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "girtablilu_warrior",
     "name": "Girtablilu Warrior",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/34/Girtablilu_Warrior.gif/revision/latest?cb=20220730175043&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/34/Girtablilu_Warrior.gif/revision/latest?cb=20220730175043&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 100,
+      "death": 85,
+      "energy": 115,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "gloom_maw",
     "name": "Gloom Maw",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2a/Gloom_Maw.gif/revision/latest?cb=20250630065654&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2a/Gloom_Maw.gif/revision/latest?cb=20250630065654&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 105,
+      "death": 75,
+      "energy": 110,
+      "holy": 105,
+      "ice": 100
+    }
   },
   {
     "id": "glooth_anemone",
     "name": "Glooth Anemone",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/87/Glooth_Anemone.gif/revision/latest?cb=20140614005304&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/87/Glooth_Anemone.gif/revision/latest?cb=20140614005304&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 105,
+      "death": 65,
+      "energy": 90,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "glooth_bandit",
     "name": "Glooth Bandit",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/39/Glooth_Bandit.gif/revision/latest?cb=20141205143433&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/39/Glooth_Bandit.gif/revision/latest?cb=20141205143433&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 0,
+      "fire": 105,
+      "death": 80,
+      "energy": 80,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "glooth_blob",
     "name": "Glooth Blob",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c1/Glooth_Blob.gif/revision/latest?cb=20180506164139&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c1/Glooth_Blob.gif/revision/latest?cb=20180506164139&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 0,
+      "energy": 110,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "glooth_brigand",
     "name": "Glooth Brigand",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2d/Glooth_Brigand.gif/revision/latest?cb=20141205143333&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2d/Glooth_Brigand.gif/revision/latest?cb=20141205143333&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 100,
+      "death": 85,
+      "energy": 75,
+      "holy": 105,
+      "ice": 90
+    }
   },
   {
     "id": "glooth_golem",
     "name": "Glooth Golem",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8e/Glooth_Golem.gif/revision/latest?cb=20140620215028&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8e/Glooth_Golem.gif/revision/latest?cb=20140620215028&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 105,
+      "death": 70,
+      "energy": 95,
+      "holy": 85,
+      "ice": 100
+    }
   },
   {
     "id": "goggle_cake",
     "name": "Goggle Cake",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/45/Goggle_Cake.gif/revision/latest?cb=20240604163321&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/45/Goggle_Cake.gif/revision/latest?cb=20240604163321&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 105,
+      "fire": 110,
+      "death": 85,
+      "energy": 85,
+      "holy": 95,
+      "ice": 85
+    }
   },
   {
     "id": "golden_servant_replica",
     "name": "Golden Servant Replica",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8c/Golden_Servant_Replica.gif/revision/latest?cb=20161108223654&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8c/Golden_Servant_Replica.gif/revision/latest?cb=20161108223654&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 20,
+      "fire": 85,
+      "death": 100,
+      "energy": 75,
+      "holy": 0,
+      "ice": 105
+    }
   },
   {
     "id": "goldhanded_cultist",
     "name": "Goldhanded Cultist",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ea/Goldhanded_Cultist.gif/revision/latest?cb=20220730175049&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ea/Goldhanded_Cultist.gif/revision/latest?cb=20220730175049&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 85,
+      "energy": 83,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "goldhanded_cultist_bride",
     "name": "Goldhanded Cultist Bride",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/85/Goldhanded_Cultist_Bride.gif/revision/latest?cb=20220730175046&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/85/Goldhanded_Cultist_Bride.gif/revision/latest?cb=20220730175046&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 85,
+      "energy": 83,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "gore_horn",
     "name": "Gore Horn",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d7/Gore_Horn.gif/revision/latest?cb=20220626123651&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d7/Gore_Horn.gif/revision/latest?cb=20220626123651&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 110,
+      "death": 100,
+      "energy": 50,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "gorerilla",
     "name": "Gorerilla",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/98/Gorerilla.gif/revision/latest?cb=20220621120835&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/98/Gorerilla.gif/revision/latest?cb=20220621120835&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 100,
+      "fire": 80,
+      "death": 100,
+      "energy": 100,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "gorger_inferniarch",
     "name": "Gorger Inferniarch",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/59/Gorger_Inferniarch.gif/revision/latest?cb=20241105122612&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/59/Gorger_Inferniarch.gif/revision/latest?cb=20241105122612&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 90,
+      "energy": 105,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "grave_guard",
     "name": "Grave Guard",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b5/Dark_Torturer.gif/revision/latest?cb=20061212191617&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b5/Dark_Torturer.gif/revision/latest?cb=20061212191617&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 10,
+      "fire": 0,
+      "death": 90,
+      "energy": 70,
+      "holy": 110,
+      "ice": 110
+    }
   },
   {
     "id": "gravedigger",
     "name": "Gravedigger",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d9/Gravedigger.gif/revision/latest?cb=20140215170309&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d9/Gravedigger.gif/revision/latest?cb=20140215170309&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 105,
+      "fire": 110,
+      "death": 0,
+      "energy": 0,
+      "holy": 105,
+      "ice": 0
+    }
   },
   {
     "id": "green_djinn",
     "name": "Green Djinn",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e2/Green_Djinn.gif/revision/latest?cb=20240228100412&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e2/Green_Djinn.gif/revision/latest?cb=20240228100412&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 100,
+      "fire": 20,
+      "death": 80,
+      "energy": 50,
+      "holy": 113,
+      "ice": 110
+    }
   },
   {
     "id": "grim_reaper",
     "name": "Grim Reaper",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/16/Grim_Reaper.gif/revision/latest?cb=20080712051905&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/16/Grim_Reaper.gif/revision/latest?cb=20080712051905&path-prefix=en",
+    "resistances": {
+      "physical": 75,
+      "earth": 60,
+      "fire": 110,
+      "death": 20,
+      "energy": 110,
+      "holy": 110,
+      "ice": 35
+    }
   },
   {
     "id": "grimeleech",
     "name": "Grimeleech",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bd/Grimeleech.gif/revision/latest?cb=20151112211909&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bd/Grimeleech.gif/revision/latest?cb=20151112211909&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 80,
+      "death": 40,
+      "energy": 105,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "gryphon",
     "name": "Gryphon",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7f/Gryphon.gif/revision/latest?cb=20220829163021&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7f/Gryphon.gif/revision/latest?cb=20220829163021&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "guardian_of_tales",
     "name": "Guardian of Tales",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/05/Guardian_of_Tales.gif/revision/latest?cb=20180608202545&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/05/Guardian_of_Tales.gif/revision/latest?cb=20180608202545&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 0,
+      "death": 50,
+      "energy": 100,
+      "holy": 100,
+      "ice": 112
+    }
   },
   {
     "id": "guzzlemaw",
     "name": "Guzzlemaw",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/72/Guzzlemaw.gif/revision/latest?cb=20210420140852&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/72/Guzzlemaw.gif/revision/latest?cb=20210420140852&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 80,
+      "fire": 90,
+      "death": 90,
+      "energy": 85,
+      "holy": 105,
+      "ice": 95
+    }
   },
   {
     "id": "hand_of_cursed_fate",
     "name": "Hand of Cursed Fate",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/45/Hand_of_Cursed_Fate.gif/revision/latest?cb=20180707104432&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/45/Hand_of_Cursed_Fate.gif/revision/latest?cb=20180707104432&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 0,
+      "energy": 95,
+      "holy": 125,
+      "ice": 110
+    }
   },
   {
     "id": "harpy",
     "name": "Harpy",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7e/Harpy.gif/revision/latest?cb=20221108171738&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7e/Harpy.gif/revision/latest?cb=20221108171738&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 90,
+      "fire": 105,
+      "death": 105,
+      "energy": 75,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "haunted_dragon",
     "name": "Haunted Dragon",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6f/Undead_Dragon.gif/revision/latest?cb=20171218212220&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6f/Undead_Dragon.gif/revision/latest?cb=20171218212220&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 80,
+      "death": 0,
+      "energy": 100,
+      "holy": 140,
+      "ice": 50
+    }
   },
   {
     "id": "haunted_hunter",
     "name": "Haunted Hunter",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3c/Haunted_Hunter.gif/revision/latest?cb=20251108013758&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3c/Haunted_Hunter.gif/revision/latest?cb=20251108013758&path-prefix=en",
+    "resistances": {
+      "physical": 103,
+      "earth": 85,
+      "fire": 91,
+      "death": 112,
+      "energy": 106,
+      "holy": 94,
+      "ice": 109
+    }
   },
   {
     "id": "haunted_treeling",
     "name": "Haunted Treeling",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b5/Haunted_Treeling.gif/revision/latest?cb=20250926155717&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b5/Haunted_Treeling.gif/revision/latest?cb=20250926155717&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 105,
+      "death": 90,
+      "energy": 100,
+      "holy": 80,
+      "ice": 90
+    }
   },
   {
     "id": "hawk_hopper",
     "name": "Hawk Hopper",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Hawk_Hopper.gif/revision/latest?cb=20250628082612&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Hawk_Hopper.gif/revision/latest?cb=20250628082612&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 85,
+      "fire": 110,
+      "death": 105,
+      "energy": 90,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "headpecker",
     "name": "Headpecker",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1a/Headpecker.gif/revision/latest?cb=20220621170908&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1a/Headpecker.gif/revision/latest?cb=20220621170908&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 90,
+      "fire": 110,
+      "death": 110,
+      "energy": 90,
+      "holy": 0,
+      "ice": 110
+    }
   },
   {
     "id": "headwalker",
     "name": "Headwalker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ea/Headwalker.gif/revision/latest?cb=20250630071203&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ea/Headwalker.gif/revision/latest?cb=20250630071203&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 105,
+      "fire": 100,
+      "death": 110,
+      "energy": 85,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "hellfire_fighter",
     "name": "Hellfire Fighter",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/Hellfire_Fighter.gif/revision/latest?cb=20061212194618&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/Hellfire_Fighter.gif/revision/latest?cb=20061212194618&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 100,
+      "fire": 0,
+      "death": 80,
+      "energy": 80,
+      "holy": 100,
+      "ice": 125
+    }
   },
   {
     "id": "hellflayer",
     "name": "Hellflayer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2a/Hellflayer.gif/revision/latest?cb=20151112212404&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2a/Hellflayer.gif/revision/latest?cb=20151112212404&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 30,
+      "death": 75,
+      "energy": 105,
+      "holy": 105,
+      "ice": 95
+    }
   },
   {
     "id": "hellhound",
     "name": "Hellhound",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/Hellhound.gif/revision/latest?cb=20061212194952&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/Hellhound.gif/revision/latest?cb=20061212194952&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 0,
+      "death": 100,
+      "energy": 90,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "hellhunter_inferniarch",
     "name": "Hellhunter Inferniarch",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Hellhunter_Inferniarch.gif/revision/latest?cb=20241105122827&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Hellhunter_Inferniarch.gif/revision/latest?cb=20241105122827&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 115,
+      "fire": 105,
+      "death": 115,
+      "energy": 85,
+      "holy": 100,
+      "ice": 95
+    }
   },
   {
     "id": "hellspawn",
     "name": "Hellspawn",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2f/Hellspawn.gif/revision/latest?cb=20221114133936&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2f/Hellspawn.gif/revision/latest?cb=20221114133936&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 20,
+      "fire": 60,
+      "death": 105,
+      "energy": 90,
+      "holy": 70,
+      "ice": 110
+    }
   },
   {
     "id": "hero",
     "name": "Hero",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6f/Hero.gif/revision/latest?cb=20050501020322&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6f/Hero.gif/revision/latest?cb=20050501020322&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 50,
+      "fire": 70,
+      "death": 120,
+      "energy": 60,
+      "holy": 50,
+      "ice": 90
+    }
   },
   {
     "id": "hibernal_moth",
     "name": "Hibernal Moth",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/44/Hibernal_Moth.gif/revision/latest?cb=20181107180330&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/44/Hibernal_Moth.gif/revision/latest?cb=20181107180330&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 130,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 75
+    }
   },
   {
     "id": "hideous_fungus",
     "name": "Hideous Fungus",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e3/Hideous_Fungus.gif/revision/latest?cb=20120622171844&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e3/Hideous_Fungus.gif/revision/latest?cb=20120622171844&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 105,
+      "death": 65,
+      "energy": 85,
+      "holy": 95,
+      "ice": 85
+    }
   },
   {
     "id": "high_voltage_elemental",
     "name": "High Voltage Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/76/Energy_Elemental.gif/revision/latest?cb=20200115220105&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/76/Energy_Elemental.gif/revision/latest?cb=20200115220105&path-prefix=en",
+    "resistances": {
+      "physical": 65,
+      "earth": 115,
+      "fire": 100,
+      "death": 95,
+      "energy": 0,
+      "holy": 95,
+      "ice": 0
+    }
   },
   {
     "id": "hive_overseer",
     "name": "Hive Overseer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4f/Hive_Overseer.gif/revision/latest?cb=20111212220555&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4f/Hive_Overseer.gif/revision/latest?cb=20111212220555&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 0,
+      "fire": 60,
+      "death": 85,
+      "energy": 80,
+      "holy": 90,
+      "ice": 95
+    }
   },
   {
     "id": "honey_elemental",
     "name": "Honey Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a5/Honey_Elemental.gif/revision/latest?cb=20240604125052&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a5/Honey_Elemental.gif/revision/latest?cb=20240604125052&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 80,
+      "fire": 80,
+      "death": 70,
+      "energy": 110,
+      "holy": 95,
+      "ice": 105
+    }
   },
   {
     "id": "hot_dog",
     "name": "Hot Dog",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Dog.gif/revision/latest?cb=20150416141602&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Dog.gif/revision/latest?cb=20150416141602&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 0,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "hulking_carnisylvan",
     "name": "Hulking Carnisylvan",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a3/Hulking_Carnisylvan.gif/revision/latest?cb=20210527033222&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a3/Hulking_Carnisylvan.gif/revision/latest?cb=20210527033222&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 120,
+      "death": 90,
+      "energy": 85,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "hulking_prehemoth",
     "name": "Hulking Prehemoth",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/64/Hulking_Prehemoth.gif/revision/latest?cb=20220621121102&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/64/Hulking_Prehemoth.gif/revision/latest?cb=20220621121102&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 120,
+      "fire": 60,
+      "death": 110,
+      "energy": 70,
+      "holy": 115,
+      "ice": 115
+    }
   },
   {
     "id": "humongous_fungus",
     "name": "Humongous Fungus",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ee/Humongous_Fungus.gif/revision/latest?cb=20120622170852&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ee/Humongous_Fungus.gif/revision/latest?cb=20120622170852&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 65,
+      "energy": 85,
+      "holy": 95,
+      "ice": 85
+    }
   },
   {
     "id": "hydra",
     "name": "Hydra",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Hydra.gif/revision/latest?cb=20210420142716&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Hydra.gif/revision/latest?cb=20210420142716&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 0,
+      "fire": 100,
+      "death": 100,
+      "energy": 110,
+      "holy": 70,
+      "ice": 50
+    }
   },
   {
     "id": "ice_dragon",
     "name": "Ice Dragon",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e3/Ice_Dragon.gif/revision/latest?cb=20230207174943&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e3/Ice_Dragon.gif/revision/latest?cb=20230207174943&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 50,
+      "fire": 130,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "ice_golem",
     "name": "Ice Golem",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6a/Ice_Golem.gif/revision/latest?cb=20171218213435&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6a/Ice_Golem.gif/revision/latest?cb=20171218213435&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 100,
+      "fire": 0,
+      "death": 0,
+      "energy": 120,
+      "holy": 0,
+      "ice": 0
+    }
   },
   {
     "id": "ice_witch",
     "name": "Ice Witch",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/ca/Ice_Witch.gif/revision/latest?cb=20180206145407&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/ca/Ice_Witch.gif/revision/latest?cb=20180206145407&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 50,
+      "death": 110,
+      "energy": 110,
+      "holy": 70,
+      "ice": 0
+    }
   },
   {
     "id": "icecold_book",
     "name": "Icecold Book",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3d/Icecold_Book.gif/revision/latest?cb=20180607130122&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3d/Icecold_Book.gif/revision/latest?cb=20180607130122&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 110,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "iceplume_strider",
     "name": "Iceplume Strider",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3a/Iceplume_Strider.gif/revision/latest?cb=20260720011834&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3a/Iceplume_Strider.gif/revision/latest?cb=20260720011834&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 105,
+      "fire": 105,
+      "death": 105,
+      "energy": 90,
+      "holy": 90,
+      "ice": 90
+    }
   },
   {
     "id": "iks_aucar",
     "name": "Iks Aucar",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/98/Iks_Aucar.gif/revision/latest?cb=20221108204329&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/98/Iks_Aucar.gif/revision/latest?cb=20221108204329&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 100,
+      "fire": 95,
+      "death": 110,
+      "energy": 105,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "iks_chuka",
     "name": "Iks Chuka",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c5/Iks_Chuka.gif/revision/latest?cb=20221108204512&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c5/Iks_Chuka.gif/revision/latest?cb=20221108204512&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 95,
+      "death": 85,
+      "energy": 105,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "iks_churrascan",
     "name": "Iks Churrascan",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4b/Iks_Churrascan.gif/revision/latest?cb=20221109154041&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4b/Iks_Churrascan.gif/revision/latest?cb=20221109154041&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 100,
+      "fire": 95,
+      "death": 110,
+      "energy": 105,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "iks_pututu",
     "name": "Iks Pututu",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b1/Iks_Pututu.gif/revision/latest?cb=20221108204659&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b1/Iks_Pututu.gif/revision/latest?cb=20221108204659&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 75,
+      "fire": 95,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "iks_yapunac",
     "name": "Iks Yapunac",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e8/Iks_Yapunac.gif/revision/latest?cb=20231114095233&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e8/Iks_Yapunac.gif/revision/latest?cb=20231114095233&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 90,
+      "fire": 90,
+      "death": 120,
+      "energy": 110,
+      "holy": 85,
+      "ice": 105
+    }
   },
   {
     "id": "infected_weeper",
     "name": "Infected Weeper",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/af/Infected_Weeper.gif/revision/latest?cb=20120726204925&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/af/Infected_Weeper.gif/revision/latest?cb=20120726204925&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 0,
+      "fire": 100,
+      "death": 70,
+      "energy": 75,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "infernal_demon",
     "name": "Infernal Demon",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ac/Infernal_Demon.gif/revision/latest?cb=20220602202136&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ac/Infernal_Demon.gif/revision/latest?cb=20220602202136&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 100,
+      "fire": 60,
+      "death": 50,
+      "energy": 100,
+      "holy": 125,
+      "ice": 120
+    }
   },
   {
     "id": "infernal_frog",
     "name": "Infernal Frog",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/79/Infernal_Frog.gif/revision/latest?cb=20171219235134&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/79/Infernal_Frog.gif/revision/latest?cb=20171219235134&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "infernal_phantom",
     "name": "Infernal Phantom",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/92/Infernal_Phantom.gif/revision/latest?cb=20200611061715&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/92/Infernal_Phantom.gif/revision/latest?cb=20200611061715&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 110,
+      "fire": 20,
+      "death": 0,
+      "energy": 99,
+      "holy": 120,
+      "ice": 120
+    }
   },
   {
     "id": "infernalist",
     "name": "Infernalist",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/64/Infernalist.gif/revision/latest?cb=20180206145432&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/64/Infernalist.gif/revision/latest?cb=20180206145432&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 5,
+      "fire": 0,
+      "death": 90,
+      "energy": 0,
+      "holy": 80,
+      "ice": 105
+    }
   },
   {
     "id": "ink_blob",
     "name": "Ink Blob",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3e/Ink_Blob.gif/revision/latest?cb=20180607130121&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3e/Ink_Blob.gif/revision/latest?cb=20180607130121&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 100,
+      "energy": 108,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "ink_splash",
     "name": "Ink Splash",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a1/Ink_Splash.gif/revision/latest?cb=20250702175005&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a1/Ink_Splash.gif/revision/latest?cb=20250702175005&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 85,
+      "fire": 105,
+      "death": 85,
+      "energy": 110,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "insane_siren",
     "name": "Insane Siren",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/58/Insane_Siren.gif/revision/latest?cb=20181107202651&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/58/Insane_Siren.gif/revision/latest?cb=20181107202651&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 100,
+      "fire": 45,
+      "death": 100,
+      "energy": 100,
+      "holy": 75,
+      "ice": 120
+    }
   },
   {
     "id": "insectoid_worker",
     "name": "Insectoid Worker",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6d/Insectoid_Worker.gif/revision/latest?cb=20171218214537&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6d/Insectoid_Worker.gif/revision/latest?cb=20171218214537&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 110,
+      "death": 100,
+      "energy": 105,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "instable_breach_brood",
     "name": "Instable Breach Brood",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/45/Breach_Brood.gif/revision/latest?cb=20160421202915&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/45/Breach_Brood.gif/revision/latest?cb=20160421202915&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 115,
+      "fire": 60,
+      "death": 90,
+      "energy": 25,
+      "holy": 100,
+      "ice": 70
+    }
   },
   {
     "id": "instable_sparkion",
     "name": "Instable Sparkion",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c5/Instable_Sparkion.gif/revision/latest?cb=20160602153834&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c5/Instable_Sparkion.gif/revision/latest?cb=20160602153834&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 115,
+      "fire": 80,
+      "death": 95,
+      "energy": 20,
+      "holy": 95,
+      "ice": 40
+    }
   },
   {
     "id": "iron_servant_replica",
     "name": "Iron Servant Replica",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Iron_Servant_Replica.gif/revision/latest?cb=20180417203957&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/18/Iron_Servant_Replica.gif/revision/latest?cb=20180417203957&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 75,
+      "death": 110,
+      "energy": 75,
+      "holy": 80,
+      "ice": 100
+    }
   },
   {
     "id": "ironblight",
     "name": "Ironblight",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d6/Ironblight.gif/revision/latest?cb=20140215163115&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d6/Ironblight.gif/revision/latest?cb=20140215163115&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 0,
+      "fire": 40,
+      "death": 60,
+      "energy": 95,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "jaracal",
     "name": "Jaracal",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f2/Jaracal.gif/revision/latest?cb=20260720005523&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f2/Jaracal.gif/revision/latest?cb=20260720005523&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 105,
+      "fire": 85,
+      "death": 90,
+      "energy": 105,
+      "holy": 90,
+      "ice": 110
+    }
   },
   {
     "id": "juggernaut",
     "name": "Juggernaut",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/72/Juggernaut.gif/revision/latest?cb=20120620225832&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/72/Juggernaut.gif/revision/latest?cb=20120620225832&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 80,
+      "fire": 70,
+      "death": 100,
+      "energy": 110,
+      "holy": 105,
+      "ice": 90
+    }
   },
   {
     "id": "jungle_moa",
     "name": "Jungle Moa",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4f/Jungle_Moa.gif/revision/latest?cb=20220621121222&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4f/Jungle_Moa.gif/revision/latest?cb=20220621121222&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 105,
+      "fire": 100,
+      "death": 110,
+      "energy": 90,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "juvenile_bashmu",
     "name": "Juvenile Bashmu",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4c/Juvenile_Bashmu.gif/revision/latest?cb=20210527033146&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4c/Juvenile_Bashmu.gif/revision/latest?cb=20210527033146&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 95,
+      "fire": 100,
+      "death": 95,
+      "energy": 95,
+      "holy": 120,
+      "ice": 110
+    }
   },
   {
     "id": "killer_caiman",
     "name": "Killer Caiman",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3b/Killer_Caiman.gif/revision/latest?cb=20100621021911&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3b/Killer_Caiman.gif/revision/latest?cb=20100621021911&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 80,
+      "fire": 100,
+      "death": 100,
+      "energy": 105,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "knight_s_apparition",
     "name": "Knight's Apparition",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ac/Knight%27s_Apparition.gif/revision/latest?cb=20200611061715&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ac/Knight%27s_Apparition.gif/revision/latest?cb=20200611061715&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 100,
+      "fire": 120,
+      "death": 120,
+      "energy": 100,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "knowledge_elemental",
     "name": "Knowledge Elemental",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7b/Knowledge_Elemental.gif/revision/latest?cb=20180606180302&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7b/Knowledge_Elemental.gif/revision/latest?cb=20180606180302&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 120,
+      "energy": 0,
+      "holy": 50,
+      "ice": 100
+    }
   },
   {
     "id": "kollos",
     "name": "Kollos",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bf/Kollos.gif/revision/latest?cb=20111217223042&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bf/Kollos.gif/revision/latest?cb=20111217223042&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 70,
+      "death": 105,
+      "energy": 90,
+      "holy": 100,
+      "ice": 107
+    }
   },
   {
     "id": "lacewing_moth",
     "name": "Lacewing Moth",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Lacewing_Moth.gif/revision/latest?cb=20181107180328&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Lacewing_Moth.gif/revision/latest?cb=20181107180328&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 70
+    }
   },
   {
     "id": "lamassu",
     "name": "Lamassu",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3c/Lamassu.gif/revision/latest?cb=20190702012026&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3c/Lamassu.gif/revision/latest?cb=20190702012026&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 100,
+      "death": 120,
+      "energy": 100,
+      "holy": 80,
+      "ice": 100
+    }
   },
   {
     "id": "lancer_beetle",
     "name": "Lancer Beetle",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Lancer_Beetle.gif/revision/latest?cb=20091230072003&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Lancer_Beetle.gif/revision/latest?cb=20091230072003&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 50,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "lava_golem",
     "name": "Lava Golem",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bf/Lava_Golem.gif/revision/latest?cb=20210420140843&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bf/Lava_Golem.gif/revision/latest?cb=20210420140843&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 0,
+      "fire": 0,
+      "death": 65,
+      "energy": 70,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "lava_lurker",
     "name": "Lava Lurker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Lava_Lurker.gif/revision/latest?cb=20180116122741&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Lava_Lurker.gif/revision/latest?cb=20180116122741&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "lavafungus",
     "name": "Lavafungus",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ab/Lavafungus.gif/revision/latest?cb=20220513223506&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ab/Lavafungus.gif/revision/latest?cb=20220513223506&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 80,
+      "energy": 100,
+      "holy": 100,
+      "ice": 120
+    }
   },
   {
     "id": "lavaworm",
     "name": "Lavaworm",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/03/Lavaworm.gif/revision/latest?cb=20220510222347&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/03/Lavaworm.gif/revision/latest?cb=20220510222347&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 85,
+      "death": 90,
+      "energy": 100,
+      "holy": 100,
+      "ice": 115
+    }
   },
   {
     "id": "lich",
     "name": "Lich",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Lich.gif/revision/latest?cb=20221125123236&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Lich.gif/revision/latest?cb=20221125123236&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 0,
+      "energy": 20,
+      "holy": 120,
+      "ice": 100
+    }
   },
   {
     "id": "liodile",
     "name": "Liodile",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/12/Liodile.gif/revision/latest?cb=20221108204603&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/12/Liodile.gif/revision/latest?cb=20221108204603&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 70,
+      "fire": 110,
+      "death": 95,
+      "energy": 75,
+      "holy": 115,
+      "ice": 105
+    }
   },
   {
     "id": "lion_hydra",
     "name": "Lion Hydra",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/93/Lion_Hydra.gif/revision/latest?cb=20250628082741&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/93/Lion_Hydra.gif/revision/latest?cb=20250628082741&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 105,
+      "fire": 100,
+      "death": 110,
+      "energy": 100,
+      "holy": 105,
+      "ice": 100
+    }
   },
   {
     "id": "lizard_chosen",
     "name": "Lizard Chosen",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ae/Lizard_Chosen.gif/revision/latest?cb=20091130225422&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ae/Lizard_Chosen.gif/revision/latest?cb=20091130225422&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 90,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "lizard_dragon_priest",
     "name": "Lizard Dragon Priest",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3e/Lizard_Dragon_Priest.gif/revision/latest?cb=20221126222935&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3e/Lizard_Dragon_Priest.gif/revision/latest?cb=20221126222935&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 15,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "lizard_high_guard",
     "name": "Lizard High Guard",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/03/Lizard_High_Guard.gif/revision/latest?cb=20091128081236&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/03/Lizard_High_Guard.gif/revision/latest?cb=20091128081236&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 55,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "lizard_legionnaire",
     "name": "Lizard Legionnaire",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/52/Lizard_Legionnaire.gif/revision/latest?cb=20260318012040&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/52/Lizard_Legionnaire.gif/revision/latest?cb=20260318012040&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 55,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "lizard_magistratus",
     "name": "Lizard Magistratus",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/94/Lizard_Magistratus.gif/revision/latest?cb=20260318011832&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/94/Lizard_Magistratus.gif/revision/latest?cb=20260318011832&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 15,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "lizard_noble",
     "name": "Lizard Noble",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/23/Lizard_Noble.gif/revision/latest?cb=20260318011904&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/23/Lizard_Noble.gif/revision/latest?cb=20260318011904&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 15,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "lizard_snakecharmer",
     "name": "Lizard Snakecharmer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/05/Lizard_Snakecharmer.gif/revision/latest?cb=20260318011704&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/05/Lizard_Snakecharmer.gif/revision/latest?cb=20260318011704&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 0,
+      "fire": 110,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "lizard_zaogun",
     "name": "Lizard Zaogun",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9f/Lizard_Zaogun.gif/revision/latest?cb=20091130225523&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9f/Lizard_Zaogun.gif/revision/latest?cb=20091130225523&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 55,
+      "death": 90,
+      "energy": 80,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "loricate_orger",
     "name": "Loricate Orger",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3f/Loricate_Orger.gif/revision/latest?cb=20191009182949&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3f/Loricate_Orger.gif/revision/latest?cb=20191009182949&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 80,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "lost_basher",
     "name": "Lost Basher",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/58/Lost_Basher.gif/revision/latest?cb=20121125135323&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/58/Lost_Basher.gif/revision/latest?cb=20121125135323&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 75,
+      "death": 85,
+      "energy": 95,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "lost_berserker",
     "name": "Lost Berserker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/24/Lost_Berserker.gif/revision/latest?cb=20120622171742&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/24/Lost_Berserker.gif/revision/latest?cb=20120622171742&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 0,
+      "fire": 90,
+      "death": 85,
+      "energy": 100,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "lost_exile",
     "name": "Lost Exile",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c2/Lost_Exile.gif/revision/latest?cb=20171109020906&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c2/Lost_Exile.gif/revision/latest?cb=20171109020906&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 75,
+      "death": 80,
+      "energy": 90,
+      "holy": 110,
+      "ice": 85
+    }
   },
   {
     "id": "lost_husher",
     "name": "Lost Husher",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d2/Lost_Husher.gif/revision/latest?cb=20121125135152&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d2/Lost_Husher.gif/revision/latest?cb=20121125135152&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 75,
+      "death": 80,
+      "energy": 90,
+      "holy": 110,
+      "ice": 105
+    }
   },
   {
     "id": "lost_soul",
     "name": "Lost Soul",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/ff/Lost_Soul.gif/revision/latest?cb=20210420142351&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/ff/Lost_Soul.gif/revision/latest?cb=20210420142351&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 0,
+      "energy": 90,
+      "holy": 125,
+      "ice": 50
+    }
   },
   {
     "id": "lost_thrower",
     "name": "Lost Thrower",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b3/Lost_Thrower.gif/revision/latest?cb=20121125135419&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b3/Lost_Thrower.gif/revision/latest?cb=20121125135419&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 85,
+      "death": 90,
+      "energy": 90,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "lumbering_carnivor",
     "name": "Lumbering Carnivor",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/36/Lumbering_Carnivor.gif/revision/latest?cb=20181107203526&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/36/Lumbering_Carnivor.gif/revision/latest?cb=20181107203526&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 100,
+      "fire": 140,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "magma_crawler",
     "name": "Magma Crawler",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a5/Magma_Crawler.gif/revision/latest?cb=20140215163133&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a5/Magma_Crawler.gif/revision/latest?cb=20140215163133&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 0,
+      "death": 75,
+      "energy": 90,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "makara",
     "name": "Makara",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1c/Makara.gif/revision/latest?cb=20220621121444&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1c/Makara.gif/revision/latest?cb=20220621121444&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 115,
+      "fire": 95,
+      "death": 105,
+      "energy": 115,
+      "holy": 100,
+      "ice": 75
+    }
   },
   {
     "id": "manta_ray",
     "name": "Manta Ray",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/30/Manta_Ray.gif/revision/latest?cb=20140215161537&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/30/Manta_Ray.gif/revision/latest?cb=20140215161537&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 0,
+      "death": 100,
+      "energy": 105,
+      "holy": 100,
+      "ice": 75
+    }
   },
   {
     "id": "manticore",
     "name": "Manticore",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0b/Manticore.gif/revision/latest?cb=20190702012029&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0b/Manticore.gif/revision/latest?cb=20190702012029&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 120
+    }
   },
   {
     "id": "mantosaurus",
     "name": "Mantosaurus",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7c/Mantosaurus.gif/revision/latest?cb=20220621121137&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7c/Mantosaurus.gif/revision/latest?cb=20220621121137&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 95,
+      "fire": 100,
+      "death": 95,
+      "energy": 90,
+      "holy": 115,
+      "ice": 115
+    }
   },
   {
     "id": "many_faces",
     "name": "Many Faces",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/01/Many_Faces.gif/revision/latest?cb=20220602201600&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/01/Many_Faces.gif/revision/latest?cb=20220602201600&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 105,
+      "death": 130,
+      "energy": 100,
+      "holy": 50,
+      "ice": 70
+    }
   },
   {
     "id": "marid",
     "name": "Marid",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a1/Marid.gif/revision/latest?cb=20050601213801&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a1/Marid.gif/revision/latest?cb=20050601213801&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 10,
+      "death": 108,
+      "energy": 40,
+      "holy": 80,
+      "ice": 105
+    }
   },
   {
     "id": "massive_earth_elemental",
     "name": "Massive Earth Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b4/Massive_Earth_Elemental.gif/revision/latest?cb=20210420151055&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b4/Massive_Earth_Elemental.gif/revision/latest?cb=20210420151055&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 0,
+      "fire": 115,
+      "death": 55,
+      "energy": 10,
+      "holy": 50,
+      "ice": 85
+    }
   },
   {
     "id": "massive_energy_elemental",
     "name": "Massive Energy Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2f/Massive_Energy_Elemental.gif/revision/latest?cb=20200115220643&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2f/Massive_Energy_Elemental.gif/revision/latest?cb=20200115220643&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 105,
+      "fire": 0,
+      "death": 80,
+      "energy": 0,
+      "holy": 80,
+      "ice": 0
+    }
   },
   {
     "id": "massive_fire_elemental",
     "name": "Massive Fire Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/df/Massive_Fire_Elemental.gif/revision/latest?cb=20080621003333&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/df/Massive_Fire_Elemental.gif/revision/latest?cb=20080621003333&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 100,
+      "fire": 0,
+      "death": 80,
+      "energy": 70,
+      "holy": 100,
+      "ice": 115
+    }
   },
   {
     "id": "massive_water_elemental",
     "name": "Massive Water Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/41/Massive_Water_Elemental.gif/revision/latest?cb=20070712031830&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/41/Massive_Water_Elemental.gif/revision/latest?cb=20070712031830&path-prefix=en",
+    "resistances": {
+      "physical": 60,
+      "earth": 0,
+      "fire": 0,
+      "death": 50,
+      "energy": 125,
+      "holy": 50,
+      "ice": 0
+    }
   },
   {
     "id": "mean_lost_soul",
     "name": "Mean Lost Soul",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5f/Mean_Lost_Soul.gif/revision/latest?cb=20191110161525&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5f/Mean_Lost_Soul.gif/revision/latest?cb=20191110161525&path-prefix=en",
+    "resistances": {
+      "physical": 45,
+      "earth": 80,
+      "fire": 100,
+      "death": 0,
+      "energy": 70,
+      "holy": 130,
+      "ice": 100
+    }
   },
   {
     "id": "meandering_mushroom",
     "name": "Meandering Mushroom",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/09/Meandering_Mushroom.gif/revision/latest?cb=20230613180255&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/09/Meandering_Mushroom.gif/revision/latest?cb=20230613180255&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 120,
+      "fire": 110,
+      "death": 50,
+      "energy": 75,
+      "holy": 115,
+      "ice": 60
+    }
   },
   {
     "id": "medusa",
     "name": "Medusa",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/60/Medusa.gif/revision/latest?cb=20091212001229&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/60/Medusa.gif/revision/latest?cb=20091212001229&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "mega_dragon",
     "name": "Mega Dragon",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/14/Mega_Dragon.gif/revision/latest?cb=20231114102819&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/14/Mega_Dragon.gif/revision/latest?cb=20231114102819&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 80,
+      "death": 80,
+      "energy": 110,
+      "holy": 110,
+      "ice": 80
+    }
   },
   {
     "id": "menacing_carnivor",
     "name": "Menacing Carnivor",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0b/Menacing_Carnivor.gif/revision/latest?cb=20181107203528&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0b/Menacing_Carnivor.gif/revision/latest?cb=20181107203528&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 120
+    }
   },
   {
     "id": "mercurial_menace",
     "name": "Mercurial Menace",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dc/Mercurial_Menace.gif/revision/latest?cb=20220621120949&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dc/Mercurial_Menace.gif/revision/latest?cb=20220621120949&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 110,
+      "fire": 80,
+      "death": 105,
+      "energy": 120,
+      "holy": 0,
+      "ice": 90
+    }
   },
   {
     "id": "metal_gargoyle",
     "name": "Metal Gargoyle",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/44/Metal_Gargoyle.gif/revision/latest?cb=20140613164541&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/44/Metal_Gargoyle.gif/revision/latest?cb=20140613164541&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 0,
+      "fire": 90,
+      "death": 20,
+      "energy": 110,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "midnight_asura",
     "name": "Midnight Asura",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b4/Midnight_Asura.gif/revision/latest?cb=20150625214344&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b4/Midnight_Asura.gif/revision/latest?cb=20150625214344&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 90,
+      "death": 0,
+      "energy": 110,
+      "holy": 70,
+      "ice": 90
+    }
   },
   {
     "id": "minotaur_amazon",
     "name": "Minotaur Amazon",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/02/Minotaur_Amazon.gif/revision/latest?cb=20140613171035&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/02/Minotaur_Amazon.gif/revision/latest?cb=20140613171035&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 105,
+      "death": 90,
+      "energy": 110,
+      "holy": 90,
+      "ice": 95
+    }
   },
   {
     "id": "minotaur_cult_follower",
     "name": "Minotaur Cult Follower",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f2/Minotaur_Cult_Follower.gif/revision/latest?cb=20170803134430&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f2/Minotaur_Cult_Follower.gif/revision/latest?cb=20170803134430&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 110,
+      "energy": 100,
+      "holy": 90,
+      "ice": 110
+    }
   },
   {
     "id": "minotaur_cult_prophet",
     "name": "Minotaur Cult Prophet",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/Minotaur_Cult_Prophet.gif/revision/latest?cb=20170718003145&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/Minotaur_Cult_Prophet.gif/revision/latest?cb=20170718003145&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 100,
+      "death": 105,
+      "energy": 80,
+      "holy": 90,
+      "ice": 110
+    }
   },
   {
     "id": "minotaur_cult_zealot",
     "name": "Minotaur Cult Zealot",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Minotaur_Cult_Zealot.gif/revision/latest?cb=20210420152025&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Minotaur_Cult_Zealot.gif/revision/latest?cb=20210420152025&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 110,
+      "energy": 100,
+      "holy": 90,
+      "ice": 110
+    }
   },
   {
     "id": "minotaur_hunter",
     "name": "Minotaur Hunter",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/df/Minotaur_Hunter.gif/revision/latest?cb=20150207010042&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/df/Minotaur_Hunter.gif/revision/latest?cb=20150207010042&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 100,
+      "energy": 100,
+      "holy": 90,
+      "ice": 105
+    }
   },
   {
     "id": "minotaur_invader",
     "name": "Minotaur Invader",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/61/Minotaur_Invader.gif/revision/latest?cb=20210420151852&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/61/Minotaur_Invader.gif/revision/latest?cb=20210420151852&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 110,
+      "energy": 100,
+      "holy": 90,
+      "ice": 110
+    }
   },
   {
     "id": "misguided_bully",
     "name": "Misguided Bully",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Misguided_Bully.gif/revision/latest?cb=20171020183215&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Misguided_Bully.gif/revision/latest?cb=20171020183215&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 70,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 130,
+      "ice": 90
+    }
   },
   {
     "id": "misguided_thief",
     "name": "Misguided Thief",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e7/Misguided_Thief.gif/revision/latest?cb=20171020183443&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e7/Misguided_Thief.gif/revision/latest?cb=20171020183443&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 70,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 130,
+      "ice": 90
+    }
   },
   {
     "id": "mitmah_scout",
     "name": "Mitmah Scout",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/ce/Mitmah_Scout.gif/revision/latest?cb=20231114095153&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/ce/Mitmah_Scout.gif/revision/latest?cb=20231114095153&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 115,
+      "fire": 90,
+      "death": 85,
+      "energy": 105,
+      "holy": 110,
+      "ice": 85
+    }
   },
   {
     "id": "mitmah_seer",
     "name": "Mitmah Seer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d3/Mitmah_Seer.gif/revision/latest?cb=20260719051141&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d3/Mitmah_Seer.gif/revision/latest?cb=20260719051141&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 105,
+      "fire": 85,
+      "death": 85,
+      "energy": 120,
+      "holy": 100,
+      "ice": 95
+    }
   },
   {
     "id": "monk_s_apparition",
     "name": "Monk's Apparition",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/27/Monk%27s_Apparition.gif/revision/latest?cb=20250225103256&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/27/Monk%27s_Apparition.gif/revision/latest?cb=20250225103256&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 100,
+      "fire": 110,
+      "death": 120,
+      "energy": 100,
+      "holy": 60,
+      "ice": 100
+    }
   },
   {
     "id": "mooh_tah_warrior",
     "name": "Mooh'Tah Warrior",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e1/Mooh%27Tah_Warrior.gif/revision/latest?cb=20240228103111&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e1/Mooh%27Tah_Warrior.gif/revision/latest?cb=20240228103111&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 90,
+      "fire": 85,
+      "death": 85,
+      "energy": 95,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "moohtant",
     "name": "Moohtant",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1c/Moohtant.gif/revision/latest?cb=20171218214813&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1c/Moohtant.gif/revision/latest?cb=20171218214813&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 95,
+      "death": 90,
+      "energy": 85,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "moonspawn_blightspitter",
     "name": "Moonspawn Blightspitter",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6b/Moonspawn_Blightspitter.gif/revision/latest?cb=20260626183000&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6b/Moonspawn_Blightspitter.gif/revision/latest?cb=20260626183000&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 75,
+      "fire": 112,
+      "death": 85,
+      "energy": 85,
+      "holy": 102,
+      "ice": 100
+    }
   },
   {
     "id": "moonspawn_oozecrown",
     "name": "Moonspawn Oozecrown",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5b/Moonspawn_Oozecrown.gif/revision/latest?cb=20260626183103&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5b/Moonspawn_Oozecrown.gif/revision/latest?cb=20260626183103&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 82,
+      "fire": 108,
+      "death": 90,
+      "energy": 95,
+      "holy": 106,
+      "ice": 106
+    }
   },
   {
     "id": "moonstone_excavator",
     "name": "Moonstone Excavator",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Moonstone_Excavator.gif/revision/latest?cb=20260720011836&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Moonstone_Excavator.gif/revision/latest?cb=20260720011836&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 20,
+      "fire": 110,
+      "death": 80,
+      "energy": 110,
+      "holy": 90,
+      "ice": 85
+    }
   },
   {
     "id": "moonstone_overseer",
     "name": "Moonstone Overseer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/54/Moonstone_Overseer.gif/revision/latest?cb=20260629185623&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/54/Moonstone_Overseer.gif/revision/latest?cb=20260629185623&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 70,
+      "fire": 110,
+      "death": 75,
+      "energy": 110,
+      "holy": 85,
+      "ice": 95
+    }
   },
   {
     "id": "mould_phantom",
     "name": "Mould Phantom",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7d/Mould_Phantom.gif/revision/latest?cb=20200611061717&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7d/Mould_Phantom.gif/revision/latest?cb=20200611061717&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 50,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "mutated_bat",
     "name": "Mutated Bat",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/86/Mutated_Bat.gif/revision/latest?cb=20220623102451&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/86/Mutated_Bat.gif/revision/latest?cb=20220623102451&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 0,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "mutated_human",
     "name": "Mutated Human",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Mutated_Human.gif/revision/latest?cb=20171218214202&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Mutated_Human.gif/revision/latest?cb=20171218214202&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 80
+    }
   },
   {
     "id": "mutated_rat",
     "name": "Mutated Rat",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c4/Mutated_Rat.gif/revision/latest?cb=20171218214155&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c4/Mutated_Rat.gif/revision/latest?cb=20171218214155&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 0,
+      "energy": 100,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "mutated_tiger",
     "name": "Mutated Tiger",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b8/Mutated_Tiger.gif/revision/latest?cb=20081212000141&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b8/Mutated_Tiger.gif/revision/latest?cb=20081212000141&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 20,
+      "fire": 80,
+      "death": 105,
+      "energy": 80,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "mycobiontic_beetle",
     "name": "Mycobiontic Beetle",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7c/Mycobiontic_Beetle.gif/revision/latest?cb=20230613180256&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7c/Mycobiontic_Beetle.gif/revision/latest?cb=20230613180256&path-prefix=en",
+    "resistances": {
+      "physical": 75,
+      "earth": 40,
+      "fire": 65,
+      "death": 100,
+      "energy": 115,
+      "holy": 105,
+      "ice": 125
+    }
   },
   {
     "id": "naga_archer",
     "name": "Naga Archer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Naga_Archer.gif/revision/latest?cb=20220626140547&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/19/Naga_Archer.gif/revision/latest?cb=20220626140547&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 115,
+      "fire": 80,
+      "death": 90,
+      "energy": 110,
+      "holy": 120,
+      "ice": 80
+    }
   },
   {
     "id": "naga_warrior",
     "name": "Naga Warrior",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/76/Naga_Warrior.gif/revision/latest?cb=20220626140905&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/76/Naga_Warrior.gif/revision/latest?cb=20220626140905&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 105,
+      "fire": 90,
+      "death": 90,
+      "energy": 105,
+      "holy": 120,
+      "ice": 90
+    }
   },
   {
     "id": "necromancer",
     "name": "Necromancer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Necromancer.gif/revision/latest?cb=20210420141254&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Necromancer.gif/revision/latest?cb=20210420141254&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 0,
+      "fire": 105,
+      "death": 50,
+      "energy": 80,
+      "holy": 105,
+      "ice": 90
+    }
   },
   {
     "id": "nibblemaw",
     "name": "Nibblemaw",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/aa/Nibblemaw.gif/revision/latest?cb=20240604163422&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/aa/Nibblemaw.gif/revision/latest?cb=20240604163422&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 90,
+      "fire": 100,
+      "death": 60,
+      "energy": 115,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "night_harpy",
     "name": "Night Harpy",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/00/Night_Harpy.gif/revision/latest?cb=20251108013725&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/00/Night_Harpy.gif/revision/latest?cb=20251108013725&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 70,
+      "death": 109,
+      "energy": 100,
+      "holy": 109,
+      "ice": 112
+    }
   },
   {
     "id": "nighthunter",
     "name": "Nighthunter",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e0/Nighthunter.gif/revision/latest?cb=20220621121013&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e0/Nighthunter.gif/revision/latest?cb=20220621121013&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 85,
+      "fire": 100,
+      "death": 80,
+      "energy": 105,
+      "holy": 115,
+      "ice": 105
+    }
   },
   {
     "id": "nightmare",
     "name": "Nightmare",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/Nightmare.gif/revision/latest?cb=20061212200344&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/Nightmare.gif/revision/latest?cb=20061212200344&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 80,
+      "death": 0,
+      "energy": 80,
+      "holy": 125,
+      "ice": 90
+    }
   },
   {
     "id": "nightmare_scion",
     "name": "Nightmare Scion",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Nightmare_Scion.gif/revision/latest?cb=20081212000310&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Nightmare_Scion.gif/revision/latest?cb=20081212000310&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 80,
+      "death": 0,
+      "energy": 80,
+      "holy": 125,
+      "ice": 90
+    }
   },
   {
     "id": "nightstalker",
     "name": "Nightstalker",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/81/Nightstalker.gif/revision/latest?cb=20240228102044&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/81/Nightstalker.gif/revision/latest?cb=20240228102044&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 100,
+      "fire": 100,
+      "death": 105,
+      "energy": 105,
+      "holy": 80,
+      "ice": 80
+    }
   },
   {
     "id": "noble_lion",
     "name": "Noble Lion",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/61/Noble_Lion.gif/revision/latest?cb=20141119021206&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/61/Noble_Lion.gif/revision/latest?cb=20141119021206&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 80,
+      "fire": 80,
+      "death": 90,
+      "energy": 100,
+      "holy": 50,
+      "ice": 100
+    }
   },
   {
     "id": "norcferatu_heartless",
     "name": "Norcferatu Heartless",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/37/Norcferatu_Heartless.gif/revision/latest?cb=20250628134605&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/37/Norcferatu_Heartless.gif/revision/latest?cb=20250628134605&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 110,
+      "fire": 100,
+      "death": 70,
+      "energy": 95,
+      "holy": 105,
+      "ice": 100
+    }
   },
   {
     "id": "norcferatu_nightweaver",
     "name": "Norcferatu Nightweaver",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/66/Norcferatu_Nightweaver.gif/revision/latest?cb=20250628082925&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/66/Norcferatu_Nightweaver.gif/revision/latest?cb=20250628082925&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 105,
+      "fire": 100,
+      "death": 75,
+      "energy": 90,
+      "holy": 95,
+      "ice": 110
+    }
   },
   {
     "id": "noxious_ripptor",
     "name": "Noxious Ripptor",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bd/Noxious_Ripptor.gif/revision/latest?cb=20220621120902&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bd/Noxious_Ripptor.gif/revision/latest?cb=20220621120902&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 90,
+      "fire": 100,
+      "death": 110,
+      "energy": 90,
+      "holy": 110,
+      "ice": 110
+    }
   },
   {
     "id": "nymph",
     "name": "Nymph",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/05/Nymph.gif/revision/latest?cb=20170728174952&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/05/Nymph.gif/revision/latest?cb=20170728174952&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 40,
+      "fire": 100,
+      "death": 60,
+      "energy": 100,
+      "holy": 60,
+      "ice": 100
+    }
   },
   {
     "id": "ogre_brute",
     "name": "Ogre Brute",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/94/Ogre_Brute.gif/revision/latest?cb=20151112212659&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/94/Ogre_Brute.gif/revision/latest?cb=20151112212659&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 0,
+      "fire": 80,
+      "death": 90,
+      "energy": 110,
+      "holy": 80,
+      "ice": 80
+    }
   },
   {
     "id": "ogre_rowdy",
     "name": "Ogre Rowdy",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/17/Ogre_Rowdy.gif/revision/latest?cb=20220829163942&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/17/Ogre_Rowdy.gif/revision/latest?cb=20220829163942&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 70,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 130
+    }
   },
   {
     "id": "ogre_ruffian",
     "name": "Ogre Ruffian",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/db/Ogre_Ruffian.gif/revision/latest?cb=20220715023053&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/db/Ogre_Ruffian.gif/revision/latest?cb=20220715023053&path-prefix=en",
+    "resistances": {
+      "physical": 50,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 120
+    }
   },
   {
     "id": "ogre_sage",
     "name": "Ogre Sage",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3d/Ogre_Sage.gif/revision/latest?cb=20220715023057&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3d/Ogre_Sage.gif/revision/latest?cb=20220715023057&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 75,
+      "fire": 100,
+      "death": 0,
+      "energy": 130,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "ogre_savage",
     "name": "Ogre Savage",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4b/Ogre_Savage.gif/revision/latest?cb=20151112213233&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4b/Ogre_Savage.gif/revision/latest?cb=20151112213233&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 80,
+      "death": 90,
+      "energy": 110,
+      "holy": 50,
+      "ice": 80
+    }
   },
   {
     "id": "ogre_shaman",
     "name": "Ogre Shaman",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/68/Ogre_Shaman.gif/revision/latest?cb=20151112213249&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/68/Ogre_Shaman.gif/revision/latest?cb=20151112213249&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 80,
+      "death": 0,
+      "energy": 80,
+      "holy": 110,
+      "ice": 80
+    }
   },
   {
     "id": "omnivora",
     "name": "Omnivora",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7b/Omnivora.gif/revision/latest?cb=20210420161335&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7b/Omnivora.gif/revision/latest?cb=20210420161335&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 80,
+      "energy": 90,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "oozing_carcass",
     "name": "Oozing Carcass",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c5/Oozing_Carcass.gif/revision/latest?cb=20230613180257&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c5/Oozing_Carcass.gif/revision/latest?cb=20230613180257&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 120,
+      "fire": 110,
+      "death": 60,
+      "energy": 75,
+      "holy": 125,
+      "ice": 65
+    }
   },
   {
     "id": "oozing_corpus",
     "name": "Oozing Corpus",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Oozing_Corpus.gif/revision/latest?cb=20230613180258&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Oozing_Corpus.gif/revision/latest?cb=20230613180258&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 60,
+      "fire": 75,
+      "death": 100,
+      "energy": 125,
+      "holy": 110,
+      "ice": 110
+    }
   },
   {
     "id": "orc_berserker",
     "name": "Orc Berserker",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/16/Orc_Berserker.gif/revision/latest?cb=20141110202321&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/16/Orc_Berserker.gif/revision/latest?cb=20141110202321&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 85,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "orc_cult_fanatic",
     "name": "Orc Cult Fanatic",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/39/Orc_Cult_Fanatic.gif/revision/latest?cb=20170719023947&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/39/Orc_Cult_Fanatic.gif/revision/latest?cb=20170719023947&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 110,
+      "fire": 0,
+      "death": 110,
+      "energy": 80,
+      "holy": 80,
+      "ice": 100
+    }
   },
   {
     "id": "orc_cult_inquisitor",
     "name": "Orc Cult Inquisitor",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5f/Orc_Cult_Inquisitor.gif/revision/latest?cb=20170719023759&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5f/Orc_Cult_Inquisitor.gif/revision/latest?cb=20170719023759&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 85,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "orc_cult_minion",
     "name": "Orc Cult Minion",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bb/Orc_Cult_Minion.gif/revision/latest?cb=20170719023622&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bb/Orc_Cult_Minion.gif/revision/latest?cb=20170719023622&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 80,
+      "holy": 80,
+      "ice": 100
+    }
   },
   {
     "id": "orc_cult_priest",
     "name": "Orc Cult Priest",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5d/Orc_Cult_Priest.gif/revision/latest?cb=20170719023843&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5d/Orc_Cult_Priest.gif/revision/latest?cb=20170719023843&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 105,
+      "energy": 50,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "orc_cultist",
     "name": "Orc Cultist",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/52/Orc_Cultist.gif/revision/latest?cb=20250929183245&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/52/Orc_Cultist.gif/revision/latest?cb=20250929183245&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 70,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "orc_leader",
     "name": "Orc Leader",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0e/Orc_Leader.gif/revision/latest?cb=20070712030519&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0e/Orc_Leader.gif/revision/latest?cb=20070712030519&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 110,
+      "energy": 80,
+      "holy": 80,
+      "ice": 100
+    }
   },
   {
     "id": "orc_marauder",
     "name": "Orc Marauder",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3e/Orc_Marauder.gif/revision/latest?cb=20210420144718&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3e/Orc_Marauder.gif/revision/latest?cb=20210420144718&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 80,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "orc_warlord",
     "name": "Orc Warlord",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/44/Orc_Warlord.gif/revision/latest?cb=20070712031335&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/44/Orc_Warlord.gif/revision/latest?cb=20070712031335&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 20,
+      "death": 105,
+      "energy": 80,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "orclops_bloodbreaker",
     "name": "Orclops Bloodbreaker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c6/Orclops_Bloodbreaker.gif/revision/latest?cb=20250628082833&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c6/Orclops_Bloodbreaker.gif/revision/latest?cb=20250628082833&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 100,
+      "fire": 110,
+      "death": 70,
+      "energy": 100,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "orclops_doomhauler",
     "name": "Orclops Doomhauler",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Orclops_Doomhauler.gif/revision/latest?cb=20161103184409&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Orclops_Doomhauler.gif/revision/latest?cb=20161103184409&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 70,
+      "fire": 85,
+      "death": 90,
+      "energy": 110,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "orclops_ravager",
     "name": "Orclops Ravager",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f2/Orclops_Ravager.gif/revision/latest?cb=20161210092612&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f2/Orclops_Ravager.gif/revision/latest?cb=20161210092612&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 80,
+      "death": 90,
+      "energy": 110,
+      "holy": 50,
+      "ice": 80
+    }
   },
   {
     "id": "orewalker",
     "name": "Orewalker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Orewalker.gif/revision/latest?cb=20120710204238&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Orewalker.gif/revision/latest?cb=20120710204238&path-prefix=en",
+    "resistances": {
+      "physical": 75,
+      "earth": 0,
+      "fire": 35,
+      "death": 75,
+      "energy": 105,
+      "holy": 100,
+      "ice": 95
+    }
   },
   {
     "id": "orger",
     "name": "Orger",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/74/Orger.gif/revision/latest?cb=20191009182616&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/74/Orger.gif/revision/latest?cb=20191009182616&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 80,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "paladin_s_apparition",
     "name": "Paladin's Apparition",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0e/Paladin%27s_Apparition.gif/revision/latest?cb=20200611061717&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0e/Paladin%27s_Apparition.gif/revision/latest?cb=20200611061717&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 100,
+      "fire": 111,
+      "death": 120,
+      "energy": 100,
+      "holy": 60,
+      "ice": 70
+    }
   },
   {
     "id": "parder",
     "name": "Parder",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/10/Parder.gif/revision/latest?cb=20220621121412&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/10/Parder.gif/revision/latest?cb=20220621121412&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 85,
+      "fire": 110,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "percht",
     "name": "Percht",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9c/Percht.gif/revision/latest?cb=20181212191709&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9c/Percht.gif/revision/latest?cb=20181212191709&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 100,
+      "energy": 100,
+      "holy": 90,
+      "ice": 120
+    }
   },
   {
     "id": "phantasm",
     "name": "Phantasm",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/61/Phantasm.gif/revision/latest?cb=20150418075859&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/61/Phantasm.gif/revision/latest?cb=20150418075859&path-prefix=en",
+    "resistances": {
+      "physical": 0,
+      "earth": 80,
+      "fire": 110,
+      "death": 0,
+      "energy": 110,
+      "holy": 110,
+      "ice": 80
+    }
   },
   {
     "id": "pirat_bombardier",
     "name": "Pirat Bombardier",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Pirat_Bombardier.gif/revision/latest?cb=20220129230307&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Pirat_Bombardier.gif/revision/latest?cb=20220129230307&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 120,
+      "fire": 100,
+      "death": 100,
+      "energy": 90,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "pirat_cutthroat",
     "name": "Pirat Cutthroat",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/76/Pirat_Cutthroat.gif/revision/latest?cb=20220129225839&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/76/Pirat_Cutthroat.gif/revision/latest?cb=20220129225839&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 120,
+      "fire": 100,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "pirat_mate",
     "name": "Pirat Mate",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/df/Pirat_Mate.gif/revision/latest?cb=20220129230441&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/df/Pirat_Mate.gif/revision/latest?cb=20220129230441&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 130,
+      "fire": 100,
+      "death": 100,
+      "energy": 70,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "pirat_scoundrel",
     "name": "Pirat Scoundrel",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c2/Pirat_Scoundrel.gif/revision/latest?cb=20220129230120&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c2/Pirat_Scoundrel.gif/revision/latest?cb=20220129230120&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 130,
+      "fire": 100,
+      "death": 100,
+      "energy": 74,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "pirate_buccaneer",
     "name": "Pirate Buccaneer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/64/Pirate_Buccaneer.gif/revision/latest?cb=20060804204011&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/64/Pirate_Buccaneer.gif/revision/latest?cb=20060804204011&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 90,
+      "fire": 105,
+      "death": 105,
+      "energy": 105,
+      "holy": 90,
+      "ice": 105
+    }
   },
   {
     "id": "pirate_corsair",
     "name": "Pirate Corsair",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/11/Pirate_Corsair.gif/revision/latest?cb=20060821162721&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/11/Pirate_Corsair.gif/revision/latest?cb=20060821162721&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 110,
+      "death": 105,
+      "energy": 100,
+      "holy": 90,
+      "ice": 105
+    }
   },
   {
     "id": "pirate_cutthroat",
     "name": "Pirate Cutthroat",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Pirate_Cutthroat.gif/revision/latest?cb=20181019180925&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/ba/Pirate_Cutthroat.gif/revision/latest?cb=20181019180925&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 105,
+      "death": 105,
+      "energy": 100,
+      "holy": 80,
+      "ice": 105
+    }
   },
   {
     "id": "pixie",
     "name": "Pixie",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1c/Pixie.gif/revision/latest?cb=20171013214939&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1c/Pixie.gif/revision/latest?cb=20171013214939&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 40,
+      "fire": 110,
+      "death": 70,
+      "energy": 100,
+      "holy": 40,
+      "ice": 105
+    }
   },
   {
     "id": "plaguesmith",
     "name": "Plaguesmith",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d3/Plaguesmith.gif/revision/latest?cb=20070906224850&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d3/Plaguesmith.gif/revision/latest?cb=20070906224850&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 70,
+      "death": 90,
+      "energy": 110,
+      "holy": 110,
+      "ice": 80
+    }
   },
   {
     "id": "poisonous_carnisylvan",
     "name": "Poisonous Carnisylvan",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Poisonous_Carnisylvan.gif/revision/latest?cb=20210527033223&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Poisonous_Carnisylvan.gif/revision/latest?cb=20210527033223&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 75,
+      "fire": 115,
+      "death": 95,
+      "energy": 100,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "pooka",
     "name": "Pooka",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/Pooka.gif/revision/latest?cb=20170728180659&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/Pooka.gif/revision/latest?cb=20170728180659&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 30,
+      "fire": 80,
+      "death": 90,
+      "energy": 110,
+      "holy": 80,
+      "ice": 80
+    }
   },
   {
     "id": "priestess",
     "name": "Priestess",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/15/Priestess.gif/revision/latest?cb=20181019175924&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/15/Priestess.gif/revision/latest?cb=20181019175924&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 30,
+      "fire": 60,
+      "death": 90,
+      "energy": 100,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "priestess_of_the_wild_sun",
     "name": "Priestess of the Wild Sun",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b5/Priestess_of_the_Wild_Sun.gif/revision/latest?cb=20190702012031&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b5/Priestess_of_the_Wild_Sun.gif/revision/latest?cb=20190702012031&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 100,
+      "energy": 85,
+      "holy": 100,
+      "ice": 125
+    }
   },
   {
     "id": "putrid_mummy",
     "name": "Putrid Mummy",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8d/Putrid_Mummy.gif/revision/latest?cb=20180726030048&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8d/Putrid_Mummy.gif/revision/latest?cb=20180726030048&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 120,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 80
+    }
   },
   {
     "id": "quara_constrictor",
     "name": "Quara Constrictor",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Quara_Constrictor.gif/revision/latest?cb=20060803212828&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Quara_Constrictor.gif/revision/latest?cb=20060803212828&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_constrictor_scout",
     "name": "Quara Constrictor Scout",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Quara_Constrictor.gif/revision/latest?cb=20060803212828&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Quara_Constrictor.gif/revision/latest?cb=20060803212828&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_hydromancer",
     "name": "Quara Hydromancer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8a/Quara_Hydromancer.gif/revision/latest?cb=20150612081219&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8a/Quara_Hydromancer.gif/revision/latest?cb=20150612081219&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_hydromancer_scout",
     "name": "Quara Hydromancer Scout",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/ff/Quara_Hydromancer_Scout.gif/revision/latest?cb=20150612081231&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/ff/Quara_Hydromancer_Scout.gif/revision/latest?cb=20150612081231&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_looter",
     "name": "Quara Looter",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Quara_Looter.gif/revision/latest?cb=20240604125249&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Quara_Looter.gif/revision/latest?cb=20240604125249&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 80,
+      "death": 95,
+      "energy": 115,
+      "holy": 90,
+      "ice": 0
+    }
   },
   {
     "id": "quara_mantassin",
     "name": "Quara Mantassin",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9d/Quara_Mantassin.gif/revision/latest?cb=20240228100629&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9d/Quara_Mantassin.gif/revision/latest?cb=20240228100629&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_pincher",
     "name": "Quara Pincher",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8a/Quara_Pincher.gif/revision/latest?cb=20060803212938&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8a/Quara_Pincher.gif/revision/latest?cb=20060803212938&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_pincher_scout",
     "name": "Quara Pincher Scout",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f0/Quara_Pincher_Scout.gif/revision/latest?cb=20060815214551&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f0/Quara_Pincher_Scout.gif/revision/latest?cb=20060815214551&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_plunderer",
     "name": "Quara Plunderer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8e/Quara_Plunderer.gif/revision/latest?cb=20240604125309&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8e/Quara_Plunderer.gif/revision/latest?cb=20240604125309&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 110,
+      "fire": 80,
+      "death": 90,
+      "energy": 110,
+      "holy": 85,
+      "ice": 0
+    }
   },
   {
     "id": "quara_predator",
     "name": "Quara Predator",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/54/Quara_Predator.gif/revision/latest?cb=20201209191003&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/54/Quara_Predator.gif/revision/latest?cb=20201209191003&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_predator_scout",
     "name": "Quara Predator Scout",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/74/Quara_Predator_Scout.gif/revision/latest?cb=20060815214257&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/74/Quara_Predator_Scout.gif/revision/latest?cb=20060815214257&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "quara_raider",
     "name": "Quara Raider",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cb/Quara_Raider.gif/revision/latest?cb=20240604125326&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cb/Quara_Raider.gif/revision/latest?cb=20240604125326&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 115,
+      "fire": 80,
+      "death": 100,
+      "energy": 110,
+      "holy": 90,
+      "ice": 0
+    }
   },
   {
     "id": "radiant_acolyte",
     "name": "Radiant Acolyte",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/78/Radiant_Acolyte.gif/revision/latest?cb=20260720011842&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/78/Radiant_Acolyte.gif/revision/latest?cb=20260720011842&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 105,
+      "fire": 60,
+      "death": 70,
+      "energy": 105,
+      "holy": 95,
+      "ice": 90
+    }
   },
   {
     "id": "radiant_inquisitor",
     "name": "Radiant Inquisitor",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b3/Radiant_Inquisitor.gif/revision/latest?cb=20260720011845&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b3/Radiant_Inquisitor.gif/revision/latest?cb=20260720011845&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 95,
+      "fire": 105,
+      "death": 105,
+      "energy": 80,
+      "holy": 75,
+      "ice": 110
+    }
   },
   {
     "id": "radiant_paragon",
     "name": "Radiant Paragon",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Radiant_Paragon.gif/revision/latest?cb=20260720011848&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Radiant_Paragon.gif/revision/latest?cb=20260720011848&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 115,
+      "fire": 70,
+      "death": 80,
+      "energy": 110,
+      "holy": 100,
+      "ice": 95
+    }
   },
   {
     "id": "radiant_templar",
     "name": "Radiant Templar",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/74/Radiant_Templar.gif/revision/latest?cb=20260720011851&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/74/Radiant_Templar.gif/revision/latest?cb=20260720011851&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 95,
+      "fire": 110,
+      "death": 105,
+      "energy": 80,
+      "holy": 75,
+      "ice": 110
+    }
   },
   {
     "id": "radiant_warden",
     "name": "Radiant Warden",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/74/Radiant_Warden.gif/revision/latest?cb=20260720011855&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/74/Radiant_Warden.gif/revision/latest?cb=20260720011855&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 105,
+      "fire": 70,
+      "death": 80,
+      "energy": 110,
+      "holy": 110,
+      "ice": 90
+    }
   },
   {
     "id": "radiant_zealot",
     "name": "Radiant Zealot",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bd/Radiant_Zealot.gif/revision/latest?cb=20260720011859&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bd/Radiant_Zealot.gif/revision/latest?cb=20260720011859&path-prefix=en",
+    "resistances": {
+      "physical": 115,
+      "earth": 90,
+      "fire": 105,
+      "death": 110,
+      "energy": 60,
+      "holy": 80,
+      "ice": 105
+    }
   },
   {
     "id": "rage_squid",
     "name": "Rage Squid",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/15/Rage_Squid.gif/revision/latest?cb=20180607140214&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/15/Rage_Squid.gif/revision/latest?cb=20180607140214&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 0,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 115
+    }
   },
   {
     "id": "raubritter_chastener",
     "name": "Raubritter Chastener",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Raubritter_Chastener.gif/revision/latest?cb=20260515074026&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Raubritter_Chastener.gif/revision/latest?cb=20260515074026&path-prefix=en",
+    "resistances": {
+      "physical": 120,
+      "earth": 112,
+      "fire": 106,
+      "death": 100,
+      "energy": 85,
+      "holy": 85,
+      "ice": 75
+    }
   },
   {
     "id": "raubritter_marksman",
     "name": "Raubritter Marksman",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d0/Raubritter_Marksman.gif/revision/latest?cb=20260515075123&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d0/Raubritter_Marksman.gif/revision/latest?cb=20260515075123&path-prefix=en",
+    "resistances": {
+      "physical": 116,
+      "earth": 112,
+      "fire": 112,
+      "death": 100,
+      "energy": 88,
+      "holy": 85,
+      "ice": 85
+    }
   },
   {
     "id": "raubritter_skirmisher",
     "name": "Raubritter Skirmisher",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7b/Raubritter_Skirmisher.gif/revision/latest?cb=20251126173250&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7b/Raubritter_Skirmisher.gif/revision/latest?cb=20251126173250&path-prefix=en",
+    "resistances": {
+      "physical": 112,
+      "earth": 106,
+      "fire": 115,
+      "death": 100,
+      "energy": 91,
+      "holy": 85,
+      "ice": 80
+    }
   },
   {
     "id": "ravenous_lava_lurker",
     "name": "Ravenous Lava Lurker",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Lava_Lurker.gif/revision/latest?cb=20180116122741&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/1d/Lava_Lurker.gif/revision/latest?cb=20180116122741&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "reality_reaver",
     "name": "Reality Reaver",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/17/Reality_Reaver.gif/revision/latest?cb=20160421202922&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/17/Reality_Reaver.gif/revision/latest?cb=20160421202922&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 90,
+      "death": 95,
+      "energy": 15,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "renegade_knight",
     "name": "Renegade Knight",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b2/Renegade_Knight.gif/revision/latest?cb=20150625082517&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b2/Renegade_Knight.gif/revision/latest?cb=20150625082517&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 80,
+      "fire": 80,
+      "death": 110,
+      "energy": 65,
+      "holy": 50,
+      "ice": 100
+    }
   },
   {
     "id": "renegade_quara_constrictor",
     "name": "Renegade Quara Constrictor",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Quara_Constrictor.gif/revision/latest?cb=20060803212828&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f5/Quara_Constrictor.gif/revision/latest?cb=20060803212828&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "renegade_quara_hydromancer",
     "name": "Renegade Quara Hydromancer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Renegade_Quara_Hydromancer.gif/revision/latest?cb=20150612081240&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/90/Renegade_Quara_Hydromancer.gif/revision/latest?cb=20150612081240&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "renegade_quara_mantassin",
     "name": "Renegade Quara Mantassin",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4b/Renegade_Quara_Mantassin.gif/revision/latest?cb=20141119064917&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4b/Renegade_Quara_Mantassin.gif/revision/latest?cb=20141119064917&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "renegade_quara_pincher",
     "name": "Renegade Quara Pincher",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/15/Renegade_Quara_Pincher.gif/revision/latest?cb=20141119064749&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/15/Renegade_Quara_Pincher.gif/revision/latest?cb=20141119064749&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "renegade_quara_predator",
     "name": "Renegade Quara Predator",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a5/Renegade_Quara_Predator.gif/revision/latest?cb=20141119064854&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a5/Renegade_Quara_Predator.gif/revision/latest?cb=20141119064854&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 100,
+      "energy": 125,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "retching_horror",
     "name": "Retching Horror",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Retching_Horror.gif/revision/latest?cb=20131126125338&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Retching_Horror.gif/revision/latest?cb=20131126125338&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 15,
+      "death": 78,
+      "energy": 103,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "rhindeer",
     "name": "Rhindeer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/32/Rhindeer.gif/revision/latest?cb=20221108204526&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/32/Rhindeer.gif/revision/latest?cb=20221108204526&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 110,
+      "death": 100,
+      "energy": 95,
+      "holy": 105,
+      "ice": 100
+    }
   },
   {
     "id": "ripper_spectre",
     "name": "Ripper Spectre",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Ripper_Spectre.gif/revision/latest?cb=20181107175612&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Ripper_Spectre.gif/revision/latest?cb=20181107175612&path-prefix=en",
+    "resistances": {
+      "physical": 30,
+      "earth": 80,
+      "fire": 120,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "roaming_dread",
     "name": "Roaming Dread",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cd/Roaming_Dread.gif/revision/latest?cb=20251108013648&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cd/Roaming_Dread.gif/revision/latest?cb=20251108013648&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 109,
+      "fire": 109,
+      "death": 118,
+      "energy": 109,
+      "holy": 100,
+      "ice": 109
+    }
   },
   {
     "id": "roaring_lion",
     "name": "Roaring Lion",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/64/Roaring_Lion.gif/revision/latest?cb=20140215170356&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/64/Roaring_Lion.gif/revision/latest?cb=20140215170356&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 80,
+      "death": 100,
+      "energy": 100,
+      "holy": 50,
+      "ice": 110
+    }
   },
   {
     "id": "roast_pork",
     "name": "Roast Pork",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4c/Roast_Pork.gif/revision/latest?cb=20220708043046&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4c/Roast_Pork.gif/revision/latest?cb=20220708043046&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 0,
+      "death": 110,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "rootthing_amber_shaper",
     "name": "Rootthing Amber Shaper",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/86/Rootthing_Amber_Shaper.gif/revision/latest?cb=20240604125416&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/86/Rootthing_Amber_Shaper.gif/revision/latest?cb=20240604125416&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 105,
+      "death": 100,
+      "energy": 75,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "rootthing_bug_tracker",
     "name": "Rootthing Bug Tracker",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a9/Rootthing_Bug_Tracker.gif/revision/latest?cb=20240604125433&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a9/Rootthing_Bug_Tracker.gif/revision/latest?cb=20240604125433&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 0,
+      "fire": 115,
+      "death": 105,
+      "energy": 75,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "rootthing_nutshell",
     "name": "Rootthing Nutshell",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e5/Rootthing_Nutshell.gif/revision/latest?cb=20240604125358&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e5/Rootthing_Nutshell.gif/revision/latest?cb=20240604125358&path-prefix=en",
+    "resistances": {
+      "physical": 75,
+      "earth": 0,
+      "fire": 115,
+      "death": 110,
+      "energy": 85,
+      "holy": 95,
+      "ice": 105
+    }
   },
   {
     "id": "rot_elemental",
     "name": "Rot Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bd/Rot_Elemental.gif/revision/latest?cb=20220508232827&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bd/Rot_Elemental.gif/revision/latest?cb=20220508232827&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 100,
+      "death": 80,
+      "energy": 105,
+      "holy": 80,
+      "ice": 70
+    }
   },
   {
     "id": "rotten_golem",
     "name": "Rotten Golem",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e2/Rotten_Golem.gif/revision/latest?cb=20220518220435&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e2/Rotten_Golem.gif/revision/latest?cb=20220518220435&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 60,
+      "fire": 125,
+      "death": 120,
+      "energy": 115,
+      "holy": 50,
+      "ice": 100
+    }
   },
   {
     "id": "rotten_man_maggot",
     "name": "Rotten Man-Maggot",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0d/Rotten_Man-Maggot.gif/revision/latest?cb=20230613180259&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0d/Rotten_Man-Maggot.gif/revision/latest?cb=20230613180259&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 115,
+      "fire": 110,
+      "death": 70,
+      "energy": 45,
+      "holy": 115,
+      "ice": 60
+    }
   },
   {
     "id": "rustheap_golem",
     "name": "Rustheap Golem",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a8/Rustheap_Golem.gif/revision/latest?cb=20140613235203&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a8/Rustheap_Golem.gif/revision/latest?cb=20140613235203&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 100,
+      "fire": 30,
+      "death": 90,
+      "energy": 105,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "sabretooth_creature",
     "name": "Sabretooth (Creature)",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/12/Sabretooth_%28Creature%29.gif/revision/latest?cb=20220627120416&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/12/Sabretooth_%28Creature%29.gif/revision/latest?cb=20220627120416&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 110,
+      "fire": 110,
+      "death": 100,
+      "energy": 90,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "sacred_spider",
     "name": "Sacred Spider",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/47/Tarantula.gif/revision/latest?cb=20150422152827&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/47/Tarantula.gif/revision/latest?cb=20150422152827&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 115,
+      "death": 100,
+      "energy": 90,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "sandstone_scorpion",
     "name": "Sandstone Scorpion",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Sandstone_Scorpion.gif/revision/latest?cb=20140214233942&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Sandstone_Scorpion.gif/revision/latest?cb=20140214233942&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 10,
+      "fire": 60,
+      "death": 100,
+      "energy": 110,
+      "holy": 110,
+      "ice": 110
+    }
   },
   {
     "id": "schiach",
     "name": "Schiach",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2e/Schiach.gif/revision/latest?cb=20181212191727&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2e/Schiach.gif/revision/latest?cb=20181212191727&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 120,
+      "death": 90,
+      "energy": 100,
+      "holy": 120,
+      "ice": 90
+    }
   },
   {
     "id": "sea_serpent",
     "name": "Sea Serpent",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/28/Sea_Serpent.gif/revision/latest?cb=20221111063251&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/28/Sea_Serpent.gif/revision/latest?cb=20221111063251&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 100,
+      "fire": 70,
+      "death": 90,
+      "energy": 105,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "seacrest_serpent",
     "name": "Seacrest Serpent",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8f/Seacrest_Serpent.gif/revision/latest?cb=20180501031134&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8f/Seacrest_Serpent.gif/revision/latest?cb=20180501031134&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 95,
+      "fire": 80,
+      "death": 90,
+      "energy": 100,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "serpent_spawn",
     "name": "Serpent Spawn",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4d/Serpent_Spawn.gif/revision/latest?cb=20060810012625&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4d/Serpent_Spawn.gif/revision/latest?cb=20060810012625&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "shaburak_demon",
     "name": "Shaburak Demon",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/33/Shaburak_Demon.gif/revision/latest?cb=20110629223805&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/33/Shaburak_Demon.gif/revision/latest?cb=20110629223805&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 125,
+      "fire": 0,
+      "death": 105,
+      "energy": 40,
+      "holy": 100,
+      "ice": 40
+    }
   },
   {
     "id": "shaburak_lord",
     "name": "Shaburak Lord",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a8/Shaburak_Lord.gif/revision/latest?cb=20110701103759&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a8/Shaburak_Lord.gif/revision/latest?cb=20110701103759&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 120,
+      "fire": 0,
+      "death": 105,
+      "energy": 35,
+      "holy": 100,
+      "ice": 35
+    }
   },
   {
     "id": "shaburak_prince",
     "name": "Shaburak Prince",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/aa/Shaburak_Prince.gif/revision/latest?cb=20110701103820&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/aa/Shaburak_Prince.gif/revision/latest?cb=20110701103820&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 115,
+      "fire": 0,
+      "death": 100,
+      "energy": 30,
+      "holy": 105,
+      "ice": 30
+    }
   },
   {
     "id": "shadow_pupil",
     "name": "Shadow Pupil",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/77/Shadow_Pupil.gif/revision/latest?cb=20130703145529&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/77/Shadow_Pupil.gif/revision/latest?cb=20130703145529&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 0,
+      "fire": 105,
+      "death": 50,
+      "energy": 90,
+      "holy": 105,
+      "ice": 80
+    }
   },
   {
     "id": "shaper_matriarch",
     "name": "Shaper Matriarch",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/92/Shaper_Matriarch.gif/revision/latest?cb=20161103184523&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/92/Shaper_Matriarch.gif/revision/latest?cb=20161103184523&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 60,
+      "fire": 100,
+      "death": 85,
+      "energy": 105,
+      "holy": 70,
+      "ice": 80
+    }
   },
   {
     "id": "shark",
     "name": "Shark",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Shark.gif/revision/latest?cb=20111201041238&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Shark.gif/revision/latest?cb=20111201041238&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 80,
+      "fire": 45,
+      "death": 100,
+      "energy": 105,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "shell_drake",
     "name": "Shell Drake",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a4/Shell_Drake.gif/revision/latest?cb=20250630071807&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a4/Shell_Drake.gif/revision/latest?cb=20250630071807&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 105,
+      "fire": 80,
+      "death": 100,
+      "energy": 100,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "shock_head",
     "name": "Shock Head",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d7/Shock_Head.gif/revision/latest?cb=20140215171824&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d7/Shock_Head.gif/revision/latest?cb=20140215171824&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 0,
+      "death": 80,
+      "energy": 90,
+      "holy": 100,
+      "ice": 75
+    }
   },
   {
     "id": "shrieking_cry_stal",
     "name": "Shrieking Cry-Stal",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/be/Shrieking_Cry-stal.gif/revision/latest?cb=20220621120822&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/be/Shrieking_Cry-stal.gif/revision/latest?cb=20220621120822&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 105,
+      "fire": 95,
+      "death": 100,
+      "energy": 90,
+      "holy": 0,
+      "ice": 95
+    }
   },
   {
     "id": "sight_of_surrender",
     "name": "Sight of Surrender",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/21/Sight_of_Surrender.gif/revision/latest?cb=20210420144728&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/21/Sight_of_Surrender.gif/revision/latest?cb=20210420144728&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 80,
+      "fire": 65,
+      "death": 80,
+      "energy": 90,
+      "holy": 105,
+      "ice": 60
+    }
   },
   {
     "id": "silencer",
     "name": "Silencer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dd/Silencer.gif/revision/latest?cb=20131126125103&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dd/Silencer.gif/revision/latest?cb=20131126125103&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 70,
+      "death": 35,
+      "energy": 85,
+      "holy": 125,
+      "ice": 85
+    }
   },
   {
     "id": "silverfrost_sentinel",
     "name": "Silverfrost Sentinel",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8c/Silverfrost_Sentinel.gif/revision/latest?cb=20260704205200&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/8c/Silverfrost_Sentinel.gif/revision/latest?cb=20260704205200&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 110,
+      "fire": 105,
+      "death": 110,
+      "energy": 90,
+      "holy": 90,
+      "ice": 85
+    }
   },
   {
     "id": "sineater_inferniarch",
     "name": "Sineater Inferniarch",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/00/Sineater_Inferniarch.gif/revision/latest?cb=20241105122639&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/00/Sineater_Inferniarch.gif/revision/latest?cb=20241105122639&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 100,
+      "fire": 0,
+      "death": 90,
+      "energy": 110,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "skeleton_elite_warrior",
     "name": "Skeleton Elite Warrior",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d0/Skeleton_Warrior.gif/revision/latest?cb=20150418080023&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d0/Skeleton_Warrior.gif/revision/latest?cb=20150418080023&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 95,
+      "fire": 105,
+      "death": 0,
+      "energy": 105,
+      "holy": 125,
+      "ice": 100
+    }
   },
   {
     "id": "son_of_verminor",
     "name": "Son of Verminor",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/82/Slime.gif/revision/latest?cb=20220715022751&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/82/Slime.gif/revision/latest?cb=20220715022751&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 90,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "sopping_carcass",
     "name": "Sopping Carcass",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f3/Sopping_Carcass.gif/revision/latest?cb=20230613180300&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f3/Sopping_Carcass.gif/revision/latest?cb=20230613180300&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 115,
+      "fire": 105,
+      "death": 40,
+      "energy": 65,
+      "holy": 120,
+      "ice": 50
+    }
   },
   {
     "id": "sopping_corpus",
     "name": "Sopping Corpus",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/94/Sopping_Corpus.gif/revision/latest?cb=20230613180301&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/94/Sopping_Corpus.gif/revision/latest?cb=20230613180301&path-prefix=en",
+    "resistances": {
+      "physical": 60,
+      "earth": 50,
+      "fire": 70,
+      "death": 90,
+      "energy": 120,
+      "holy": 105,
+      "ice": 110
+    }
   },
   {
     "id": "sorcerer_s_apparition",
     "name": "Sorcerer's Apparition",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/42/Sorcerer%27s_Apparition.gif/revision/latest?cb=20200611061718&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/42/Sorcerer%27s_Apparition.gif/revision/latest?cb=20200611061718&path-prefix=en",
+    "resistances": {
+      "physical": 120,
+      "earth": 100,
+      "fire": 120,
+      "death": 120,
+      "energy": 100,
+      "holy": 60,
+      "ice": 70
+    }
   },
   {
     "id": "soul_broken_harbinger",
     "name": "Soul-Broken Harbinger",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ae/Soul-Broken_Harbinger.gif/revision/latest?cb=20181107202651&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ae/Soul-Broken_Harbinger.gif/revision/latest?cb=20181107202651&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 130,
+      "death": 80,
+      "energy": 105,
+      "holy": 100,
+      "ice": 45
+    }
   },
   {
     "id": "souleater",
     "name": "Souleater",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/79/Souleater.gif/revision/latest?cb=20100620194108&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/79/Souleater.gif/revision/latest?cb=20100620194108&path-prefix=en",
+    "resistances": {
+      "physical": 40,
+      "earth": 100,
+      "fire": 110,
+      "death": 0,
+      "energy": 110,
+      "holy": 110,
+      "ice": 50
+    }
   },
   {
     "id": "sparkion",
     "name": "Sparkion",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Sparkion.gif/revision/latest?cb=20160421202014&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/48/Sparkion.gif/revision/latest?cb=20160421202014&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 115,
+      "fire": 85,
+      "death": 95,
+      "energy": 10,
+      "holy": 95,
+      "ice": 30
+    }
   },
   {
     "id": "spectre",
     "name": "Spectre",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5b/Spectre.gif/revision/latest?cb=20220829162358&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5b/Spectre.gif/revision/latest?cb=20220829162358&path-prefix=en",
+    "resistances": {
+      "physical": 10,
+      "earth": 0,
+      "fire": 108,
+      "death": 0,
+      "energy": 108,
+      "holy": 100,
+      "ice": 99
+    }
   },
   {
     "id": "spellreaper_inferniarch",
     "name": "Spellreaper Inferniarch",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/44/Spellreaper_Inferniarch.gif/revision/latest?cb=20241105122708&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/44/Spellreaper_Inferniarch.gif/revision/latest?cb=20241105122708&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 115,
+      "fire": 105,
+      "death": 115,
+      "energy": 0,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "sphinx",
     "name": "Sphinx",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fa/Sphinx.gif/revision/latest?cb=20190702012032&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fa/Sphinx.gif/revision/latest?cb=20190702012032&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 112,
+      "energy": 100,
+      "holy": 85,
+      "ice": 115
+    }
   },
   {
     "id": "spidris",
     "name": "Spidris",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9a/Spidris.gif/revision/latest?cb=20240228102243&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9a/Spidris.gif/revision/latest?cb=20240228102243&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 85,
+      "death": 90,
+      "energy": 105,
+      "holy": 110,
+      "ice": 103
+    }
   },
   {
     "id": "spidris_elite",
     "name": "Spidris Elite",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/53/Spidris_Elite.gif/revision/latest?cb=20240228102313&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/53/Spidris_Elite.gif/revision/latest?cb=20240228102313&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 85,
+      "death": 90,
+      "energy": 105,
+      "holy": 110,
+      "ice": 103
+    }
   },
   {
     "id": "spiky_carnivor",
     "name": "Spiky Carnivor",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/84/Spiky_Carnivor.gif/revision/latest?cb=20260719233651&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/84/Spiky_Carnivor.gif/revision/latest?cb=20260719233651&path-prefix=en",
+    "resistances": {
+      "physical": 60,
+      "earth": 100,
+      "fire": 130,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "spitter",
     "name": "Spitter",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d9/Spitter.gif/revision/latest?cb=20111201033622&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d9/Spitter.gif/revision/latest?cb=20111201033622&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 95,
+      "death": 85,
+      "energy": 111,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "squid_warden",
     "name": "Squid Warden",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d4/Squid_Warden.gif/revision/latest?cb=20180607140213&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d4/Squid_Warden.gif/revision/latest?cb=20180607140213&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 115,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "stabilizing_dread_intruder",
     "name": "Stabilizing Dread Intruder",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fe/Stabilizing_Dread_Intruder.gif/revision/latest?cb=20160423200830&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fe/Stabilizing_Dread_Intruder.gif/revision/latest?cb=20160423200830&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 100,
+      "fire": 80,
+      "death": 30,
+      "energy": 20,
+      "holy": 105,
+      "ice": 95
+    }
   },
   {
     "id": "stabilizing_reality_reaver",
     "name": "Stabilizing Reality Reaver",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b6/Stabilizing_Reality_Reaver.gif/revision/latest?cb=20160423200112&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b6/Stabilizing_Reality_Reaver.gif/revision/latest?cb=20160423200112&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 85,
+      "death": 100,
+      "energy": 30,
+      "holy": 100,
+      "ice": 80
+    }
   },
   {
     "id": "stalking_stalk",
     "name": "Stalking Stalk",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/39/Stalking_Stalk.gif/revision/latest?cb=20220621121716&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/39/Stalking_Stalk.gif/revision/latest?cb=20220621121716&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 75,
+      "fire": 75,
+      "death": 90,
+      "energy": 115,
+      "holy": 100,
+      "ice": 110
+    }
   },
   {
     "id": "stampor",
     "name": "Stampor",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/13/Stampor.gif/revision/latest?cb=20141218233924&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/13/Stampor.gif/revision/latest?cb=20141218233924&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 90,
+      "energy": 70,
+      "holy": 50,
+      "ice": 90
+    }
   },
   {
     "id": "stone_devourer",
     "name": "Stone Devourer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2d/Stone_Devourer.gif/revision/latest?cb=20240228102542&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/2d/Stone_Devourer.gif/revision/latest?cb=20240228102542&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 95,
+      "death": 70,
+      "energy": 70,
+      "holy": 70,
+      "ice": 70
+    }
   },
   {
     "id": "stone_rhino",
     "name": "Stone Rhino",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/75/Stone_Rhino.gif/revision/latest?cb=20161103184330&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/75/Stone_Rhino.gif/revision/latest?cb=20161103184330&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 80,
+      "fire": 90,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "stonerefiner",
     "name": "Stonerefiner",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c1/Stonerefiner.gif/revision/latest?cb=20171108165603&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c1/Stonerefiner.gif/revision/latest?cb=20171108165603&path-prefix=en",
+    "resistances": {
+      "physical": 120,
+      "earth": 80,
+      "fire": 110,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 120
+    }
   },
   {
     "id": "streaked_devourer",
     "name": "Streaked Devourer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3a/Streaked_Devourer.gif/revision/latest?cb=20220513142023&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3a/Streaked_Devourer.gif/revision/latest?cb=20220513142023&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 90,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 115
+    }
   },
   {
     "id": "sulphider",
     "name": "Sulphider",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/03/Sulphider.gif/revision/latest?cb=20220621121555&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/03/Sulphider.gif/revision/latest?cb=20220621121555&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 80,
+      "death": 80,
+      "energy": 100,
+      "holy": 110,
+      "ice": 120
+    }
   },
   {
     "id": "sulphur_spouter",
     "name": "Sulphur Spouter",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9e/Sulphur_Spouter.gif/revision/latest?cb=20220621120913&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9e/Sulphur_Spouter.gif/revision/latest?cb=20220621120913&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 75,
+      "death": 100,
+      "energy": 100,
+      "holy": 120,
+      "ice": 100
+    }
   },
   {
     "id": "swan_maiden",
     "name": "Swan Maiden",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/03/Swan_Maiden.gif/revision/latest?cb=20170729194655&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/03/Swan_Maiden.gif/revision/latest?cb=20170729194655&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 70,
+      "fire": 110,
+      "death": 50,
+      "energy": 100,
+      "holy": 70,
+      "ice": 100
+    }
   },
   {
     "id": "swarmer",
     "name": "Swarmer",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/98/Swarmer.gif/revision/latest?cb=20150418080048&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/98/Swarmer.gif/revision/latest?cb=20150418080048&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 108,
+      "death": 100,
+      "energy": 25,
+      "holy": 100,
+      "ice": 103
+    }
   },
   {
     "id": "terrorsleep",
     "name": "Terrorsleep",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9c/Terrorsleep.gif/revision/latest?cb=20131126125247&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9c/Terrorsleep.gif/revision/latest?cb=20131126125247&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 0,
+      "fire": 65,
+      "death": 45,
+      "energy": 105,
+      "holy": 110,
+      "ice": 95
+    }
   },
   {
     "id": "thanatursus",
     "name": "Thanatursus",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c4/Thanatursus.gif/revision/latest?cb=20200804173248&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c4/Thanatursus.gif/revision/latest?cb=20200804173248&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 100,
+      "fire": 100,
+      "death": 120,
+      "energy": 50,
+      "holy": 80,
+      "ice": 100
+    }
   },
   {
     "id": "tomb_servant",
     "name": "Tomb Servant",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ac/Tomb_Servant.gif/revision/latest?cb=20171218210643&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/ac/Tomb_Servant.gif/revision/latest?cb=20171218210643&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 100
+    }
   },
   {
     "id": "tremendous_tyrant",
     "name": "Tremendous Tyrant",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3e/Tremendous_Tyrant.gif/revision/latest?cb=20210527061915&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3e/Tremendous_Tyrant.gif/revision/latest?cb=20210527061915&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 120,
+      "fire": 100,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 85
+    }
   },
   {
     "id": "troll_legionnaire",
     "name": "Troll Legionnaire",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/30/Troll_Legionnaire.gif/revision/latest?cb=20090708165243&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/30/Troll_Legionnaire.gif/revision/latest?cb=20090708165243&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "true_dawnfire_asura",
     "name": "True Dawnfire Asura",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/14/True_Dawnfire_Asura.gif/revision/latest?cb=20180607130128&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/14/True_Dawnfire_Asura.gif/revision/latest?cb=20180607130128&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 100,
+      "fire": 0,
+      "death": 80,
+      "energy": 110,
+      "holy": 110,
+      "ice": 105
+    }
   },
   {
     "id": "true_feverbloom_asura",
     "name": "True Feverbloom Asura",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/97/True_Feverbloom_Asura.gif/revision/latest?cb=20260720011907&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/97/True_Feverbloom_Asura.gif/revision/latest?cb=20260720011907&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 85,
+      "fire": 100,
+      "death": 110,
+      "energy": 105,
+      "holy": 105,
+      "ice": 110
+    }
   },
   {
     "id": "true_frost_flower_asura",
     "name": "True Frost Flower Asura",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9a/True_Frost_Flower_Asura.gif/revision/latest?cb=20180607130127&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/9a/True_Frost_Flower_Asura.gif/revision/latest?cb=20180607130127&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 110,
+      "death": 80,
+      "energy": 110,
+      "holy": 70,
+      "ice": 0
+    }
   },
   {
     "id": "true_midnight_asura",
     "name": "True Midnight Asura",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a6/True_Midnight_Asura.gif/revision/latest?cb=20180607130128&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a6/True_Midnight_Asura.gif/revision/latest?cb=20180607130128&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 90,
+      "death": 0,
+      "energy": 110,
+      "holy": 70,
+      "ice": 90
+    }
   },
   {
     "id": "tunnel_tyrant",
     "name": "Tunnel Tyrant",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/89/Tunnel_Tyrant.gif/revision/latest?cb=20171107134522&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/89/Tunnel_Tyrant.gif/revision/latest?cb=20171107134522&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 130
+    }
   },
   {
     "id": "turbulent_elemental",
     "name": "Turbulent Elemental",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f7/Turbulent_Elemental.gif/revision/latest?cb=20220602201946&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/f7/Turbulent_Elemental.gif/revision/latest?cb=20220602201946&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 60,
+      "fire": 120,
+      "death": 100,
+      "energy": 110,
+      "holy": 100,
+      "ice": 70
+    }
   },
   {
     "id": "twisted_pooka",
     "name": "Twisted Pooka",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b0/Twisted_Pooka.gif/revision/latest?cb=20170728180952&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/b0/Twisted_Pooka.gif/revision/latest?cb=20170728180952&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 60,
+      "fire": 80,
+      "death": 70,
+      "energy": 110,
+      "holy": 120,
+      "ice": 80
+    }
   },
   {
     "id": "twisted_shaper",
     "name": "Twisted Shaper",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/36/Twisted_Shaper.gif/revision/latest?cb=20161117161526&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/36/Twisted_Shaper.gif/revision/latest?cb=20161117161526&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 60,
+      "fire": 105,
+      "death": 90,
+      "energy": 105,
+      "holy": 70,
+      "ice": 70
+    }
   },
   {
     "id": "two_headed_turtle",
     "name": "Two-Headed Turtle",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e7/Two-Headed_Turtle.gif/revision/latest?cb=20220621121509&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e7/Two-Headed_Turtle.gif/revision/latest?cb=20220621121509&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 120,
+      "fire": 50,
+      "death": 110,
+      "energy": 90,
+      "holy": 100,
+      "ice": 50
+    }
   },
   {
     "id": "undead_dragon",
     "name": "Undead Dragon",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6f/Undead_Dragon.gif/revision/latest?cb=20171218212220&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6f/Undead_Dragon.gif/revision/latest?cb=20171218212220&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 0,
+      "fire": 0,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 90
+    }
   },
   {
     "id": "undead_elite_gladiator",
     "name": "Undead Elite Gladiator",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3a/Undead_Elite_Gladiator.gif/revision/latest?cb=20240228101606&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/3a/Undead_Elite_Gladiator.gif/revision/latest?cb=20240228101606&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 20,
+      "death": 105,
+      "energy": 80,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "undead_gladiator",
     "name": "Undead Gladiator",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/46/Undead_Gladiator.gif/revision/latest?cb=20240228101629&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/46/Undead_Gladiator.gif/revision/latest?cb=20240228101629&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 20,
+      "death": 105,
+      "energy": 80,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "undertaker",
     "name": "Undertaker",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a1/Undertaker.gif/revision/latest?cb=20220621121115&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a1/Undertaker.gif/revision/latest?cb=20220621121115&path-prefix=en",
+    "resistances": {
+      "physical": 115,
+      "earth": 90,
+      "fire": 100,
+      "death": 60,
+      "energy": 110,
+      "holy": 105,
+      "ice": 100
+    }
   },
   {
     "id": "usurper_archer",
     "name": "Usurper Archer",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/86/Usurper_Archer.gif/revision/latest?cb=20200611061718&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/86/Usurper_Archer.gif/revision/latest?cb=20200611061718&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 100,
+      "fire": 90,
+      "death": 120,
+      "energy": 100,
+      "holy": 90,
+      "ice": 80
+    }
   },
   {
     "id": "usurper_knight",
     "name": "Usurper Knight",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0d/Usurper_Knight.gif/revision/latest?cb=20200611061719&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0d/Usurper_Knight.gif/revision/latest?cb=20200611061719&path-prefix=en",
+    "resistances": {
+      "physical": 85,
+      "earth": 100,
+      "fire": 90,
+      "death": 115,
+      "energy": 100,
+      "holy": 85,
+      "ice": 80
+    }
   },
   {
     "id": "usurper_warlock",
     "name": "Usurper Warlock",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4e/Usurper_Warlock.gif/revision/latest?cb=20200611061719&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/4e/Usurper_Warlock.gif/revision/latest?cb=20200611061719&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 100,
+      "fire": 95,
+      "death": 110,
+      "energy": 100,
+      "holy": 68,
+      "ice": 70
+    }
   },
   {
     "id": "vampire",
     "name": "Vampire",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0b/Vampire.gif/revision/latest?cb=20240228100547&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/0/0b/Vampire.gif/revision/latest?cb=20240228100547&path-prefix=en",
+    "resistances": {
+      "physical": 75,
+      "earth": 0,
+      "fire": 110,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 100
+    }
   },
   {
     "id": "vampire_bride",
     "name": "Vampire Bride",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Vampire_Bride.gif/revision/latest?cb=20081212000443&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/99/Vampire_Bride.gif/revision/latest?cb=20081212000443&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 110,
+      "death": 0,
+      "energy": 90,
+      "holy": 110,
+      "ice": 80
+    }
   },
   {
     "id": "vampire_pig",
     "name": "Vampire Pig",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a0/Vampire_Pig.gif/revision/latest?cb=20150422164151&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a0/Vampire_Pig.gif/revision/latest?cb=20150422164151&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 100,
+      "fire": 100,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "vampire_viscount",
     "name": "Vampire Viscount",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d4/Vampire_Viscount.gif/revision/latest?cb=20250928020617&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d4/Vampire_Viscount.gif/revision/latest?cb=20250928020617&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 0,
+      "fire": 105,
+      "death": 0,
+      "energy": 100,
+      "holy": 125,
+      "ice": 90
+    }
   },
   {
     "id": "varg",
     "name": "Varg",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/92/Varg.gif/revision/latest?cb=20250628082354&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/92/Varg.gif/revision/latest?cb=20250628082354&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 100,
+      "fire": 105,
+      "death": 75,
+      "energy": 90,
+      "holy": 95,
+      "ice": 105
+    }
   },
   {
     "id": "varnished_diremaw",
     "name": "Varnished Diremaw",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Varnished_Diremaw.gif/revision/latest?cb=20210527010243&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Varnished_Diremaw.gif/revision/latest?cb=20210527010243&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 105,
+      "fire": 100,
+      "death": 100,
+      "energy": 85,
+      "holy": 100,
+      "ice": 95
+    }
   },
   {
     "id": "venerable_girtablilu",
     "name": "Venerable Girtablilu",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/10/Venerable_Girtablilu.gif/revision/latest?cb=20210527030048&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/1/10/Venerable_Girtablilu.gif/revision/latest?cb=20210527030048&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 100,
+      "death": 100,
+      "energy": 110,
+      "holy": 120,
+      "ice": 100
+    }
   },
   {
     "id": "vexclaw",
     "name": "Vexclaw",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ed/Vexclaw.gif/revision/latest?cb=20151112213544&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/ed/Vexclaw.gif/revision/latest?cb=20151112213544&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 60,
+      "fire": 25,
+      "death": 80,
+      "energy": 90,
+      "holy": 110,
+      "ice": 105
+    }
   },
   {
     "id": "vibrant_phantom",
     "name": "Vibrant Phantom",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bc/Vibrant_Phantom.gif/revision/latest?cb=20200611061720&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bc/Vibrant_Phantom.gif/revision/latest?cb=20200611061720&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 110,
+      "fire": 100,
+      "death": 110,
+      "energy": 80,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "vicious_squire",
     "name": "Vicious Squire",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/82/Vicious_Squire.gif/revision/latest?cb=20220730175130&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/82/Vicious_Squire.gif/revision/latest?cb=20220730175130&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 50,
+      "fire": 70,
+      "death": 120,
+      "energy": 60,
+      "holy": 50,
+      "ice": 90
+    }
   },
   {
     "id": "vile_grandmaster",
     "name": "Vile Grandmaster",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a9/Vile_Grandmaster.gif/revision/latest?cb=20150625082655&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a9/Vile_Grandmaster.gif/revision/latest?cb=20150625082655&path-prefix=en",
+    "resistances": {
+      "physical": 80,
+      "earth": 75,
+      "fire": 75,
+      "death": 100,
+      "energy": 75,
+      "holy": 50,
+      "ice": 90
+    }
   },
   {
     "id": "vulcongra",
     "name": "Vulcongra",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/75/Vulcongra.gif/revision/latest?cb=20120622173824&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/75/Vulcongra.gif/revision/latest?cb=20120622173824&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 0,
+      "death": 95,
+      "energy": 100,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "wailing_widow",
     "name": "Wailing Widow",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/80/Wailing_Widow.gif/revision/latest?cb=20150422152840&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/80/Wailing_Widow.gif/revision/latest?cb=20150422152840&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 110,
+      "death": 0,
+      "energy": 100,
+      "holy": 90,
+      "ice": 100
+    }
   },
   {
     "id": "walker",
     "name": "Walker",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/62/Walker.gif/revision/latest?cb=20221216034104&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/62/Walker.gif/revision/latest?cb=20221216034104&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 50,
+      "fire": 65,
+      "death": 85,
+      "energy": 100,
+      "holy": 60,
+      "ice": 95
+    }
   },
   {
     "id": "walking_dread",
     "name": "Walking Dread",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Walking_Dread.gif/revision/latest?cb=20251108013603&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/73/Walking_Dread.gif/revision/latest?cb=20251108013603&path-prefix=en",
+    "resistances": {
+      "physical": 109,
+      "earth": 91,
+      "fire": 88,
+      "death": 103,
+      "energy": 109,
+      "holy": 100,
+      "ice": 112
+    }
   },
   {
     "id": "walking_pillar",
     "name": "Walking Pillar",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Walking_Pillar.gif/revision/latest?cb=20230613180239&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Walking_Pillar.gif/revision/latest?cb=20230613180239&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 115,
+      "fire": 115,
+      "death": 90,
+      "energy": 40,
+      "holy": 100,
+      "ice": 55
+    }
   },
   {
     "id": "wandering_pillar",
     "name": "Wandering Pillar",
     "difficulty": "Challenging",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a2/Wandering_Pillar.gif/revision/latest?cb=20230613180241&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/a/a2/Wandering_Pillar.gif/revision/latest?cb=20230613180241&path-prefix=en",
+    "resistances": {
+      "physical": 115,
+      "earth": 100,
+      "fire": 40,
+      "death": 115,
+      "energy": 110,
+      "holy": 50,
+      "ice": 100
+    }
   },
   {
     "id": "war_golem",
     "name": "War Golem",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/War_Golem.gif/revision/latest?cb=20081212000545&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/50/War_Golem.gif/revision/latest?cb=20081212000545&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 50,
+      "fire": 85,
+      "death": 80,
+      "energy": 95,
+      "holy": 50,
+      "ice": 70
+    }
   },
   {
     "id": "wardragon",
     "name": "Wardragon",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Wardragon.gif/revision/latest?cb=20231114095055&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/70/Wardragon.gif/revision/latest?cb=20231114095055&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 110,
+      "fire": 60,
+      "death": 85,
+      "energy": 105,
+      "holy": 105,
+      "ice": 110
+    }
   },
   {
     "id": "warlock",
     "name": "Warlock",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e0/Warlock.gif/revision/latest?cb=20180206145356&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e0/Warlock.gif/revision/latest?cb=20180206145356&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 5,
+      "fire": 0,
+      "death": 100,
+      "energy": 0,
+      "holy": 108,
+      "ice": 0
+    }
   },
   {
     "id": "waspoid",
     "name": "Waspoid",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7a/Waspoid.gif/revision/latest?cb=20240228102429&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7a/Waspoid.gif/revision/latest?cb=20240228102429&path-prefix=en",
+    "resistances": {
+      "physical": 102,
+      "earth": 0,
+      "fire": 110,
+      "death": 95,
+      "energy": 75,
+      "holy": 107,
+      "ice": 100
+    }
   },
   {
     "id": "water_elemental",
     "name": "Water Elemental",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Water_Elemental.gif/revision/latest?cb=20221111063341&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/6c/Water_Elemental.gif/revision/latest?cb=20221111063341&path-prefix=en",
+    "resistances": {
+      "physical": 70,
+      "earth": 0,
+      "fire": 0,
+      "death": 50,
+      "energy": 125,
+      "holy": 50,
+      "ice": 0
+    }
   },
   {
     "id": "weakened_frazzlemaw",
     "name": "Weakened Frazzlemaw",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/49/Weakened_Frazzlemaw.gif/revision/latest?cb=20170709121030&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/4/49/Weakened_Frazzlemaw.gif/revision/latest?cb=20170709121030&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 80,
+      "fire": 90,
+      "death": 90,
+      "energy": 85,
+      "holy": 105,
+      "ice": 95
+    }
   },
   {
     "id": "weeper",
     "name": "Weeper",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e6/Weeper.gif/revision/latest?cb=20120622170823&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e6/Weeper.gif/revision/latest?cb=20120622170823&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 0,
+      "fire": 0,
+      "death": 70,
+      "energy": 100,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "werebadger",
     "name": "Werebadger",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dd/Werebadger.gif/revision/latest?cb=20150624091609&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dd/Werebadger.gif/revision/latest?cb=20150624091609&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 50,
+      "fire": 105,
+      "death": 60,
+      "energy": 90,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "werebear",
     "name": "Werebear",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d9/Werebear.gif/revision/latest?cb=20150624091617&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/d9/Werebear.gif/revision/latest?cb=20150624091617&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 50,
+      "fire": 105,
+      "death": 55,
+      "energy": 85,
+      "holy": 105,
+      "ice": 90
+    }
   },
   {
     "id": "wereboar",
     "name": "Wereboar",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Wereboar.gif/revision/latest?cb=20150624091625&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/26/Wereboar.gif/revision/latest?cb=20150624091625&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 50,
+      "fire": 105,
+      "death": 50,
+      "energy": 85,
+      "holy": 105,
+      "ice": 95
+    }
   },
   {
     "id": "werecrocodile",
     "name": "Werecrocodile",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/29/Werecrocodile.gif/revision/latest?cb=20230613180242&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/29/Werecrocodile.gif/revision/latest?cb=20230613180242&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 95,
+      "fire": 75,
+      "death": 75,
+      "energy": 105,
+      "holy": 115,
+      "ice": 125
+    }
   },
   {
     "id": "werefox",
     "name": "Werefox",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cf/Werefox.gif/revision/latest?cb=20171107135930&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cf/Werefox.gif/revision/latest?cb=20171107135930&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 60,
+      "fire": 110,
+      "death": 60,
+      "energy": 90,
+      "holy": 110,
+      "ice": 100
+    }
   },
   {
     "id": "werehyaena",
     "name": "Werehyaena",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/28/Werehyaena.gif/revision/latest?cb=20200611061720&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/2/28/Werehyaena.gif/revision/latest?cb=20200611061720&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 50,
+      "death": 100,
+      "energy": 100,
+      "holy": 125,
+      "ice": 120
+    }
   },
   {
     "id": "werehyaena_shaman",
     "name": "Werehyaena Shaman",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/de/Werehyaena_Shaman.gif/revision/latest?cb=20200611061720&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/de/Werehyaena_Shaman.gif/revision/latest?cb=20200611061720&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 75,
+      "death": 105,
+      "energy": 100,
+      "holy": 95,
+      "ice": 120
+    }
   },
   {
     "id": "werelion",
     "name": "Werelion",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Werelion.gif/revision/latest?cb=20200611061712&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5c/Werelion.gif/revision/latest?cb=20200611061712&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 50,
+      "fire": 75,
+      "death": 55,
+      "energy": 100,
+      "holy": 100,
+      "ice": 125
+    }
   },
   {
     "id": "werelioness",
     "name": "Werelioness",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/71/Werelioness.gif/revision/latest?cb=20200611061713&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/71/Werelioness.gif/revision/latest?cb=20200611061713&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 65,
+      "death": 50,
+      "energy": 100,
+      "holy": 105,
+      "ice": 125
+    }
   },
   {
     "id": "werepanther",
     "name": "Werepanther",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/eb/Werepanther.gif/revision/latest?cb=20230613180243&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/eb/Werepanther.gif/revision/latest?cb=20230613180243&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 90,
+      "fire": 80,
+      "death": 80,
+      "energy": 110,
+      "holy": 125,
+      "ice": 115
+    }
   },
   {
     "id": "weretiger",
     "name": "Weretiger",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fc/Weretiger.gif/revision/latest?cb=20230613180244&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/f/fc/Weretiger.gif/revision/latest?cb=20230613180244&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 115,
+      "fire": 125,
+      "death": 100,
+      "energy": 75,
+      "holy": 90,
+      "ice": 70
+    }
   },
   {
     "id": "werewolf",
     "name": "Werewolf",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/66/Werewolf.gif/revision/latest?cb=20081214051316&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/66/Werewolf.gif/revision/latest?cb=20081214051316&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 25,
+      "fire": 105,
+      "death": 45,
+      "energy": 85,
+      "holy": 105,
+      "ice": 105
+    }
   },
   {
     "id": "white_lion",
     "name": "White Lion",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/White_Lion.gif/revision/latest?cb=20210209141036&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e9/White_Lion.gif/revision/latest?cb=20210209141036&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 70,
+      "fire": 75,
+      "death": 60,
+      "energy": 100,
+      "holy": 100,
+      "ice": 120
+    }
   },
   {
     "id": "white_weretiger",
     "name": "White Weretiger",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e2/White_Weretiger.gif/revision/latest?cb=20230613180246&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/e/e2/White_Weretiger.gif/revision/latest?cb=20230613180246&path-prefix=en",
+    "resistances": {
+      "physical": 105,
+      "earth": 120,
+      "fire": 115,
+      "death": 100,
+      "energy": 40,
+      "holy": 75,
+      "ice": 60
+    }
   },
   {
     "id": "wiggler",
     "name": "Wiggler",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c7/Wiggler.gif/revision/latest?cb=20120622173842&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/c7/Wiggler.gif/revision/latest?cb=20120622173842&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 105,
+      "death": 90,
+      "energy": 95,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "wilting_leaf_golem",
     "name": "Wilting Leaf Golem",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dd/Wilting_Leaf_Golem.gif/revision/latest?cb=20260719051257&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/d/dd/Wilting_Leaf_Golem.gif/revision/latest?cb=20260719051257&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 60,
+      "fire": 105,
+      "death": 100,
+      "energy": 100,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "winged_jaracal",
     "name": "Winged Jaracal",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7a/Winged_Jaracal.gif/revision/latest?cb=20260720011910&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/7/7a/Winged_Jaracal.gif/revision/latest?cb=20260720011910&path-prefix=en",
+    "resistances": {
+      "physical": 95,
+      "earth": 105,
+      "fire": 85,
+      "death": 90,
+      "energy": 105,
+      "holy": 90,
+      "ice": 110
+    }
   },
   {
     "id": "worker_golem",
     "name": "Worker Golem",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/89/Worker_Golem.gif/revision/latest?cb=20190621040127&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/89/Worker_Golem.gif/revision/latest?cb=20190621040127&path-prefix=en",
+    "resistances": {
+      "physical": 90,
+      "earth": 50,
+      "fire": 100,
+      "death": 90,
+      "energy": 105,
+      "holy": 50,
+      "ice": 90
+    }
   },
   {
     "id": "worm_priestess",
     "name": "Worm Priestess",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/93/Worm_Priestess.gif/revision/latest?cb=20140613170134&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/9/93/Worm_Priestess.gif/revision/latest?cb=20140613170134&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 90,
+      "death": 95,
+      "energy": 100,
+      "holy": 100,
+      "ice": 95
+    }
   },
   {
     "id": "wyrm",
     "name": "Wyrm",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/39/Wyrm.gif/revision/latest?cb=20221126183316&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/3/39/Wyrm.gif/revision/latest?cb=20221126183316&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 25,
+      "fire": 80,
+      "death": 105,
+      "energy": 0,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "wyvern",
     "name": "Wyvern",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bf/Wyvern.gif/revision/latest?cb=20220623102355&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/b/bf/Wyvern.gif/revision/latest?cb=20220623102355&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 100,
+      "death": 100,
+      "energy": 80,
+      "holy": 100,
+      "ice": 90
+    }
   },
   {
     "id": "yielothax",
     "name": "Yielothax",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Yielothax.gif/revision/latest?cb=20210420140823&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/6/63/Yielothax.gif/revision/latest?cb=20210420140823&path-prefix=en",
+    "resistances": {
+      "physical": 110,
+      "earth": 0,
+      "fire": 75,
+      "death": 50,
+      "energy": 105,
+      "holy": 100,
+      "ice": 105
+    }
   },
   {
     "id": "young_goanna",
     "name": "Young Goanna",
     "difficulty": "Hard",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5e/Young_Goanna.gif/revision/latest?cb=20220507012014&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/5/5e/Young_Goanna.gif/revision/latest?cb=20220507012014&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 80,
+      "fire": 100,
+      "death": 100,
+      "energy": 120,
+      "holy": 100,
+      "ice": 100
+    }
   },
   {
     "id": "young_sea_serpent",
     "name": "Young Sea Serpent",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/85/Young_Sea_Serpent.gif/revision/latest?cb=20240228101830&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/8/85/Young_Sea_Serpent.gif/revision/latest?cb=20240228101830&path-prefix=en",
+    "resistances": {
+      "physical": 120,
+      "earth": 105,
+      "fire": 70,
+      "death": 115,
+      "energy": 110,
+      "holy": 100,
+      "ice": 0
+    }
   },
   {
     "id": "zombie",
     "name": "Zombie",
     "difficulty": "Medium",
-    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cc/Zombie.gif/revision/latest?cb=20210420140804&path-prefix=en"
+    "imageUrl": "https://static.wikia.nocookie.net/tibia/images/c/cc/Zombie.gif/revision/latest?cb=20210420140804&path-prefix=en",
+    "resistances": {
+      "physical": 100,
+      "earth": 0,
+      "fire": 50,
+      "death": 0,
+      "energy": 0,
+      "holy": 100,
+      "ice": 0
+    }
   }
 ]

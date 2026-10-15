@@ -58,6 +58,49 @@ async function fetchImageUrls(names) {
   return urls
 }
 
+const DMG_MOD_FIELDS = [
+  ['physical', 'physicalDmgMod'],
+  ['earth', 'earthDmgMod'],
+  ['fire', 'fireDmgMod'],
+  ['death', 'deathDmgMod'],
+  ['energy', 'energyDmgMod'],
+  ['holy', 'holyDmgMod'],
+  ['ice', 'iceDmgMod'],
+]
+
+function parseResistances(wikitext) {
+  const resistances = {}
+  for (const [key, field] of DMG_MOD_FIELDS) {
+    const match = wikitext.match(new RegExp(`${field}\\s*=\\s*(\\d+)%`, 'i'))
+    resistances[key] = match ? Number(match[1]) : 100
+  }
+  return resistances
+}
+
+async function fetchResistances(names) {
+  const resistances = new Map()
+  const batchSize = 40
+  for (let i = 0; i < names.length; i += batchSize) {
+    const batch = names.slice(i, i + batchSize)
+    const titles = batch.join('|')
+    const url = `${API}?action=query&titles=${encodeURIComponent(
+      titles,
+    )}&prop=revisions&rvprop=content&rvslots=main&format=json`
+    const res = await fetch(url, { headers: HEADERS })
+    if (!res.ok) throw new Error(`Failed to fetch revisions batch: ${res.status}`)
+    const data = await res.json()
+    const pages = Object.values(data.query.pages)
+    for (const page of pages) {
+      const wikitext = page.revisions?.[0]?.slots?.main?.['*']
+      if (wikitext) {
+        resistances.set(page.title, parseResistances(wikitext))
+      }
+    }
+    console.log(`  fetched resistances ${Math.min(i + batchSize, names.length)}/${names.length}`)
+  }
+  return resistances
+}
+
 async function main() {
   console.log('Fetching Medium creatures...')
   const medium = await fetchCategoryMembers('Bestiary_Medium_Creatures')
@@ -86,12 +129,24 @@ async function main() {
     for (const m of missing) console.warn(`  - ${m.name}`)
   }
 
+  console.log(`Fetching resistances for ${all.length} creatures...`)
+  const resistances = await fetchResistances(all.map((c) => c.name))
+
+  const missingResistances = all.filter((c) => !resistances.has(c.name))
+  if (missingResistances.length > 0) {
+    console.warn(`Warning: no resistances found for ${missingResistances.length} creatures:`)
+    for (const m of missingResistances) console.warn(`  - ${m.name}`)
+  }
+
+  const DEFAULT_RESISTANCES = Object.fromEntries(DMG_MOD_FIELDS.map(([key]) => [key, 100]))
+
   const creatures = all
     .map((c) => ({
       id: normalizeId(c.name),
       name: c.name,
       difficulty: c.difficulty,
       imageUrl: imageUrls.get(c.name) ?? '',
+      resistances: resistances.get(c.name) ?? DEFAULT_RESISTANCES,
     }))
     .filter((c) => c.imageUrl)
     .sort((a, b) => a.name.localeCompare(b.name))

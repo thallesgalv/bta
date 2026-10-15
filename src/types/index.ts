@@ -1,14 +1,17 @@
 export type Difficulty = 'Medium' | 'Hard' | 'Challenging'
 
-export type Rank = 'Diamond' | 'Gold' | 'Silver' | 'Bronze'
+export type Rank = 'PickNow' | 'Star' | 'TwoStars' | 'Skip'
 
 export type Mode = 'Expert' | 'Master'
+
+export type DamageType = 'physical' | 'earth' | 'fire' | 'death' | 'energy' | 'holy' | 'ice'
 
 export interface BestiaryCreature {
   id: string
   name: string
   difficulty: Difficulty
   imageUrl: string
+  resistances: Record<DamageType, number>
 }
 
 export interface HuntRecord {

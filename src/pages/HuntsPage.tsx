@@ -9,8 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { BESTIARY } from '@/data/bestiary'
-import { computeRanks } from '@/lib/ranking'
-import { deleteRecord, getMode, getRecords, setMode, setRecords, upsertRecords } from '@/lib/storage'
+import { deleteRecord, getMode, getRecords, meetsMinimumKills, setMode, setRecords, upsertRecords } from '@/lib/storage'
 import type { HuntRecord, Mode } from '@/types'
 
 const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
@@ -23,7 +22,6 @@ export function HuntsPage() {
   const [projectionKills, setProjectionKills] = useState('444')
   const [mode, setModeState] = useState<Mode>(() => getMode())
 
-  const ranks = useMemo(() => computeRanks(records), [records])
   const filteredRecords = useMemo(() => {
     const query = search.trim().toLowerCase()
     const allowedDifficulties = mode === 'Master' ? ['Hard', 'Challenging'] : ['Hard', 'Medium']
@@ -49,8 +47,9 @@ export function HuntsPage() {
   }
 
   function handleImport(imported: HuntRecord[]) {
-    setRecords(imported)
-    setRecordsState(imported)
+    const valid = imported.filter((r) => meetsMinimumKills(r.killsPer20Min))
+    setRecords(valid)
+    setRecordsState(valid)
   }
 
   function openNewModal() {
@@ -116,11 +115,11 @@ export function HuntsPage() {
 
       <RecordsTable
         records={filteredRecords}
-        ranks={ranks}
         projectionKills={Number(projectionKills) || 0}
         emptyMessage={
           records.length === 0 ? 'No records yet.' : 'No creature found.'
         }
+        mode={mode}
         onEdit={openEditModal}
         onDelete={handleDelete}
       />

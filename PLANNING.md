@@ -2,10 +2,10 @@
 
 ## Contexto
 
-Uso pessoal: um mini-CRUD para cadastrar quais criaturas (bestiary Medium/Hard do Tibia) valem mais a pena caçar em uma Bounty Task, com base no rendimento (kills por 20min) observado em sessões de hunt. O objetivo final é uma tabela rankeada (Diamond/Gold/Silver/Bronze) que diga rapidamente qual bounty pegar. Sem backend — 100% client-side, persistido em `localStorage`, hospedado no GitHub Pages.
+Uso pessoal: um mini-CRUD para cadastrar quais criaturas (bestiary Medium/Hard do Tibia) valem mais a pena caçar em uma Bounty Task, com base no rendimento (kills por 20min) observado em sessões de hunt. O objetivo final é uma tabela rankeada (PICK NOW!!! / STAR ONLY / 2 STARS ONLY / SKIP!!!) que diga rapidamente qual bounty pegar. Sem backend — 100% client-side, persistido em `localStorage`, hospedado no GitHub Pages.
 
 Decisões confirmadas:
-- **Ranking**: percentil automático — a lista é ordenada por Kills/20min (desc) e dividida proporcionalmente em 4 faixas (Diamond → Bronze). Não é salvo no registro, é recalculado a cada render.
+- **Ranking**: faixas absolutas de Kills/20min (ver `computeRanks` abaixo). O veredito de uma criatura não depende dos outros registros. Não é salvo no registro, é derivado a cada render.
 - **Imagens das criaturas**: URLs externas diretas do TibiaWiki (fandom), hardcoded por criatura. Nada de download/hospedagem local.
 - **Import**: substitui completamente a lista atual em localStorage (não faz merge).
 
@@ -39,7 +39,7 @@ interface BestiaryCreature {
 }
 ```
 
-Ranking (`Diamond | Gold | Silver | Bronze`) **não é persistido** — é derivado em tempo de render por `computeRanks()`.
+Ranking (`PickNow | Star | TwoStars | Skip`) **não é persistido** — é derivado em tempo de render por `getRank(killsPer20Min)`.
 
 Catálogo de criaturas (`src/data/bestiary.ts`) é uma lista estática hardcoded, só com criaturas de Bestiary Medium/Hard. **Nota de implementação**: essa lista precisa ser levantada via pesquisa (TibiaWiki) na fase de build — é uma tarefa de data-entry/pesquisa própria, não algo que dá pra inferir de antemão.
 
@@ -71,8 +71,17 @@ Como um único paste pode conter **múltiplos monstros válidos** (ex: Lancer Be
 - **Hunt Analyser**: precisa haver ≥1 criatura válida parseada do texto **e** Location preenchida.
 - **Manual**: criatura selecionada (combobox) **e** `killsPer20Min > 0` **e** Location preenchida.
 
-### Ranking (`computeRanks`)
-Ordena todos os `HuntRecord` por `killsPer20Min` desc. Para cada posição `i` num total de `n`, `bucket = floor((i / n) * 4)` clampado 0–3, mapeado para `[Diamond, Gold, Silver, Bronze]`. Isso escala corretamente mesmo com poucos registros (1, 2, 3...), sem depender de múltiplos de 4.
+### Ranking (`getRank`)
+Faixas absolutas sobre `killsPer20Min`, sem depender da quantidade de registros:
+
+| Kills/20min | Label | Cor |
+| --- | --- | --- |
+| `>= 300` | `PICK NOW!!!` | verde |
+| `>= 150` | `STAR ONLY` | amarelo |
+| `>= 75` | `2 STARS ONLY` | laranja |
+| `< 75` | `SKIP!!!` | vermelho |
+
+Como `MIN_KILLS_PER_20_MIN = 25` descarta registros abaixo de 25 no save, na prática `SKIP!!!` cobre 25–74.
 
 ### Import / Export
 - **Export**: botão fica **desabilitado se a lista estiver vazia**. Ao clicar, abre um dialog com um `<Textarea readOnly>` contendo `JSON.stringify(records, null, 2)`, botão "Copiar" (clipboard) e botão "Baixar .json".
@@ -85,7 +94,7 @@ Ordena todos os `HuntRecord` por `killsPer20Min` desc. Para cada posição `i` n
 ### `/` (index)
 - Header: título "BTA" + botões `Novo cadastro` (primário), `Importar`, `Exportar` (desabilitado se lista vazia).
 - Tabela abaixo: colunas **Imagem | Nome | Ranking (badge colorido) | Kills per 20 min | Location**.
-  - Badge de ranking colorido: Diamond (ciano/branco-gelo), Gold (amarelo), Silver (cinza), Bronze (cobre/laranja).
+  - Badge de ranking colorido conforme a tabela de faixas acima: verde, amarelo, laranja, vermelho.
   - Cada linha com ações de **editar** (abre modal na aba Manual pré-preenchida) e **excluir** (remove 1 registro) — extensão razoável do "CRUD" que o pedido original menciona, já que uma tabela sem exclusão individual não seria um CRUD completo.
   - Estado vazio: mensagem "Nenhum registro cadastrado ainda".
 
@@ -154,5 +163,5 @@ bta/
 ## Verificação
 - Testar o parser colando exatamente o log de exemplo do pedido e confirmar `killsPer20Min` calculado (ex: 264 kills em 18min com proporção 20min → 293.3).
 - Testar fluxo completo no browser: cadastrar via Hunt Analyser, cadastrar manualmente, editar, excluir, exportar (copiar JSON), importar (colar JSON e confirmar substituição total).
-- Confirmar que o ranking recalcula corretamente ao adicionar/remover registros (quartis proporcionais).
+- Confirmar que o ranking de uma criatura **não** muda ao adicionar/remover outros registros, e checar os limites 300 / 150 / 75 caindo na faixa superior.
 - Build de produção (`vite build`) e checar que o deploy no GitHub Pages carrega os assets corretamente com o `base` configurado.

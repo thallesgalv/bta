@@ -1,4 +1,4 @@
-import { BookOpen, ListChecks, MoreHorizontal, Pencil, Trash2 } from 'lucide-react'
+import { BookOpen, ListChecks, Pencil, Settings, Trash2 } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import {
   DropdownMenu,
@@ -16,28 +16,35 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { BESTIARY } from '@/data/bestiary'
+import { DAMAGE_TYPE_ICON_URL, DAMAGE_TYPE_LABEL } from '@/lib/damageTypes'
 import { bredworldTaskUrl, tibiaWikiUrl } from '@/lib/externalLinks'
 import { formatDuration } from '@/lib/formatDuration'
-import { DIFFICULTY_BADGE_CLASSNAME, RANK_BADGE_CLASSNAME } from '@/lib/rankStyles'
+import { getRank } from '@/lib/ranking'
+import {
+  DIFFICULTY_BADGE_CLASSNAME,
+  RANK_BADGE_CLASSNAME,
+  RANK_LABEL,
+  resistanceTextClassName,
+} from '@/lib/rankStyles'
 import { cn } from '@/lib/utils'
-import type { HuntRecord, Rank } from '@/types'
+import type { DamageType, HuntRecord, Mode } from '@/types'
 
 const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
 
 interface RecordsTableProps {
   records: HuntRecord[]
-  ranks: Map<string, Rank>
   projectionKills: number
   emptyMessage: string
+  mode: Mode
   onEdit: (record: HuntRecord) => void
   onDelete: (id: string) => void
 }
 
 export function RecordsTable({
   records,
-  ranks,
   projectionKills,
   emptyMessage,
+  mode,
   onEdit,
   onDelete,
 }: RecordsTableProps) {
@@ -59,17 +66,19 @@ export function RecordsTable({
             <TableHead className="text-center">Image</TableHead>
             <TableHead>Name</TableHead>
             <TableHead className="text-center">Ranking</TableHead>
-            <TableHead className="text-right">Kills per 20 min</TableHead>
+            <TableHead className="text-center">Kills per 20 min</TableHead>
+            <TableHead className="text-center">Projection</TableHead>
             <TableHead className="text-center">Location</TableHead>
-            <TableHead className="text-center">Bestiary Level</TableHead>
-            <TableHead className="text-right">Projection</TableHead>
+            {mode === 'Expert' && <TableHead className="text-center">Bestiary Level</TableHead>}
+            <TableHead className="text-center">Weakness/Resistances</TableHead>
             <TableHead className="w-10" />
           </TableRow>
         </TableHeader>
         <TableBody>
           {sorted.map((record) => {
-            const rank = ranks.get(record.id)!
+            const rank = getRank(record.killsPer20Min)
             const difficulty = BESTIARY_BY_ID.get(record.id)?.difficulty
+            const resistances = BESTIARY_BY_ID.get(record.id)?.resistances
             return (
               <TableRow key={record.id}>
                 <TableCell className="text-center">
@@ -103,34 +112,63 @@ export function RecordsTable({
                   </div>
                 </TableCell>
                 <TableCell className="text-center">
-                  <Badge variant="outline" className={cn('border', RANK_BADGE_CLASSNAME[rank])}>
-                    {rank}
+                  <Badge
+                    variant="outline"
+                    className={cn('border whitespace-nowrap', RANK_BADGE_CLASSNAME[rank])}
+                  >
+                    {RANK_LABEL[rank]}
                   </Badge>
                 </TableCell>
-                <TableCell className="text-right tabular-nums">{record.killsPer20Min}</TableCell>
-                <TableCell className="text-center">
-                  <Badge variant="secondary">{record.location}</Badge>
-                </TableCell>
-                <TableCell className="text-center">
-                  {difficulty && (
-                    <Badge
-                      variant="outline"
-                      className={cn('border', DIFFICULTY_BADGE_CLASSNAME[difficulty])}
-                    >
-                      {difficulty}
-                    </Badge>
-                  )}
-                </TableCell>
-                <TableCell className="text-right tabular-nums">
+                <TableCell className="text-center tabular-nums">{record.killsPer20Min}</TableCell>
+                <TableCell className="text-center tabular-nums">
                   {projectionKills > 0
                     ? formatDuration((projectionKills / record.killsPer20Min) * 20)
                     : '—'}
                 </TableCell>
                 <TableCell className="text-center">
+                  <Badge variant="secondary">{record.location}</Badge>
+                </TableCell>
+                {mode === 'Expert' && (
+                  <TableCell className="text-center">
+                    {difficulty && (
+                      <Badge
+                        variant="outline"
+                        className={cn('border', DIFFICULTY_BADGE_CLASSNAME[difficulty])}
+                      >
+                        {difficulty}
+                      </Badge>
+                    )}
+                  </TableCell>
+                )}
+                <TableCell className="text-center">
+                  {resistances && (
+                    <div className="flex flex-wrap items-center justify-center gap-1">
+                      {(Object.entries(resistances) as [DamageType, number][])
+                        .sort((a, b) => b[1] - a[1])
+                        .map(([type, pct]) => (
+                          <span
+                            key={type}
+                            title={DAMAGE_TYPE_LABEL[type]}
+                            className="flex items-center gap-0.5 rounded bg-muted px-1 py-0.5 text-xs"
+                          >
+                            <img
+                              src={DAMAGE_TYPE_ICON_URL[type]}
+                              alt={DAMAGE_TYPE_LABEL[type]}
+                              className="size-3.5"
+                            />
+                            <span className={cn('tabular-nums', resistanceTextClassName(pct))}>
+                              {pct}%
+                            </span>
+                          </span>
+                        ))}
+                    </div>
+                  )}
+                </TableCell>
+                <TableCell className="text-center">
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                       <Button variant="ghost" size="icon-sm">
-                        <MoreHorizontal className="size-4" />
+                        <Settings className="size-4" />
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">

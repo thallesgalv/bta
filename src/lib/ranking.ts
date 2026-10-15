@@ -1,14 +1,12 @@
-import type { HuntRecord, Rank } from '@/types'
+import type { Rank } from '@/types'
 
-const RANK_ORDER: Rank[] = ['Diamond', 'Gold', 'Silver', 'Bronze']
+const RANK_THRESHOLDS: { min: number; rank: Rank }[] = [
+  { min: 300, rank: 'PickNow' },
+  { min: 150, rank: 'Star' },
+  { min: 75, rank: 'TwoStars' },
+  { min: 0, rank: 'Skip' },
+]
 
-export function computeRanks(records: HuntRecord[]): Map<string, Rank> {
-  const sorted = [...records].sort((a, b) => b.killsPer20Min - a.killsPer20Min)
-  const n = sorted.length
-  const ranks = new Map<string, Rank>()
-  sorted.forEach((record, i) => {
-    const bucket = Math.min(3, Math.floor((i / n) * 4))
-    ranks.set(record.id, RANK_ORDER[bucket])
-  })
-  return ranks
+export function getRank(killsPer20Min: number): Rank {
+  return RANK_THRESHOLDS.find((t) => killsPer20Min >= t.min)!.rank
 }
