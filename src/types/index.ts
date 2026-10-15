@@ -22,13 +22,12 @@ export interface HuntRecord {
   updatedAt: string
 }
 
-export interface Projection {
-  id: string
+export type Stars = 0 | 1 | 2
+
+export interface ComparisonEntry {
   creatureId: string
-  monsterName: string
-  killsPer20Min: number
+  stars: Stars
   totalKills: number
-  createdAt: string
 }
 
 export interface WhatsAppPhone {

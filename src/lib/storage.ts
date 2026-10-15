@@ -1,7 +1,7 @@
-import type { HuntRecord, Mode, Projection, WhatsAppPhone } from '@/types'
+import type { ComparisonEntry, HuntRecord, Mode, WhatsAppPhone } from '@/types'
 
 const STORAGE_KEY = 'bta:hunt-records'
-const PROJECTIONS_KEY = 'bta:projections'
+const COMPARISON_KEY = 'bta:comparison'
 const WHATSAPP_PHONE_KEY = 'bta:whatsapp-phone'
 const MODE_KEY = 'bta:mode'
 
@@ -50,38 +50,25 @@ export function deleteRecord(id: string): HuntRecord[] {
   return remaining
 }
 
-export function getProjections(): Projection[] {
-  const raw = localStorage.getItem(PROJECTIONS_KEY)
-  if (!raw) return []
+export const COMPARISON_SLOTS = 3
+
+export type ComparisonSlots = (ComparisonEntry | null)[]
+
+export function getComparison(): ComparisonSlots {
+  const empty: ComparisonSlots = Array(COMPARISON_SLOTS).fill(null)
+  const raw = localStorage.getItem(COMPARISON_KEY)
+  if (!raw) return empty
   try {
     const parsed = JSON.parse(raw)
-    return Array.isArray(parsed) ? parsed : []
+    if (!Array.isArray(parsed)) return empty
+    return empty.map((_, i) => parsed[i] ?? null)
   } catch {
-    return []
+    return empty
   }
 }
 
-export function setProjections(projections: Projection[]): void {
-  localStorage.setItem(PROJECTIONS_KEY, JSON.stringify(projections))
-}
-
-export function saveProjection(projection: Projection): Projection[] {
-  const existing = getProjections()
-  const index = existing.findIndex((p) => p.id === projection.id)
-  const updated = [...existing]
-  if (index >= 0) {
-    updated[index] = projection
-  } else {
-    updated.push(projection)
-  }
-  setProjections(updated)
-  return updated
-}
-
-export function deleteProjection(id: string): Projection[] {
-  const remaining = getProjections().filter((p) => p.id !== id)
-  setProjections(remaining)
-  return remaining
+export function setComparison(slots: ComparisonSlots): void {
+  localStorage.setItem(COMPARISON_KEY, JSON.stringify(slots))
 }
 
 export function getWhatsAppPhone(): WhatsAppPhone | null {

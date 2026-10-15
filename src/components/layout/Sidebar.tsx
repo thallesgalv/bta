@@ -1,10 +1,10 @@
-import { Crosshair, Sparkles, Swords } from 'lucide-react'
+import { Crosshair, Scale, Swords } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { cn } from '@/lib/utils'
 
 const NAV_ITEMS = [
   { to: '/', label: 'Hunts', icon: Crosshair, end: true },
-  { to: '/projection', label: 'Projection', icon: Sparkles, end: false },
+  { to: '/compare', label: 'Compare', icon: Scale, end: false },
 ]
 
 export function Sidebar() {

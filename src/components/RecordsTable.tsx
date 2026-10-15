@@ -1,4 +1,5 @@
 import { BookOpen, ListChecks, Pencil, Settings, Trash2 } from 'lucide-react'
+import { ResistanceList } from '@/components/ResistanceList'
 import { Badge } from '@/components/ui/badge'
 import {
   DropdownMenu,
@@ -16,7 +17,6 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { BESTIARY } from '@/data/bestiary'
-import { DAMAGE_TYPE_ICON_URL, DAMAGE_TYPE_LABEL } from '@/lib/damageTypes'
 import { bredworldTaskUrl, tibiaWikiUrl } from '@/lib/externalLinks'
 import { formatDuration } from '@/lib/formatDuration'
 import { getRank } from '@/lib/ranking'
@@ -24,10 +24,9 @@ import {
   DIFFICULTY_BADGE_CLASSNAME,
   RANK_BADGE_CLASSNAME,
   RANK_LABEL,
-  resistanceTextClassName,
 } from '@/lib/rankStyles'
 import { cn } from '@/lib/utils'
-import type { DamageType, HuntRecord, Mode } from '@/types'
+import type { HuntRecord, Mode } from '@/types'
 
 const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
 
@@ -141,28 +140,7 @@ export function RecordsTable({
                   </TableCell>
                 )}
                 <TableCell className="text-center">
-                  {resistances && (
-                    <div className="flex flex-wrap items-center justify-center gap-1">
-                      {(Object.entries(resistances) as [DamageType, number][])
-                        .sort((a, b) => b[1] - a[1])
-                        .map(([type, pct]) => (
-                          <span
-                            key={type}
-                            title={DAMAGE_TYPE_LABEL[type]}
-                            className="flex items-center gap-0.5 rounded bg-muted px-1 py-0.5 text-xs"
-                          >
-                            <img
-                              src={DAMAGE_TYPE_ICON_URL[type]}
-                              alt={DAMAGE_TYPE_LABEL[type]}
-                              className="size-3.5"
-                            />
-                            <span className={cn('tabular-nums', resistanceTextClassName(pct))}>
-                              {pct}%
-                            </span>
-                          </span>
-                        ))}
-                    </div>
-                  )}
+                  {resistances && <ResistanceList resistances={resistances} />}
                 </TableCell>
                 <TableCell className="text-center">
                   <DropdownMenu>
