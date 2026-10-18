@@ -5,6 +5,7 @@ import { ImportDialog } from '@/components/ImportDialog'
 import { NewRecordModal } from '@/components/NewRecordModal/NewRecordModal'
 import { RecordsTable } from '@/components/RecordsTable'
 import { SendToWhatsAppButton } from '@/components/SendToWhatsAppButton'
+import { TierlistDialog } from '@/components/TierlistDialog'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
@@ -19,19 +20,22 @@ export function HuntsPage() {
   const [modalOpen, setModalOpen] = useState(false)
   const [editRecord, setEditRecord] = useState<HuntRecord | null>(null)
   const [search, setSearch] = useState('')
-  const [projectionKills, setProjectionKills] = useState('444')
+  const [projectionKills, setProjectionKills] = useState('450')
   const [mode, setModeState] = useState<Mode>(() => getMode())
 
-  const filteredRecords = useMemo(() => {
-    const query = search.trim().toLowerCase()
+  const modeRecords = useMemo(() => {
     const allowedDifficulties = mode === 'Master' ? ['Hard', 'Challenging'] : ['Hard', 'Medium']
     return records.filter((r) => {
       const difficulty = BESTIARY_BY_ID.get(r.id)?.difficulty
-      if (!difficulty || !allowedDifficulties.includes(difficulty)) return false
-      if (!query) return true
-      return r.monsterName.toLowerCase().includes(query)
+      return Boolean(difficulty && allowedDifficulties.includes(difficulty))
     })
-  }, [records, search, mode])
+  }, [records, mode])
+
+  const filteredRecords = useMemo(() => {
+    const query = search.trim().toLowerCase()
+    if (!query) return modeRecords
+    return modeRecords.filter((r) => r.monsterName.toLowerCase().includes(query))
+  }, [modeRecords, search])
 
   function handleModeChange(next: Mode) {
     setModeState(next)
@@ -111,6 +115,9 @@ export function HuntsPage() {
         <span className="text-sm text-muted-foreground whitespace-nowrap">
           {records.length} registered creature{records.length !== 1 ? 's' : ''}
         </span>
+        <div className="ml-auto">
+          <TierlistDialog records={modeRecords} />
+        </div>
       </div>
 
       <RecordsTable
