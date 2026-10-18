@@ -55,11 +55,10 @@ export function ManualTab({ existingRecords, initial, onSave, onCancel }: Manual
         <Label htmlFor="manual-kills">Kills per 20min</Label>
         <Input
           id="manual-kills"
-          type="number"
-          min={1}
-          step="1"
+          type="text"
+          inputMode="numeric"
           value={killsPer20Min}
-          onChange={(e) => setKillsPer20Min(e.target.value)}
+          onChange={(e) => setKillsPer20Min(e.target.value.replace(/\D/g, ''))}
           placeholder="e.g. 300"
         />
         {belowMinimum && (

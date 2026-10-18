@@ -67,8 +67,8 @@ export function HuntsPage() {
   }
 
   return (
-    <div className="flex flex-col gap-6">
-      <header className="flex items-center justify-between gap-4">
+    <div className="flex h-full flex-col gap-6">
+      <header className="flex shrink-0 items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <Swords className="size-8 text-muted-foreground" />
           <div>
@@ -92,7 +92,7 @@ export function HuntsPage() {
         </div>
       </header>
 
-      <div className="flex items-center gap-3">
+      <div className="flex shrink-0 items-center gap-3">
         <div className="relative w-full max-w-sm">
           <Search className="absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
           <Input

@@ -44,7 +44,7 @@ export function TierlistDialog({ records }: TierlistDialogProps) {
             No records yet.
           </div>
         ) : (
-          <div className="scrollbar-thin -mr-2 flex min-h-0 flex-col gap-2 overflow-y-auto pr-2">
+          <div className="scrollbar-subtle -mr-2 flex min-h-0 flex-col gap-2 overflow-y-auto pr-2">
             {tiers.map(({ rank, records: tierRecords }) => (
               <div key={rank} className="flex min-h-28 shrink-0 gap-2">
                 <div

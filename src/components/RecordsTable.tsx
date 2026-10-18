@@ -58,9 +58,9 @@ export function RecordsTable({
   }
 
   return (
-    <div className="rounded-md border border-border">
-      <Table>
-        <TableHeader>
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-md border border-border">
+      <Table containerClassName="scrollbar-subtle flex-1 overflow-auto">
+        <TableHeader className="sticky top-0 z-10 bg-background">
           <TableRow>
             <TableHead className="text-center">Image</TableHead>
             <TableHead>Name</TableHead>

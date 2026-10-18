@@ -131,20 +131,27 @@
     cursor: pointer;
   }
 }
-@utility scrollbar-thin {
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-  &::-webkit-scrollbar {
-    width: 8px;
+@utility scrollbar-subtle {
+  /* Chrome/Edge/Safari: the ::-webkit rules are ignored once scrollbar-color is set, so standard props are Firefox-only */
+  @supports not selector(::-webkit-scrollbar) {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
   }
-  &::-webkit-scrollbar-track {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-corner {
     background: transparent;
   }
   &::-webkit-scrollbar-thumb {
-    background: var(--border);
+    background-color: var(--border);
+    background-clip: padding-box;
+    border: 3px solid transparent;
     border-radius: 9999px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: var(--muted-foreground);
+    background-color: var(--muted-foreground);
   }
 }

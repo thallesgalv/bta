@@ -3,7 +3,7 @@ import { Sidebar } from '@/components/layout/Sidebar'
 
 export function AppShell() {
   return (
-    <div className="flex min-h-screen bg-background text-foreground">
+    <div className="flex h-screen overflow-hidden bg-background text-foreground">
       <Sidebar />
       <main className="flex-1 overflow-y-auto p-8">
         <Outlet />
