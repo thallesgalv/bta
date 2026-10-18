@@ -22,6 +22,6 @@ export const DIFFICULTY_BADGE_CLASSNAME: Record<Difficulty, string> = {
 
 export function resistanceTextClassName(pct: number): string {
   if (pct > 100) return 'text-emerald-400'
-  if (pct < 100) return 'text-rose-400'
-  return 'text-muted-foreground'
+  if (pct < 100) return 'text-rose-600'
+  return 'text-gray-300'
 }
