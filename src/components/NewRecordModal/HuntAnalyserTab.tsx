@@ -4,6 +4,7 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
+import { BESTIARY } from '@/data/bestiary'
 import { parseHuntAnalyser } from '@/lib/parseHuntAnalyser'
 import { buildSaveLabel } from '@/lib/saveLabel'
 import { MIN_KILLS_PER_20_MIN, meetsMinimumKills, shouldReplace } from '@/lib/storage'
@@ -11,21 +12,37 @@ import type { HuntRecord } from '@/types'
 
 interface HuntAnalyserTabProps {
   existingRecords: HuntRecord[]
+  onlyCreatureId?: string
+  initialLocation?: string
   onSave: (records: HuntRecord[]) => void
   onCancel: () => void
 }
 
-export function HuntAnalyserTab({ existingRecords, onSave, onCancel }: HuntAnalyserTabProps) {
+export function HuntAnalyserTab({
+  existingRecords,
+  onlyCreatureId,
+  initialLocation,
+  onSave,
+  onCancel,
+}: HuntAnalyserTabProps) {
   const [text, setText] = useState('')
   const [considerProportion, setConsiderProportion] = useState(true)
-  const [location, setLocation] = useState('')
+  const [location, setLocation] = useState(initialLocation ?? '')
 
   const parsed = useMemo(
     () => parseHuntAnalyser(text, considerProportion),
     [text, considerProportion],
   )
 
-  const preview = parsed.matched.map((m) => {
+  const matched = onlyCreatureId
+    ? parsed.matched.filter((m) => m.creature.id === onlyCreatureId)
+    : parsed.matched
+  const onlyCreature = onlyCreatureId
+    ? BESTIARY.find((c) => c.id === onlyCreatureId)
+    : undefined
+  const onlyCreatureMissing = Boolean(onlyCreatureId) && text.trim() !== '' && matched.length === 0
+
+  const preview = matched.map((m) => {
     const existingRecord = existingRecords.find((r) => r.id === m.creature.id)
     return {
       ...m,
@@ -109,6 +126,12 @@ export function HuntAnalyserTab({ existingRecords, onSave, onCancel }: HuntAnaly
             </div>
           ))}
         </div>
+      )}
+
+      {onlyCreatureMissing && (
+        <p className="text-xs text-muted-foreground">
+          {onlyCreature?.name ?? 'This creature'} not found in this log.
+        </p>
       )}
 
       {belowMinCount > 0 && (

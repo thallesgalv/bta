@@ -40,35 +40,29 @@ export function NewRecordModal({
           <DialogTitle>{editRecord ? 'Edit record' : 'New record'}</DialogTitle>
         </DialogHeader>
 
-        {editRecord ? (
-          <ManualTab
-            existingRecords={existingRecords}
-            initial={editRecord}
-            onSave={(record) => handleSave([record])}
-            onCancel={handleCancel}
-          />
-        ) : (
-          <Tabs defaultValue="hunt-analyser">
-            <TabsList className="w-full">
-              <TabsTrigger value="hunt-analyser">Hunt Analyser</TabsTrigger>
-              <TabsTrigger value="manual">Manual</TabsTrigger>
-            </TabsList>
-            <TabsContent value="hunt-analyser" className="pt-3">
-              <HuntAnalyserTab
-                existingRecords={existingRecords}
-                onSave={handleSave}
-                onCancel={handleCancel}
-              />
-            </TabsContent>
-            <TabsContent value="manual" className="pt-3">
-              <ManualTab
-                existingRecords={existingRecords}
-                onSave={(record) => handleSave([record])}
-                onCancel={handleCancel}
-              />
-            </TabsContent>
-          </Tabs>
-        )}
+        <Tabs defaultValue="hunt-analyser">
+          <TabsList className="w-full">
+            <TabsTrigger value="hunt-analyser">Hunt Analyser</TabsTrigger>
+            <TabsTrigger value="manual">Manual</TabsTrigger>
+          </TabsList>
+          <TabsContent value="hunt-analyser" className="pt-3">
+            <HuntAnalyserTab
+              existingRecords={existingRecords}
+              onlyCreatureId={editRecord?.id}
+              initialLocation={editRecord?.location}
+              onSave={handleSave}
+              onCancel={handleCancel}
+            />
+          </TabsContent>
+          <TabsContent value="manual" className="pt-3">
+            <ManualTab
+              existingRecords={existingRecords}
+              initial={editRecord}
+              onSave={(record) => handleSave([record])}
+              onCancel={handleCancel}
+            />
+          </TabsContent>
+        </Tabs>
       </DialogContent>
     </Dialog>
   )

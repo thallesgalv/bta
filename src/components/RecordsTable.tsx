@@ -118,7 +118,12 @@ export function RecordsTable({
                     {RANK_LABEL[rank]}
                   </Badge>
                 </TableCell>
-                <TableCell className="text-center tabular-nums">{record.killsPer20Min}</TableCell>
+                <TableCell className="text-center tabular-nums">
+                  {record.killsPer20Min}{' '}
+                  <span className="text-[10px] text-muted-foreground">
+                    ({Number((record.killsPer20Min / 20).toFixed(1))} KPM)
+                  </span>
+                </TableCell>
                 <TableCell className="text-center tabular-nums">
                   {projectionKills > 0
                     ? formatDuration((projectionKills / record.killsPer20Min) * 20)
