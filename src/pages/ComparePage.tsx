@@ -27,7 +27,7 @@ export function ComparePage() {
     const record = entry ? recordsById.get(entry.creatureId) : undefined
     if (!entry || !record) return { minutes: null, ppm: null }
     const minutes = projectionMinutes(entry.totalKills, record.killsPer20Min)
-    return { minutes, ppm: pointsPerMinute(entry.stars, minutes) }
+    return { minutes, ppm: pointsPerMinute(entry.level, minutes) }
   })
   const ppms = metrics.flatMap((m) => (m.ppm !== null ? [m.ppm] : []))
   const bestPpm = ppms.length > 0 ? Math.max(...ppms) : null

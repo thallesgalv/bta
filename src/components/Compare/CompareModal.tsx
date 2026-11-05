@@ -1,16 +1,14 @@
 import { useState } from 'react'
-import { StarRating } from '@/components/Compare/StarRating'
 import { CreatureCombobox } from '@/components/CreatureCombobox'
+import { TaskLevelIcon } from '@/components/TaskLevelIcon'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { BESTIARY } from '@/data/bestiary'
-import { TASK_POINTS } from '@/lib/comparison'
-import type { ComparisonEntry, Stars } from '@/types'
-
-const STAR_OPTIONS: Stars[] = [0, 1, 2]
+import { TASK_LEVEL_LABEL, TASK_LEVELS, TASK_POINTS } from '@/lib/comparison'
+import type { ComparisonEntry, TaskLevel } from '@/types'
 
 interface CompareModalProps {
   open: boolean
@@ -39,7 +37,7 @@ interface CompareFormProps {
 }
 
 function CompareForm({ onSave, onCancel, editEntry }: CompareFormProps) {
-  const [stars, setStars] = useState<Stars>(editEntry?.stars ?? 0)
+  const [level, setLevel] = useState<TaskLevel>(editEntry?.level ?? 'empty')
   const [creatureId, setCreatureId] = useState<string | null>(editEntry?.creatureId ?? null)
   const [totalKills, setTotalKills] = useState(editEntry ? String(editEntry.totalKills) : '')
 
@@ -48,34 +46,34 @@ function CompareForm({ onSave, onCancel, editEntry }: CompareFormProps) {
 
   function handleSave() {
     if (!creatureId || !isValid) return
-    onSave({ creatureId, stars, totalKills: kills })
+    onSave({ creatureId, level, totalKills: kills })
   }
 
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-1.5">
-        <Label>Stars</Label>
+        <Label>Task level</Label>
         <RadioGroup
-          value={String(stars)}
-          onValueChange={(value) => setStars(Number(value) as Stars)}
-          className="flex gap-4"
+          value={level}
+          onValueChange={(value) => setLevel(value as TaskLevel)}
+          className="grid grid-cols-4 gap-2"
         >
-          {STAR_OPTIONS.map((option) => (
+          {TASK_LEVELS.map((option) => (
             <Label
               key={option}
-              htmlFor={`compare-stars-${option}`}
-              className="flex cursor-pointer items-center gap-2 font-normal"
+              htmlFor={`compare-level-${option}`}
+              className="flex cursor-pointer flex-col items-center gap-1.5 rounded-md border border-border p-2 font-normal has-data-[state=checked]:border-primary"
             >
-              <RadioGroupItem
-                id={`compare-stars-${option}`}
-                value={String(option)}
-                className="data-[state=checked]:border-primary data-[state=checked]:bg-primary"
-              />
-              <span className="flex flex-col">
-                <span>{option}</span>
+              <TaskLevelIcon level={option} className="size-10" showEmptyPlaceholder />
+              <span className="flex flex-col items-center">
+                <span>{TASK_LEVEL_LABEL[option]}</span>
                 <span className="text-xs text-muted-foreground">{TASK_POINTS[option]} pts</span>
               </span>
-              {option > 0 && <StarRating stars={option} />}
+              <RadioGroupItem
+                id={`compare-level-${option}`}
+                value={option}
+                className="data-[state=checked]:border-primary data-[state=checked]:bg-primary"
+              />
             </Label>
           ))}
         </RadioGroup>

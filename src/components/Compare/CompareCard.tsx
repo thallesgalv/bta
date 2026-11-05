@@ -1,6 +1,6 @@
 import { BookOpen, ListChecks, MoreHorizontal, Pencil, Trash2, Triangle, Trophy } from 'lucide-react'
-import { StarRating } from '@/components/Compare/StarRating'
 import { ResistanceList } from '@/components/ResistanceList'
+import { TaskLevelIcon } from '@/components/TaskLevelIcon'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import {
@@ -67,8 +67,8 @@ export function CompareCard({
         </Badge>
       )}
 
-      <div className="mt-6 flex h-5 items-center">
-        <StarRating stars={entry.stars} />
+      <div className="mt-6 flex h-12 w-full items-center justify-center">
+        <TaskLevelIcon level={entry.level} className="size-12" />
       </div>
       <img src={creature.imageUrl} alt={creature.name} className="size-16 object-contain" />
       <div className="text-center">
@@ -147,7 +147,7 @@ export function CompareCard({
         <p className="text-center text-sm text-muted-foreground">
           To be worth it, finish the task in at most{' '}
           <span className="font-semibold tabular-nums text-foreground">
-            {formatDuration(breakEvenMinutes(entry.stars, bestPpm))}
+            {formatDuration(breakEvenMinutes(entry.level, bestPpm))}
           </span>
         </p>
       )}

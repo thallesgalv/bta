@@ -1,16 +1,39 @@
-import type { Difficulty, Rank } from '@/types'
+import type { Difficulty, Rank, TaskLevel } from '@/types'
 
 export const RANK_LABEL: Record<Rank, string> = {
-  PickNow: 'PICK NOW!!!',
-  Star: 'STAR ONLY',
-  TwoStars: '2 STARS ONLY',
+  WorthAnyway: 'WORTH ANYWAY',
+  EmptyBelow450: 'EMPTY BELOW 450',
+  SilverAnyway: 'SILVER ANYWAY',
+  SilverBelow450: 'ONLY SILVER BELOW 450',
+  GoldAnyway: 'GOLD ANYWAY',
+  GoldBelow450: 'ONLY GOLD BELOW 450',
+  PlatinumAnyway: 'PLATINUM ANYWAY',
+  PlatinumBelow450: 'ONLY PLATINUM BELOW 450',
   Skip: 'SKIP!!!',
 }
 
+// How a rank is rendered: the level name is replaced by its image when one exists.
+export const RANK_DISPLAY: Record<Rank, { prefix?: string; level?: TaskLevel; suffix: string }> = {
+  WorthAnyway: { suffix: 'WORTH ANYWAY' },
+  EmptyBelow450: { suffix: 'EMPTY BELOW 450' },
+  SilverAnyway: { level: 'silver', suffix: 'ANYWAY' },
+  SilverBelow450: { prefix: 'ONLY', level: 'silver', suffix: 'BELOW 450' },
+  GoldAnyway: { level: 'gold', suffix: 'ANYWAY' },
+  GoldBelow450: { prefix: 'ONLY', level: 'gold', suffix: 'BELOW 450' },
+  PlatinumAnyway: { level: 'platinum', suffix: 'ANYWAY' },
+  PlatinumBelow450: { prefix: 'ONLY', level: 'platinum', suffix: 'BELOW 450' },
+  Skip: { suffix: 'SKIP!!!' },
+}
+
 export const RANK_BADGE_CLASSNAME: Record<Rank, string> = {
-  PickNow: 'border-emerald-400/40 bg-emerald-400/15 text-emerald-200',
-  Star: 'border-amber-400/40 bg-amber-400/15 text-amber-200',
-  TwoStars: 'border-orange-500/40 bg-orange-500/15 text-orange-300',
+  WorthAnyway: 'border-emerald-400/60 bg-emerald-400/25 text-emerald-200',
+  EmptyBelow450: 'border-emerald-400/30 bg-emerald-400/10 text-emerald-300',
+  SilverAnyway: 'border-slate-300/60 bg-slate-300/20 text-slate-100',
+  SilverBelow450: 'border-slate-300/30 bg-slate-300/10 text-slate-300',
+  GoldAnyway: 'border-amber-400/60 bg-amber-400/25 text-amber-200',
+  GoldBelow450: 'border-amber-400/30 bg-amber-400/10 text-amber-300',
+  PlatinumAnyway: 'border-cyan-400/60 bg-cyan-400/25 text-cyan-200',
+  PlatinumBelow450: 'border-cyan-400/30 bg-cyan-400/10 text-cyan-300',
   Skip: 'border-red-500/40 bg-red-500/15 text-red-300',
 }
 

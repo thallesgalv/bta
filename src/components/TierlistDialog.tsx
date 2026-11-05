@@ -1,4 +1,5 @@
 import { LayoutList } from 'lucide-react'
+import { RankBadge } from '@/components/RankBadge'
 import { Button } from '@/components/ui/button'
 import {
   Dialog,
@@ -8,14 +9,10 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { BESTIARY } from '@/data/bestiary'
-import { getRank } from '@/lib/ranking'
-import { RANK_BADGE_CLASSNAME, RANK_LABEL } from '@/lib/rankStyles'
-import { cn } from '@/lib/utils'
-import type { HuntRecord, Rank } from '@/types'
+import { getRank, RANK_ORDER } from '@/lib/ranking'
+import type { HuntRecord } from '@/types'
 
 const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
-
-const TIER_ORDER: Rank[] = ['PickNow', 'Star', 'TwoStars', 'Skip']
 
 interface TierlistDialogProps {
   records: HuntRecord[]
@@ -23,7 +20,7 @@ interface TierlistDialogProps {
 
 export function TierlistDialog({ records }: TierlistDialogProps) {
   const sorted = [...records].sort((a, b) => b.killsPer20Min - a.killsPer20Min)
-  const tiers = TIER_ORDER.map((rank) => ({
+  const tiers = RANK_ORDER.map((rank) => ({
     rank,
     records: sorted.filter((r) => getRank(r.killsPer20Min) === rank),
   }))
@@ -47,14 +44,7 @@ export function TierlistDialog({ records }: TierlistDialogProps) {
           <div className="scrollbar-subtle -mr-2 flex min-h-0 flex-col gap-2 overflow-y-auto pr-2">
             {tiers.map(({ rank, records: tierRecords }) => (
               <div key={rank} className="flex min-h-28 shrink-0 gap-2">
-                <div
-                  className={cn(
-                    'flex w-36 shrink-0 items-center justify-center rounded-md border p-2 text-center text-sm font-bold',
-                    RANK_BADGE_CLASSNAME[rank],
-                  )}
-                >
-                  {RANK_LABEL[rank]}
-                </div>
+                <RankBadge rank={rank} size="lg" className="w-40 shrink-0" />
                 <div className="flex flex-1 flex-wrap items-start gap-3 rounded-md border border-border bg-muted/30 p-2">
                   {tierRecords.length === 0 ? (
                     <span className="self-center text-sm text-muted-foreground">—</span>

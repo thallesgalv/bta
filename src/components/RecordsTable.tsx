@@ -1,4 +1,5 @@
 import { BookOpen, ListChecks, Pencil, Settings, Trash2 } from 'lucide-react'
+import { RankBadge } from '@/components/RankBadge'
 import { ResistanceList } from '@/components/ResistanceList'
 import { Badge } from '@/components/ui/badge'
 import {
@@ -18,21 +19,19 @@ import {
 } from '@/components/ui/table'
 import { BESTIARY } from '@/data/bestiary'
 import { bredworldTaskUrl, tibiaWikiUrl } from '@/lib/externalLinks'
+import { ACCEPTABLE_PPM, pointsPerMinute, projectionMinutes } from '@/lib/comparison'
 import { formatDuration } from '@/lib/formatDuration'
 import { getRank } from '@/lib/ranking'
-import {
-  DIFFICULTY_BADGE_CLASSNAME,
-  RANK_BADGE_CLASSNAME,
-  RANK_LABEL,
-} from '@/lib/rankStyles'
+import { DIFFICULTY_BADGE_CLASSNAME } from '@/lib/rankStyles'
 import { cn } from '@/lib/utils'
-import type { HuntRecord, Mode } from '@/types'
+import type { HuntRecord, Mode, TaskLevel } from '@/types'
 
 const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
 
 interface RecordsTableProps {
   records: HuntRecord[]
   projectionKills: number
+  taskLevel: TaskLevel
   emptyMessage: string
   mode: Mode
   onEdit: (record: HuntRecord) => void
@@ -42,6 +41,7 @@ interface RecordsTableProps {
 export function RecordsTable({
   records,
   projectionKills,
+  taskLevel,
   emptyMessage,
   mode,
   onEdit,
@@ -67,6 +67,7 @@ export function RecordsTable({
             <TableHead className="text-center">Ranking</TableHead>
             <TableHead className="text-center">Kills per 20 min</TableHead>
             <TableHead className="text-center">Projection</TableHead>
+            <TableHead className="text-center">PPM</TableHead>
             <TableHead className="text-center">Location</TableHead>
             {mode === 'Expert' && <TableHead className="text-center">Bestiary Level</TableHead>}
             <TableHead className="text-center">Weakness/Resistances</TableHead>
@@ -78,6 +79,9 @@ export function RecordsTable({
             const rank = getRank(record.killsPer20Min)
             const difficulty = BESTIARY_BY_ID.get(record.id)?.difficulty
             const resistances = BESTIARY_BY_ID.get(record.id)?.resistances
+            const minutes =
+              projectionKills > 0 ? projectionMinutes(projectionKills, record.killsPer20Min) : null
+            const ppm = minutes !== null ? pointsPerMinute(taskLevel, minutes) : null
             return (
               <TableRow key={record.id}>
                 <TableCell className="text-center">
@@ -111,12 +115,7 @@ export function RecordsTable({
                   </div>
                 </TableCell>
                 <TableCell className="text-center">
-                  <Badge
-                    variant="outline"
-                    className={cn('border whitespace-nowrap', RANK_BADGE_CLASSNAME[rank])}
-                  >
-                    {RANK_LABEL[rank]}
-                  </Badge>
+                  <RankBadge rank={rank} />
                 </TableCell>
                 <TableCell className="text-center tabular-nums">
                   {record.killsPer20Min}{' '}
@@ -125,9 +124,19 @@ export function RecordsTable({
                   </span>
                 </TableCell>
                 <TableCell className="text-center tabular-nums">
-                  {projectionKills > 0
-                    ? formatDuration((projectionKills / record.killsPer20Min) * 20)
-                    : '—'}
+                  {minutes !== null ? formatDuration(minutes) : '—'}
+                </TableCell>
+                <TableCell
+                  className={cn(
+                    'text-center font-medium tabular-nums',
+                    ppm === null
+                      ? 'text-muted-foreground'
+                      : ppm >= ACCEPTABLE_PPM
+                        ? 'text-emerald-400'
+                        : 'text-rose-400',
+                  )}
+                >
+                  {ppm !== null ? ppm.toFixed(2) : '—'}
                 </TableCell>
                 <TableCell className="text-center">
                   <Badge variant="secondary">{record.location}</Badge>

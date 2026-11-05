@@ -1,9 +1,28 @@
-import type { ComparisonEntry, HuntRecord, Mode, WhatsAppPhone } from '@/types'
+import type { ComparisonEntry, HuntRecord, Mode, TaskLevel, WhatsAppPhone } from '@/types'
 
 const STORAGE_KEY = 'bta:hunt-records'
 const COMPARISON_KEY = 'bta:comparison'
 const WHATSAPP_PHONE_KEY = 'bta:whatsapp-phone'
 const MODE_KEY = 'bta:mode'
+const TASK_LEVEL_KEY = 'bta:task-level'
+
+const TASK_LEVEL_VALUES: TaskLevel[] = ['empty', 'silver', 'gold', 'platinum']
+const LEGACY_STARS_TO_LEVEL: TaskLevel[] = ['empty', 'silver', 'gold']
+
+function isTaskLevel(value: unknown): value is TaskLevel {
+  return TASK_LEVEL_VALUES.includes(value as TaskLevel)
+}
+
+// Older saves stored `stars: 0 | 1 | 2` instead of `level`.
+function normalizeEntry(raw: unknown): ComparisonEntry | null {
+  if (!raw || typeof raw !== 'object') return null
+  const { creatureId, totalKills, level, stars } = raw as Record<string, unknown>
+  if (typeof creatureId !== 'string' || typeof totalKills !== 'number') return null
+  const resolved = isTaskLevel(level)
+    ? level
+    : (LEGACY_STARS_TO_LEVEL[stars as number] ?? 'empty')
+  return { creatureId, totalKills, level: resolved }
+}
 
 export function getRecords(): HuntRecord[] {
   const raw = localStorage.getItem(STORAGE_KEY)
@@ -61,7 +80,7 @@ export function getComparison(): ComparisonSlots {
   try {
     const parsed = JSON.parse(raw)
     if (!Array.isArray(parsed)) return empty
-    return empty.map((_, i) => parsed[i] ?? null)
+    return empty.map((_, i) => normalizeEntry(parsed[i]))
   } catch {
     return empty
   }
@@ -95,4 +114,13 @@ export function getMode(): Mode {
 
 export function setMode(mode: Mode): void {
   localStorage.setItem(MODE_KEY, mode)
+}
+
+export function getTaskLevel(): TaskLevel {
+  const raw = localStorage.getItem(TASK_LEVEL_KEY)
+  return isTaskLevel(raw) ? raw : 'empty'
+}
+
+export function setTaskLevel(level: TaskLevel): void {
+  localStorage.setItem(TASK_LEVEL_KEY, level)
 }

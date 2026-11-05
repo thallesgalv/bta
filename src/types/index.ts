@@ -1,6 +1,15 @@
 export type Difficulty = 'Medium' | 'Hard' | 'Challenging'
 
-export type Rank = 'PickNow' | 'Star' | 'TwoStars' | 'Skip'
+export type Rank =
+  | 'WorthAnyway'
+  | 'EmptyBelow450'
+  | 'SilverAnyway'
+  | 'SilverBelow450'
+  | 'GoldAnyway'
+  | 'GoldBelow450'
+  | 'PlatinumAnyway'
+  | 'PlatinumBelow450'
+  | 'Skip'
 
 export type Mode = 'Expert' | 'Master'
 
@@ -22,11 +31,11 @@ export interface HuntRecord {
   updatedAt: string
 }
 
-export type Stars = 0 | 1 | 2
+export type TaskLevel = 'empty' | 'silver' | 'gold' | 'platinum'
 
 export interface ComparisonEntry {
   creatureId: string
-  stars: Stars
+  level: TaskLevel
   totalKills: number
 }
 

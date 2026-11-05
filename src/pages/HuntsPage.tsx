@@ -5,13 +5,26 @@ import { ImportDialog } from '@/components/ImportDialog'
 import { NewRecordModal } from '@/components/NewRecordModal/NewRecordModal'
 import { RecordsTable } from '@/components/RecordsTable'
 import { SendToWhatsAppButton } from '@/components/SendToWhatsAppButton'
+import { TaskLevelIcon } from '@/components/TaskLevelIcon'
 import { TierlistDialog } from '@/components/TierlistDialog'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { BESTIARY } from '@/data/bestiary'
-import { deleteRecord, getMode, getRecords, meetsMinimumKills, setMode, setRecords, upsertRecords } from '@/lib/storage'
-import type { HuntRecord, Mode } from '@/types'
+import { TASK_LEVEL_LABEL, TASK_LEVELS, TASK_POINTS } from '@/lib/comparison'
+import {
+  deleteRecord,
+  getMode,
+  getRecords,
+  getTaskLevel,
+  meetsMinimumKills,
+  setMode,
+  setRecords,
+  setTaskLevel,
+  upsertRecords,
+} from '@/lib/storage'
+import type { HuntRecord, Mode, TaskLevel } from '@/types'
 
 const BESTIARY_BY_ID = new Map(BESTIARY.map((c) => [c.id, c]))
 
@@ -22,6 +35,7 @@ export function HuntsPage() {
   const [search, setSearch] = useState('')
   const [projectionKills, setProjectionKills] = useState('450')
   const [mode, setModeState] = useState<Mode>(() => getMode())
+  const [taskLevel, setTaskLevelState] = useState<TaskLevel>(() => getTaskLevel())
 
   const modeRecords = useMemo(() => {
     const allowedDifficulties = mode === 'Master' ? ['Hard', 'Challenging'] : ['Hard', 'Medium']
@@ -40,6 +54,11 @@ export function HuntsPage() {
   function handleModeChange(next: Mode) {
     setModeState(next)
     setMode(next)
+  }
+
+  function handleTaskLevelChange(next: TaskLevel) {
+    setTaskLevelState(next)
+    setTaskLevel(next)
   }
 
   function handleSave(newRecords: HuntRecord[]) {
@@ -112,6 +131,24 @@ export function HuntsPage() {
             className="w-24"
           />
         </div>
+        <RadioGroup
+          value={taskLevel}
+          onValueChange={(v) => handleTaskLevelChange(v as TaskLevel)}
+          className="flex w-auto items-center gap-3"
+          aria-label="Current task level"
+        >
+          {TASK_LEVELS.map((level) => (
+            <label
+              key={level}
+              htmlFor={`task-level-${level}`}
+              title={`${TASK_LEVEL_LABEL[level]} (${TASK_POINTS[level]} pts)`}
+              className="flex cursor-pointer items-center gap-1.5 text-sm"
+            >
+              <RadioGroupItem id={`task-level-${level}`} value={level} />
+              <TaskLevelIcon level={level} />
+            </label>
+          ))}
+        </RadioGroup>
         <span className="text-sm text-muted-foreground whitespace-nowrap">
           {records.length} registered creature{records.length !== 1 ? 's' : ''}
         </span>
@@ -123,6 +160,7 @@ export function HuntsPage() {
       <RecordsTable
         records={filteredRecords}
         projectionKills={Number(projectionKills) || 0}
+        taskLevel={taskLevel}
         emptyMessage={
           records.length === 0 ? 'No records yet.' : 'No creature found.'
         }
